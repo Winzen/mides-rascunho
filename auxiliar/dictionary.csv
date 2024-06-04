@@ -1,0 +1,962 @@
+id_tabela,coluna,chave,cobertura_temporal,valor
+empenho,modalidade_licitacao,1,(1),Convite
+empenho,modalidade_licitacao,2,(1),Tomada de Preços
+empenho,modalidade_licitacao,3,(1),Concorrência
+empenho,modalidade_licitacao,4,(1),Pregão
+empenho,modalidade_licitacao,5,(1),Pregão Presencial
+empenho,modalidade_licitacao,6,(1),Pregão Eletrônico
+empenho,modalidade_licitacao,7,(1),Leilão
+empenho,modalidade_licitacao,8,(1),Dispensa
+empenho,modalidade_licitacao,9,(1),Dispensa BEC
+empenho,modalidade_licitacao,10,(1),Inexigibilidade
+empenho,modalidade_licitacao,11,(1),Concurso
+empenho,modalidade_licitacao,12,(1),Regime Diferenciado de Contratações (RDC)
+empenho,modalidade_licitacao,29,(1),Regras Internacionais
+empenho,modalidade_licitacao,31,(1),Chamada Pública
+empenho,modalidade_licitacao,32,(1),Suprimento de Fundos
+empenho,modalidade_licitacao,98,(1),Processo licitatório
+empenho,modalidade_licitacao,99,(1),Outros/ Não aplicável
+empenho,modalidade,E,(1),Estimativo
+empenho,modalidade,G,(1),Global
+empenho,modalidade,O,(1),Ordinário
+empenho,modalidade,R,(1),Reforço
+empenho,funcao,0,(1),Sem informação
+empenho,funcao,1,(1),Legislativa
+empenho,funcao,2,(1),Judiciária
+empenho,funcao,3,(1),Essencial à justiça
+empenho,funcao,4,(1),Administração
+empenho,funcao,5,(1),Defesa nacional
+empenho,funcao,6,(1),Segurança pública
+empenho,funcao,7,(1),Relações exteriores
+empenho,funcao,8,(1),Assistência social
+empenho,funcao,9,(1),Previdência social
+empenho,funcao,10,(1),Saúde
+empenho,funcao,11,(1),Trabalho
+empenho,funcao,12,(1),Educação
+empenho,funcao,13,(1),Cultura
+empenho,funcao,14,(1),Direitos da cidadania
+empenho,funcao,15,(1),Urbanismo
+empenho,funcao,16,(1),Habitação
+empenho,funcao,17,(1),Saneamento
+empenho,funcao,18,(1),Gestão ambiental
+empenho,funcao,19,(1),Ciência e Tecnologia
+empenho,funcao,20,(1),Agricultura
+empenho,funcao,21,(1),Organização agrária
+empenho,funcao,22,(1),Indústria
+empenho,funcao,23,(1),Comércio e serviços
+empenho,funcao,24,(1),Comunicações
+empenho,funcao,25,(1),Energia
+empenho,funcao,26,(1),Transporte
+empenho,funcao,27,(1),Desporto e lazer
+empenho,funcao,28,(1),Encargos especiais
+empenho,funcao,40,(1),Sem informação
+empenho,funcao,98,(1),Atípica
+empenho,funcao,99,(1),Reserva de contingência
+empenho,subfuncao,31,(1),Ação legislativa
+empenho,subfuncao,32,(1),Controle externo
+empenho,subfuncao,61,(1),Ação judiciária
+empenho,subfuncao,62,(1),Defesa do interesse público no processo judiciário
+empenho,subfuncao,91,(1),Defesa da ordem jurídica
+empenho,subfuncao,92,(1),Representação judicial e extrajudicial
+empenho,subfuncao,121,(1),Planejamento e orçamento
+empenho,subfuncao,122,(1),Administração geral
+empenho,subfuncao,123,(1),Administração financeira
+empenho,subfuncao,124,(1),Controle interno
+empenho,subfuncao,125,(1),Normatização e fiscalização
+empenho,subfuncao,126,(1),Tecnologia da informação
+empenho,subfuncao,127,(1),Ordenamento territorial
+empenho,subfuncao,128,(1),Formação de recursos humanos
+empenho,subfuncao,129,(1),Administração de receitas
+empenho,subfuncao,130,(1),Administração de concessões
+empenho,subfuncao,131,(1),Comunicação social
+empenho,subfuncao,151,(1),Defesa aérea
+empenho,subfuncao,152,(1),Defesa naval
+empenho,subfuncao,153,(1),Defesa terrestre
+empenho,subfuncao,181,(1),Policiamento
+empenho,subfuncao,182,(1),Defesa civil
+empenho,subfuncao,183,(1),Informação e inteligência
+empenho,subfuncao,211,(1),Relações diplomáticas
+empenho,subfuncao,212,(1),Cooperação internacional
+empenho,subfuncao,241,(1),Assistência ao idoso
+empenho,subfuncao,242,(1),Assistência ao portador de deficiência
+empenho,subfuncao,243,(1),Assistência à criança e ao adolescente
+empenho,subfuncao,244,(1),Assistência comunitária
+empenho,subfuncao,271,(1),Previdência básica
+empenho,subfuncao,272,(1),Previdência do regime estatutário
+empenho,subfuncao,273,(1),Previdência complementar
+empenho,subfuncao,274,(1),Previdência especial
+empenho,subfuncao,301,(1),Atenção básica
+empenho,subfuncao,302,(1),Assistência hospitalar e ambulatorial
+empenho,subfuncao,303,(1),Suporte profilático e terapêutico
+empenho,subfuncao,304,(1),Vigilância sanitária
+empenho,subfuncao,305,(1),Vigilância epidemiológica
+empenho,subfuncao,306,(1),Alimentação e nutrição
+empenho,subfuncao,331,(1),Proteção e benefícios ao trabalhador
+empenho,subfuncao,332,(1),Relações de trabalho
+empenho,subfuncao,333,(1),Empregabilidade
+empenho,subfuncao,334,(1),Fomento ao trabalho
+empenho,subfuncao,361,(1),Ensino fundamental
+empenho,subfuncao,362,(1),Ensino médio
+empenho,subfuncao,363,(1),Ensino profissional
+empenho,subfuncao,364,(1),Ensino superior
+empenho,subfuncao,365,(1),Educação infantil
+empenho,subfuncao,366,(1),Educação de jovens e adultos
+empenho,subfuncao,367,(1),Educação especial
+empenho,subfuncao,368,(1),Educação básica
+empenho,subfuncao,391,(1),"Patrimônio histórico, artístico e arqueológico"
+empenho,subfuncao,392,(1),Difusão cultural
+empenho,subfuncao,421,(1),Custódia e reintegração social
+empenho,subfuncao,422,(1),"Direitos individuais, coletivos e difusos"
+empenho,subfuncao,423,(1),Assistência aos povos indígenas
+empenho,subfuncao,451,(1),infra-estrutura urbana
+empenho,subfuncao,452,(1),Serviços urbanos
+empenho,subfuncao,453,(1),Transportes coletivos urbanos
+empenho,subfuncao,482,(1),Habitação urbana
+empenho,subfuncao,511,(1),Saneamento básico rural
+empenho,subfuncao,512,(1),Saneamento básico urbano
+empenho,subfuncao,541,(1),Preservação e conservação ambiental
+empenho,subfuncao,542,(1),Controle ambiental
+empenho,subfuncao,543,(1),Recuperação de áreas degradadas
+empenho,subfuncao,544,(1),Recursos hídricos
+empenho,subfuncao,545,(1),Meteorologia
+empenho,subfuncao,571,(1),Desenvolvimento científico
+empenho,subfuncao,572,(1),Desenvolvimento tecnológico e engenharia
+empenho,subfuncao,573,(1),Difusão do conhecimento científico e tecnológico
+empenho,subfuncao,601,(1),Promoção da produção vegetal
+empenho,subfuncao,602,(1),Promoção da produção animal
+empenho,subfuncao,603,(1),Defesa sanitária vegetal
+empenho,subfuncao,604,(1),Defesa sanitária animal
+empenho,subfuncao,605,(1),Abastecimento
+empenho,subfuncao,606,(1),Extensão rural
+empenho,subfuncao,607,(1),Irrigação
+empenho,subfuncao,608,(1),Promoção da produção agropecuária
+empenho,subfuncao,609,(1),Defesa agropecuária
+empenho,subfuncao,631,(1),Reforma agrária
+empenho,subfuncao,632,(1),Colonização
+empenho,subfuncao,661,(1),Promoção industrial
+empenho,subfuncao,662,(1),Produção industrial
+empenho,subfuncao,663,(1),Mineração
+empenho,subfuncao,664,(1),Propriedade industrial
+empenho,subfuncao,665,(1),Normalização e qualidade
+empenho,subfuncao,691,(1),Promoção comercial
+empenho,subfuncao,692,(1),Comercialização
+empenho,subfuncao,693,(1),Comércio exterior
+empenho,subfuncao,694,(1),Serviços financeiros
+empenho,subfuncao,695,(1),Turismo
+empenho,subfuncao,721,(1),Comunicações postais
+empenho,subfuncao,722,(1),Telecomunicações
+empenho,subfuncao,751,(1),Conservação de energia
+empenho,subfuncao,752,(1),Energia elétrica
+empenho,subfuncao,753,(1),Combustíveis
+empenho,subfuncao,754,(1),Biocombustíveis
+empenho,subfuncao,781,(1),Transporte aéreo
+empenho,subfuncao,782,(1),Transporte rodoviário
+empenho,subfuncao,783,(1),Transporte ferroviário
+empenho,subfuncao,784,(1),Transporte hidroviário
+empenho,subfuncao,785,(1),Transportes especiais
+empenho,subfuncao,811,(1),Desporto de rendimento
+empenho,subfuncao,812,(1),Desporto comunitário
+empenho,subfuncao,813,(1),Lazer
+empenho,subfuncao,841,(1),Refinanciamento da dívida interna
+empenho,subfuncao,842,(1),Refinanciamento da dívida externa
+empenho,subfuncao,843,(1),Serviço da dívida internaNome
+empenho,subfuncao,844,(1),Serviço da dívida externa
+empenho,subfuncao,845,(1),Outras transferências
+empenho,subfuncao,846,(1),Outros encargos especiais
+empenho,subfuncao,847,(1),Transferências para a educação básica
+empenho,subfuncao,999,(1),Reserva de contingência
+empenho,elemento_despesa,31501199,(1),TRANSFERÊNCIAS DE RECURSOS PARA COBERTURA DE DESPESAS COM PESSOAL CONTRATADO ATRAVÉS DE INSTITUIÇÕES PRIVADAS SEM FINS LUCRATIVOS
+empenho,elemento_despesa,31900199,(1),INATIVOS – LEI MUNICIPAL NO 4012/75 – VEREADORES
+empenho,elemento_despesa,31900199,(1),INDENIZAÇÃO SOBRE GRATIFICAÇÃO NATALINA – INATIVOS
+empenho,elemento_despesa,31900399,(1),INDENIZAÇÃO SOBRE GRATIFICAÇÃO NATALINA – PENSIONISTAS
+empenho,elemento_despesa,31900401,(1),CONTRATAÇÃO POR TEMPO DETERMINADO DE PROFESSORES
+empenho,elemento_despesa,31900499,(1),CONTRATAÇÃO POR TEMPO DETERMINADO DE PROFISSIONAIS DE DIVERSAS ÁREAS
+empenho,elemento_despesa,31901104,(1),ADICIONAL-NOTURNO – SERVIDORES RPPS
+empenho,elemento_despesa,31901104,(1),ADICIONAL-NOTURNO – SERVIDORES RGPS
+empenho,elemento_despesa,31901105,(1),INCORPORAÇÕES – SERVIDORES RPPS
+empenho,elemento_despesa,31901105,(1),INCORPORAÇÕES – SERVIDORES RGPS
+empenho,elemento_despesa,31901109,(1),ADICIONAL DE PERICULOSIDADE – SERVIDORES RPPS
+empenho,elemento_despesa,31901109,(1),ADICIONAL DE PERICULOSIDADE – SERVIDORES RGPS
+empenho,elemento_despesa,31901110,(1),ADICIONAL DE INSALUBRIDADE – SERVIDORES RPPS
+empenho,elemento_despesa,31901110,(1),ADICIONAL DE INSALUBRIDADE – SERVIDORES RGPS
+empenho,elemento_despesa,31901130,(1),ABONO VERBA SUS
+empenho,elemento_despesa,31901130,(1),ABONO VERBA SUS – SERVIDORES RGPS
+empenho,elemento_despesa,31901130,(1),ABONO VERBA SUS – SERVIDORES RPPS
+empenho,elemento_despesa,31901130,(1),ABONO PROVISÓRIO DIVERSO – PESSOAL CIVIL
+empenho,elemento_despesa,31901130,(1),ABONO PROVISÓRIO DIVERSO – PESSOAL CIVIL – SERVIDORES RPPS
+empenho,elemento_despesa,31901130,(1),ABONO PROVISÓRIO DIVERSO – PESSOAL CIVIL – SERVIDORES RGPS
+empenho,elemento_despesa,31901131,(1),GRATIFICAÇÃO POR EXERCÍCIO DE CARGOS – SERVIDORES RPPS
+empenho,elemento_despesa,31901131,(1),GRATIFICAÇÃO POR EXERCÍCIO DE CARGOS – SERVIDORES RGPS
+empenho,elemento_despesa,31901133,(1),GRATIFICAÇÃO POR EXERCÍCIO DE FUNÇÕES – SERVIDORES RPPS
+empenho,elemento_despesa,31901133,(1),GRATIFICAÇÃO POR EXERCÍCIO DE FUNÇÕES – SERVIDORES RGPS
+empenho,elemento_despesa,31901137,(1),GRATIFICAÇÃO DE TEMPO DE SERVIÇO  – SERVIDORES RPPS
+empenho,elemento_despesa,31901137,(1),GRATIFICAÇÃO DE TEMPO DE SERVIÇO  – SERVIDORES RGPS
+empenho,elemento_despesa,31901140,(1),GRATIFICAÇÃO DE LOCALIZAÇÃO E DE ATIVIDADES ESPECIAIS
+empenho,elemento_despesa,31901140,(1),GRATIFICAÇÃO PARA ATIVIDADES ESPECIAIS - SERVIDORES RPPS
+empenho,elemento_despesa,31901140,(1),GRATIFICAÇÃO PARA  ATIVIDADES ESPECIAIS - SERVIDORES RGPS
+empenho,elemento_despesa,31901142,(1),FÉRIAS INDENIZADAS – SERVIDORES RPPS
+empenho,elemento_despesa,31901142,(1),FÉRIAS INDENIZADAS – SERVIDORES RGPS
+empenho,elemento_despesa,31901143,(1),13O SALÁRIO – SERVIDORES RPPS
+empenho,elemento_despesa,31901143,(1),13O SALÁRIO – SERVIDORES RGPS
+empenho,elemento_despesa,31901143,(1),JUROS SOBRE O 13O SALÁRIO – ATIVOS
+empenho,elemento_despesa,31901143,(1),JUROS SOBRE O 13O SALÁRIO – ATIVOS – RPPS
+empenho,elemento_despesa,31901143,(1),JUROS SOBRE O 13O SALÁRIO – ATIVOS – RGPS
+empenho,elemento_despesa,31901144,(1),FÉRIAS - ABONO PECUNIÁRIO – SERVIDORES RPPS
+empenho,elemento_despesa,31901144,(1),FÉRIAS - ABONO PECUNIÁRIO – SERVIDORES RGPS
+empenho,elemento_despesa,31901145,(1),FÉRIAS - ABONO CONSTITUCIONAL – SERVIDORES RPPS
+empenho,elemento_despesa,31901145,(1),FÉRIAS - ABONO CONSTITUCIONAL – SERVIDORES RGPS
+empenho,elemento_despesa,31901146,(1),FÉRIAS - PAGAMENTO ANTECIPADO – SERVIDORES RPPS
+empenho,elemento_despesa,31901146,(1),FÉRIAS - PAGAMENTO ANTECIPADO – SERVIDORES RGPS
+empenho,elemento_despesa,31901147,(1),LICENÇA-PRÊMIO – SERVIDORES RPPS
+empenho,elemento_despesa,31901147,(1),LICENÇA-PRÊMIO – SERVIDORES RGPS
+empenho,elemento_despesa,31901148,(1),LICENÇA-PRÊMIO INDENIZADA – SERVIDORES RPPS
+empenho,elemento_despesa,31901148,(1),LICENÇA-PRÊMIO INDENIZADA – SERVIDORES RGPS
+empenho,elemento_despesa,31901149,(1),LICENÇA CAPACITAÇÃO – SERVIDORES RPPS
+empenho,elemento_despesa,31901149,(1),LICENÇA CAPACITAÇÃO – SERVIDORES RGPS
+empenho,elemento_despesa,31901150,(1),SALÁRIO MATERNIDADE - PESSOAL ATIVO  – SERVIDORES RPPS
+empenho,elemento_despesa,31901150,(1),SALÁRIO MATERNIDADE - PESSOAL ATIVO  – SERVIDORES RGPS
+empenho,elemento_despesa,31901151,(1),"OUTROS ADICIONAIS, VANTAGENS, GRATIFICAÇÕES E OUTROS COMPLEMENTOS DE SALÁRIOS – SERVIDORES RPPS"
+empenho,elemento_despesa,31901151,(1),"OUTROS ADICIONAIS, VANTAGENS, GRATIFICAÇÕES E OUTROS COMPLEMENTOS DE SALÁRIOS – SERVIDORES RGPS"
+empenho,elemento_despesa,31901152,(1),LICENÇA SAÚDE - PESSOAL ATIVO - RPPS
+empenho,elemento_despesa,31901152,(1),LICENÇA SAÚDE - PESSOAL ATIVO- RGPS
+empenho,elemento_despesa,31901173,(1),REMUNERAÇÃO DOS CONSELHEIROS TUTELARES
+empenho,elemento_despesa,31901173,(1),REMUNERAÇÃO  DOS CONSELHEIROS TUTELARES – SERVIDORES RPPS
+empenho,elemento_despesa,31901173,(1),REMUNERAÇÃO  DOS CONSELHEIROS TUTELARES – SERVIDORES RGPS
+empenho,elemento_despesa,31901173,(1),REMUNERAÇÃO DOS INTEGRANTES DAS JARIS
+empenho,elemento_despesa,31901173,(1),REMUNERAÇÃO DOS INTEGRANTES DAS JARIS – SERVIDORES RPPS
+empenho,elemento_despesa,31901173,(1),REMUNERAÇÃO DOS INTEGRANTES DAS JARIS – SERVIDORES RGPS
+empenho,elemento_despesa,31901174,(1),SUBSÍDIOS - RPPS
+empenho,elemento_despesa,31901174,(1),SUBSÍDIOS - RGPS
+empenho,elemento_despesa,31901175,(1),REPRESENTAÇÃO MENSAL - SERVIDORES RPPS
+empenho,elemento_despesa,31901175,(1),REPRESENTAÇÃO MENSAL - SERVIDORES RGPS
+empenho,elemento_despesa,31901177,(1),REMUNERAÇÃO DE PESSOAL EM DISPONIBILIDADE - RPPS
+empenho,elemento_despesa,31901177,(1),REMUNERAÇÃO DE PESSOAL EM DISPONIBILIDADE - RGPS
+empenho,elemento_despesa,31901199,(1),OUTRAS DESPESAS FIXAS - PESSOAL CIVIL - SERVIDORES RPPS
+empenho,elemento_despesa,31901199,(1),OUTRAS DESPESAS FIXAS - PESSOAL CIVIL - SERVIDORES RGPS
+empenho,elemento_despesa,31901301,(1),FGTS - SERVIDORES
+empenho,elemento_despesa,31901302,(1),INSS - SERVIDORES
+empenho,elemento_despesa,31901302,(1),INSS - AGENTES POLÍTICOS
+empenho,elemento_despesa,31901302,(1),INSS SOBRE SESSÃO EXTRAORDINÁRIA – AGENTES POLÍTICOS
+empenho,elemento_despesa,31901302,(1),INSS SOBRE CONVOCAÇÃO EXTRAORDINÁRIA – AGENTES POLÍTICOS
+empenho,elemento_despesa,31901315,(1),MULTAS - FGTS
+empenho,elemento_despesa,31901315,(1),MULTAS - INSS
+empenho,elemento_despesa,31901315,(1),MULTAS SOBRE OUTROS ENCARGOS SOCIAIS
+empenho,elemento_despesa,31901399,(1),SEGURO OBRIGATÓRIO
+empenho,elemento_despesa,31901399,(1),SEGURO OBRIGATÓRIO - SERVIDORES RPPS
+empenho,elemento_despesa,31901399,(1),SEGURO OBRIGATÓRIO - SERVIDORES RGPS
+empenho,elemento_despesa,31901399,(1),SECRASO
+empenho,elemento_despesa,31901399,(1),SECRASO - SERVIDORES RPPS
+empenho,elemento_despesa,31901399,(1),SECRASO - SERVIDORES RGPS
+empenho,elemento_despesa,31901399,(1),JUROS SOBRE OBRIGAÇÕES PATRONAIS
+empenho,elemento_despesa,31901604,(1),CONVOCAÇÃO EXTRAORDINÁRIA – SERVIDORES RPPS
+empenho,elemento_despesa,31901604,(1),CONVOCAÇÃO EXTRAORDINÁRIA – SERVIDORES RGPS
+empenho,elemento_despesa,31901632,(1),SUBSTITUIÇÕES – SERVIDORES RPPS
+empenho,elemento_despesa,31901632,(1),SUBSTITUIÇÕES – SERVIDORES RGPS
+empenho,elemento_despesa,31901636,(1),ADICIONAL POR PLANTÃO HOSPITALAR - RPPS
+empenho,elemento_despesa,31901636,(1),ADICIONAL POR PLANTÃO HOSPITALAR - RGPS
+empenho,elemento_despesa,31901644,(1),SERVIÇOS EXTRAORDINÁRIOS – SERVIDORES RPPS
+empenho,elemento_despesa,31901644,(1),SERVIÇOS EXTRAORDINÁRIOS – SERVIDORES RGPS
+empenho,elemento_despesa,31901699,(1),OUTRAS DESPESAS VARIÁVEIS - PESSOAL CIVIL
+empenho,elemento_despesa,31901699,(1),OUTRAS DESPESAS VARIÁVEIS - PESSOAL CIVIL - SERVIDORES RPPS
+empenho,elemento_despesa,31901699,(1),OUTRAS DESPESAS VARIÁVEIS - PESSOAL CIVIL - SERVIDORES RGPS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – PRINCIPAL
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – PRINCIPAL - SERVIDORES RPPS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – PRINCIPAL - SERVIDORES RGPS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – ATUALIZAÇÃO MONETÁRIA
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – ATUALIZAÇÃO MONETÁRIA - SERVIDORES RPPS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – ATUALIZAÇÃO MONETÁRIA - SERVIDORES RGPS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – PERÍCIAS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – PERÍCIAS - SERVIDORES RPPS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – PERÍCIAS - SERVIDORES RGPS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – HONORÁRIOS ADVOCATÍCIOS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – HONORÁRIOS ADVOCATÍCIOS - SERVIDORES RPPS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – HONORÁRIOS ADVOCATÍCIOS - SERVIDORES RGPS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – CUSTAS JUDICIAIS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – CUSTAS JUDICIAIS - SERVIDORES RPPS
+empenho,elemento_despesa,31909101,(1),PRECATÓRIOS – CUSTAS JUDICIAIS - SERVIDORES RGPS
+empenho,elemento_despesa,31909123,(1),PRECATÓRIOS – PRINCIPAL - INATIVO CIVIL
+empenho,elemento_despesa,31909123,(1),PRECATÓRIOS – PERÍCIAS - INATIVO CIVIL
+empenho,elemento_despesa,31909123,(1),PRECATÓRIOS – HONORÁRIOS ADVOCATÍCIOS – INATIVO CIVIL
+empenho,elemento_despesa,31909123,(1),PRECATÓRIOS – CUSTAS JUDICIAIS – INATIVO CIVIL
+empenho,elemento_despesa,31909136,(1),PRECATÓRIOS – PRINCIPAL - PENSIONISTA CIVIL
+empenho,elemento_despesa,31909136,(1),PRECATÓRIOS – PERÍCIAS - PENSIONISTA CIVIL
+empenho,elemento_despesa,31909136,(1),PRECATÓRIOS – HONORÁRIOS ADVOCATÍCIOS - PENSIONISTA CIVIL
+empenho,elemento_despesa,31909136,(1),PRECATÓRIOS – CUSTAS JUDICIAIS - PENSIONISTA CIVIL
+empenho,elemento_despesa,31909199,(1),OUTRAS SENTENÇAS JUDICIAIS – SERVIDORES RPPS
+empenho,elemento_despesa,31909199,(1),OUTRAS SENTENÇAS JUDICIAIS – SERVIDORES RGPS
+empenho,elemento_despesa,31909211,(1),VENCIMENTOS E VANTAGENS FIXAS - PESSOAL CIVIL - RPPS
+empenho,elemento_despesa,31909211,(1),VENCIMENTOS E VANTAGENS FIXAS - PESSOAL CIVIL - RGPS/SEM REGIME
+empenho,elemento_despesa,31909211,(1),FÉRIAS - ABONO PECUNIÁRIO
+empenho,elemento_despesa,31909211,(1),FÉRIAS - ABONO PECUNIÁRIO – SERVIDORES RPPS
+empenho,elemento_despesa,31909211,(1),FÉRIAS - ABONO PECUNIÁRIO – SERVIDORES RGPS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – SERVIDORES RPPS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – PRINCIPAL – SERVIDORES RPPS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – PERÍCIAS – SERVIDORES RPPS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – HONORÁRIOS ADVOCATÍCIOS – SERVIDORES RPPS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – CUSTAS JUDICIAIS – SERVIDORES RPPS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – SERVIDORES RGPS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – PRINCIPAL – SERVIDORES RGPS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – PERÍCIAS – SERVIDORES RGPS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – HONORÁRIOS ADVOCATÍCIOS – SERVIDORES RGPS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – CUSTAS JUDICIAIS – SERVIDORES RGPS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – SERVIDORES INATIVOS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – PRINCIPAL – INATIVO CIVIL
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – PERÍCIAS – INATIVO CIVIL
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – HONORÁRIOS ADVOCATÍCIOS – INATIVO CIVIL
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – CUSTAS JUDICIAIS – INATIVO CIVIL
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – PENSIONISTAS
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – PRINCIPAL – PENSIONISTA CIVIL
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – PERÍCIAS – PENSIONISTA CIVIL
+empenho,elemento_despesa,31909291,(1),SENTENÇAS JUDICIAIS – CUSTAS JUDICIAIS – PENSIONISTA CIVIL
+empenho,elemento_despesa,31909499,(1),OUTRAS INDENIZAÇÕES E RESTITUIÇÕES TRABALHISTAS
+empenho,elemento_despesa,31911310,(1),CONTRIBUIÇÕES PREVIDENCIÁRIAS – RPPS – PESSOAL INATIVO – PLANO PREVIDENCIÁRIO
+empenho,elemento_despesa,31911310,(1),CONTRIBUIÇÕES PREVIDENCIÁRIAS – RPPS – PENSIONISTA – PLANO PREVIDENCIÁRIO
+empenho,elemento_despesa,31911312,(1),CONTRIBUIÇÕES PREVIDENCIÁRIAS – RPPS – PESSOAL INATIVO – PLANO FINANCEIRO
+empenho,elemento_despesa,31911312,(1),CONTRIBUIÇÕES PREVIDENCIÁRIAS – RPPS -  PENSIONISTA – PLANO FINANCEIRO
+empenho,elemento_despesa,31911320,(1),ALÍQUOTA SUPLEMENTAR DE CONTRIBUIÇÃO PREVIDENCIÁRIA – PESSOAL ATIVO – PLANO PREVIDENCIÁRIO
+empenho,elemento_despesa,31911320,(1),PARCELAMENTO LC NO 637 DE 14.01.2010 – PESSOAL ATIVO – PLANO PREVIDENCIÁRIO
+empenho,elemento_despesa,31911321,(1),ALÍQUOTA SUPLEMENTAR DE CONTRIBUIÇÃO PREVIDENCIÁRIA - PESSOAL INATIVO - PLANO PREVIDENCIÁRIO
+empenho,elemento_despesa,31911321,(1),ALÍQUOTA SUPLEMENTAR DE CONTRIBUIÇÃO PREVIDENCIÁRIA - PENSIONISTA - PLANO PREVIDENCIÁRIO
+empenho,elemento_despesa,31911323,(1),ALÍQUOTA SUPLEMENTAR DE CONTRIBUIÇÃO PREVIDENCIÁRIA - PESSOAL INATIVO - PLANO FINANCEIRO
+empenho,elemento_despesa,31911323,(1),ALÍQUOTA SUPLEMENTAR DE CONTRIBUIÇÃO PREVIDENCIÁRIA - PENSIONISTA - PLANO FINANCEIRO
+empenho,elemento_despesa,31911399,(1),OUTRAS OBRIGAÇÕES PATRONAIS DIVERSAS
+empenho,elemento_despesa,31919206,(1),CONTRIBUIÇÕES PREVIDENCIÁRIAS - RPPS - PESSOAL INATIVO DO PLANO PREVIDENCIÁRIO
+empenho,elemento_despesa,31919206,(1),CONTRIBUIÇÕES PREVIDENCIÁRIAS - RPPS - PENSIONISTA DO PLANO PREVIDENCIÁRIO
+empenho,elemento_despesa,31919208,(1),CONTRIBUIÇÕES PREVIDENCIÁRIAS - RPPS - PESSOAL INATIVO DO PLANO FINANCEIRO
+empenho,elemento_despesa,31919208,(1),CONTRIBUIÇÕES PREVIDENCIÁRIAS - RPPS - PENSIONISTA DO PLANO FINANCEIRO
+empenho,elemento_despesa,31919210,(1),ALÍQUOTA SUPLEMENTAR DE CONTRIBUIÇÃO PREVIDENCIÁRIA - PESSOAL INATIVO DO PLANO PREVIDENCIÁRIO
+empenho,elemento_despesa,31919210,(1),ALÍQUOTA SUPLEMENTAR DE CONTRIBUIÇÃO PREVIDENCIÁRIA - PENSIONISTA DO PLANO PREVIDENCIÁRIO
+empenho,elemento_despesa,31919212,(1),ALÍQUOTA SUPLEMENTAR DE CONTRIBUIÇÃO PREVIDENCIÁRIA - PESSOAL INATIVO DO PLANO FINANCEIRO
+empenho,elemento_despesa,31919212,(1),ALÍQUOTA SUPLEMENTAR DE CONTRIBUIÇÃO PREVIDENCIÁRIA - PENSIONISTA DO PLANO FINANCEIRO
+empenho,elemento_despesa,32902101,(1),JUROS DA DÍVIDA - CONTRATOS COM INSTITUIÇÕES FINANCEIRAS
+empenho,elemento_despesa,32902102,(1),JUROS DA DÍVIDA DE PARCELAMENTOS COM O INSS
+empenho,elemento_despesa,32902102,(1),REGISTRA AS DESPESAS COM JUROS DECORRENTES DO PARCELAMENTO DO FGTS.
+empenho,elemento_despesa,32902102,(1),JUROS DA DÍVIDA - PARCELAMENTOS DE PASEP
+empenho,elemento_despesa,32902102,(1),JUROS DA DÍVIDA DE PARCELAMENTOS COM A CEEE
+empenho,elemento_despesa,32902102,(1),JUROS DA DÍVIDA DE PARCELAMENTOS COM A CORSAN
+empenho,elemento_despesa,32902102,(1),JUROS DA DÍVIDA DE PARCELAMENTOS COM O GHC
+empenho,elemento_despesa,32902102,(1),JUROS DA DÍVIDA DE PARCELAMENTOS COM  GHC – DMAE - POA
+empenho,elemento_despesa,32902102,(1),JUROS DA DÍVIDA COM PARCELAMENTO COM CEEE – TERMO DE ACORDO
+empenho,elemento_despesa,32902102,(1),JUROS DA DÍVIDA COM PARCELAMENTO CEEE - SINALEIRAS
+empenho,elemento_despesa,32902102,(1),JUROS DA DÍVIDA COM PARCELAMENTO DE SR’S E SALDOS DA DEPURAÇÃO
+empenho,elemento_despesa,32902102,(1),JUROS DA DÍVIDA COM PARCELAMENTO DE PRÊMIO DE SEGUROS
+empenho,elemento_despesa,32902102,(1),JUROS DA DÍVIDA COM PARCELAMENTO DO PROGRAMA RELUZ - CEEE
+empenho,elemento_despesa,32902102,(1),JUROS DA DÍVIDA COM PARCELAMENTO DO PRÓ-GUAÍBA
+empenho,elemento_despesa,32902103,(1),JUROS DA DÍVIDA – CONTRATOS NO EXTERIOR
+empenho,elemento_despesa,32902103,(1),JUROS DA DÍVIDA –COMISSÃO DE CONTRATOS NO EXTERIOR
+empenho,elemento_despesa,32902199,(1),OUTROS JUROS DA DIVIDA CONTRATADA
+empenho,elemento_despesa,32902201,(1),ENCARGOS DA DÍVIDA - CONTRATOS COM INSTITUIÇÕES FINANCEIRAS
+empenho,elemento_despesa,32902202,(1),ENCARGOS DA DÍVIDA COM PARCELAMENTO DE INSS
+empenho,elemento_despesa,32902202,(1),ENCARGOS DA DÍVIDA COM PARCELAMENTO DE FGTS
+empenho,elemento_despesa,32902202,(1),ENCARGOS DA DÍVIDA COM PARCELAMENTO DE PASEP
+empenho,elemento_despesa,32902202,(1),ENCARGOS DA DÍVIDA DE PARCELAMENTOS COM A CEEE
+empenho,elemento_despesa,32902202,(1),ENCARGOS DA DÍVIDA DE PARCELAMENTOS COM A CORSAN
+empenho,elemento_despesa,32902202,(1),ENCARGOS DA DÍVIDA DE PARCELAMENTOS COM CEEE - TERMO DE ACORDO
+empenho,elemento_despesa,32902202,(1),ENCARGOS DA DÍVIDA DE PARCELAMENTOS COM CEEE – SINALEIRAS
+empenho,elemento_despesa,32902202,(1),ENCARGOS DA DÍVIDA DE PARCELAMENTOS DE SR’S E SALDOS DA DEPURAÇÃO
+empenho,elemento_despesa,32902202,(1),ENCARGOS DA DÍVIDA DE PARCELAMENTOS DE PRÊMIO DE SEGUROS
+empenho,elemento_despesa,32902202,(1),ENCARGOS DA DÍVIDA COM PARCELAMENTOS DE PROGRAMA RELUZ – CEEE
+empenho,elemento_despesa,32902299,(1),OUTROS ENCARGOS SOBRE A DÍVIDA INTERNA POR CONTRATO
+empenho,elemento_despesa,32902299,(1),OUTROS ENCARGOS SOBRE A DÍVIDA EXTERNA POR CONTRATO
+empenho,elemento_despesa,32902299,(1),DIVERSOS ENCARGOS DA DÍVIDA CONTRATADA
+empenho,elemento_despesa,32912102,(1),ENCARGOS DA DÍVIDA COM PARCELAMENTO DE DÉBITOS
+empenho,elemento_despesa,32912104,(1),JUROS DA DÍVIDA COM PARCELAMENTOS DO RPPS
+empenho,elemento_despesa,33204199,(1),TRANSFERÊNCIAS FUNSET - FUNDO NACIONAL DE SEGURANÇA E EDUCAÇÃO NO TRÂNSITO (LF 9.503/97)
+empenho,elemento_despesa,33204199,(1),TRANSFERÊNCIA VALORES À JUSTIÇA ELEITORAL
+empenho,elemento_despesa,33304139,(1),COMPENSAÇÃO FINANCEIRA (§9° ART.201 DA CF)
+empenho,elemento_despesa,33304139,(1),PROGRAMA TROCA-TROCA
+empenho,elemento_despesa,33304139,(1),TRANSFERÊNCIAS PARA GRUPAMENTOS DE INCÊNDIO
+empenho,elemento_despesa,33304139,(1),RIO GRANDE DO SUL – OUTRAS CONTRIBUIÇÕES
+empenho,elemento_despesa,33304199,(1),COMPENSAÇÃO FINANCEIRA (§ 9O ART. 201 DA CF) – OUTROS ESTADOS E DF
+empenho,elemento_despesa,33309339,(1),RESTITUIÇÃO DE TRANSFERÊNCIAS E CONVÊNIOS RECEBIDOS DO ESTADO
+empenho,elemento_despesa,33309339,(1),RESTITUIÇÃO DE IPVA
+empenho,elemento_despesa,33404139,(1),COMPENSAÇÃO FINANCEIRA (§ 9O ART. 201 DA CF)
+empenho,elemento_despesa,33404139,(1),CONTRIBUIÇÕES A ESCOLAS MUNICIPAIS
+empenho,elemento_despesa,33404139,(1),CONTRIBUIÇÕES PARA O MUNÍCIPIO POLO DA CONTRAPARTIDA DE CONVÊNIOS COM A UNIÃO
+empenho,elemento_despesa,33404139,(1),TRANSFERÊNCIA A MUNICÍPIO EMANCIPADO PARA ACERTO DE CONTAS
+empenho,elemento_despesa,33404139,(1),OUTRAS CONTRIBUIÇÕES
+empenho,elemento_despesa,33404139,(1),COMPENSAÇÃO FINANCEIRA (§ 9O ART. 201 DA CF) – MUNICÍPIOS LOCALIZADOS  EM OUTROS ESTADOS
+empenho,elemento_despesa,33404799,(1),CONTRIBUIÇÃO PATRONAL PARA  RPPS DE OUTRO MUNICÍPIO
+empenho,elemento_despesa,33409399,(1),RESTITUIÇÃO DE TRANSFERÊNCIAS E CONVÊNIOS RECEBIDOS DOS MUNICÍPIOS
+empenho,elemento_despesa,33409399,(1),INDENIZAÇÕES E RESTITUIÇÕES - PRAD SANTA TECLA
+empenho,elemento_despesa,33504101,(1),PROGRAMA DINHEIRO DIRETO NAS ESCOLAS - PDDE
+empenho,elemento_despesa,33504101,(1),CONTRIBUIÇÕES CORRENTES
+empenho,elemento_despesa,33504199,(1),ENTIDADES DE ASSISTÊNCIA TÉCNICA E EXTENSÃO RURAL
+empenho,elemento_despesa,33504199,(1),INSTITUIÇÕES PRIVADAS LIGADAS À ÁREA DA SAÚDE
+empenho,elemento_despesa,33504199,(1),OUTRAS INSTITUIÇÕES PRIVADAS
+empenho,elemento_despesa,33504306,(1),COOPERAÇÃO
+empenho,elemento_despesa,33504306,(1),TRABALHO EDUCATIVO
+empenho,elemento_despesa,33504306,(1),ABRIGAGEM
+empenho,elemento_despesa,33504306,(1),SASE - SERVIÇO DE ATENDIMENTO SOCIOEDUCATIVO EM MEIO ABERTO
+empenho,elemento_despesa,33504308,(1),CRECHES COMUNITÁRIAS
+empenho,elemento_despesa,33504308,(1),CONSELHOS ESCOLARES
+empenho,elemento_despesa,33504308,(1),MOVA
+empenho,elemento_despesa,33504308,(1),TRANSFERÊNCIAS - DINHEIRO DIRETO NAS ESCOLAS
+empenho,elemento_despesa,33504399,(1),INSTITUIÇÕES PRIVADAS DIVERSAS
+empenho,elemento_despesa,33509299,(1),"INSTITUIÇÕES DE CARÁTER ASSISTENCIAL, CULTURAL E EDUCACIONAL"
+empenho,elemento_despesa,33509299,(1),IMESF – INSTITUTO MUNICIPAL DE ESTRATÉGIA DA SAÚDE DA FAMÍLIA
+empenho,elemento_despesa,33509299,(1),HOSPITAIS
+empenho,elemento_despesa,33509299,(1),CRECHES COMUNITÁRIAS
+empenho,elemento_despesa,33509299,(1),INSTITUIÇÕES PRIVADAS DIVERSAS
+empenho,elemento_despesa,33509302,(1),RESTITUIÇÕES A ENTIDADES PRIVADAS SEM FINS LUCRATIVOS
+empenho,elemento_despesa,33679283,(1),"DESPESAS DECORRENTES DE CONTRATO DE PARCERIA PÚBLICO- PRIVADA - PPP, EXCETO SUBVENÇÕES ECONÔMICAS, APORTE E FUNDO GARANTIDOR"
+empenho,elemento_despesa,33717001,(1),RATEIO DO CUSTEIO ADMINISTRATIVO
+empenho,elemento_despesa,33717101,(1),RATEIO PARA AQUISIÇÃO DE MATERIAIS DIVERSOS
+empenho,elemento_despesa,33804301,(1),COOPERAÇÃO
+empenho,elemento_despesa,33804301,(1),COOPERAÇÃO TÉCNICA INTERNACIONAL – UNESCO
+empenho,elemento_despesa,33809243,(1),"INSTITUIÇÕES DE CARÁTER ASSISTENCIAL, CULTURAL E EDUCACIONAL - DEA"
+empenho,elemento_despesa,33900401,(1),CONTRATAÇÃO POR TEMPO DETERMINADO DE PROFESSORES
+empenho,elemento_despesa,33900499,(1),CONTRATAÇÃO POR TEMPO DETERMINADO DE PROFISSIONAIS DE DIVERSAS ÁREAS
+empenho,elemento_despesa,33900801,(1),AUXÍLIO-FUNERAL – PESSOAL ATIVO
+empenho,elemento_despesa,33900801,(1),AUXÍLIO FUNERAL – PESSOAL INATIVO
+empenho,elemento_despesa,33900801,(1),AUXÍLIO FUNERAL – PENSIONISTAS
+empenho,elemento_despesa,33900805,(1),AUXÍLIO-NATALIDADE – PESSOAL ATIVO
+empenho,elemento_despesa,33900805,(1),AUXÍLIO-NATALIDADE – PESSOAL INATIVO
+empenho,elemento_despesa,33900809,(1),AUXÍLIO-CRECHE OU ASSISTÊNCIA PRÉ-ESCOLAR – SERVIDORES RPPS
+empenho,elemento_despesa,33900809,(1),AUXÍLIO-CRECHE OU ASSISTÊNCIA PRÉ-ESCOLAR – SERVIDORES RGPS
+empenho,elemento_despesa,33900811,(1),AUXÍLIO-SAÚDE - PESSOAL ATIVO
+empenho,elemento_despesa,33900811,(1),AUXÍLIO-SAÚDE – PESSOAL ATIVO – SERVIDORES RPPS
+empenho,elemento_despesa,33900811,(1),AUXÍLIO-SAÚDE – PESSOAL ATIVO – SERVIDORES RGPS
+empenho,elemento_despesa,33900811,(1),AUXÍLIO-SAÚDE - PESSOAL INATIVO
+empenho,elemento_despesa,33900811,(1),AUXÍLIO-SAÚDE - PENSIONISTAS
+empenho,elemento_despesa,33900853,(1),AUXÍLIO-RECLUSÃO – PESSOAL ATIVO
+empenho,elemento_despesa,33900853,(1),AUXÍLIO-RECLUSÃO – PESSOAL ATIVO – RPPS
+empenho,elemento_despesa,33900853,(1),AUXÍLIO-RECLUSÃO – PESSOAL ATIVO – RGPS
+empenho,elemento_despesa,33900853,(1),AUXÍLIO-RECLUSÃO - PESSOAL INATIVO
+empenho,elemento_despesa,33900856,(1),SALÁRIO-FAMÍLIA  - PESSOAL ATIVO
+empenho,elemento_despesa,33900856,(1),SALÁRIO-FAMÍLIA– PESSOAL ATIVO – RPPS
+empenho,elemento_despesa,33900856,(1),SALÁRIO-FAMÍLIA– PESSOAL ATIVO – RGPS
+empenho,elemento_despesa,33900856,(1),SALÁRIO-FAMÍLIA  - PESSOAL INATIVO
+empenho,elemento_despesa,33900856,(1),SALÁRIO-FAMÍLIA  - PESSOAL INATIVO - RPPS
+empenho,elemento_despesa,33903011,(1),OXIDANTES
+empenho,elemento_despesa,33903011,(1),FLUORETANTES
+empenho,elemento_despesa,33903011,(1),COAGULANTES
+empenho,elemento_despesa,33903011,(1),ALCALIZANTES E ACIDULANTES
+empenho,elemento_despesa,33903011,(1),AGENTES BIOLÓGICOS
+empenho,elemento_despesa,33903011,(1),ATENUANTES DE GOSTO E ODOR
+empenho,elemento_despesa,33903011,(1),REAGENTES DE CONTROLE BIOLÓGICO
+empenho,elemento_despesa,33903011,(1),REAGENTES DE CONTROLE FÍSICO QUÍMICO
+empenho,elemento_despesa,33903011,(1),OUTROS PRODUTOS QUÍMICOS PARA TRATAMENTO
+empenho,elemento_despesa,33903024,(1),"MATERIAL DE CONSTRUÇÃO, HIDRÁULICO, SANITÁRIO, PINTURA E FERRAGENS"
+empenho,elemento_despesa,33903025,(1),MATERIAL PARA CONSERVAÇÃO DE AR CONDICIONADO
+empenho,elemento_despesa,33903025,(1),MATERIAL DE CONSERVAÇÃO E MANUTENÇÃO DE MÁQUINAS E EQUIPAMENTOS ADMINISTRATIVOS E DE COMUNICAÇÃO
+empenho,elemento_despesa,33903025,(1),MATERIAL DE CONSERVAÇÃO E MANUTENÇÃO DE BENS DE PRODUÇÃO
+empenho,elemento_despesa,33903025,(1),MATERIAL DE CONSERVAÇÃO E MANUTENÇÃO DE MÁQUINAS E EQUIPAMENTOS OPERACIONAIS
+empenho,elemento_despesa,33903036,(1),ARTIGOS CIRÚRGICOS
+empenho,elemento_despesa,33903036,(1),MATERIAL E FILMES RADIOLÓGICOS
+empenho,elemento_despesa,33903036,(1),FRALDAS DESCARTÁVEIS
+empenho,elemento_despesa,33903099,(1),"MATERIAL PARA CÓPIA, REPROGRAFIA E/OU ENCADERNAÇÃO"
+empenho,elemento_despesa,33903099,(1),MATERIAL DE DESENHO E ARTESANATO
+empenho,elemento_despesa,33903099,(1),SAIBRO
+empenho,elemento_despesa,33903099,(1),"MATERIAL PARA OFICINAS PEDAGÓGICAS, CULTURAIS E PROFISSIONALIZANTES"
+empenho,elemento_despesa,33903099,(1),MATERIAL PARA MANUTENÇÃO E RECUPERAÇÃO DE ATERROS SANITÁRIOS
+empenho,elemento_despesa,33903099,(1),RECUPERAÇÃO DE HIDRÔMETROS
+empenho,elemento_despesa,33903099,(1),CONSERVAÇÃO DE REDES DE ÁGUA
+empenho,elemento_despesa,33903099,(1),CONSERVAÇÃO DE REDES DE ESGOTO
+empenho,elemento_despesa,33903099,(1),LIGAÇÃO DE ÁGUA
+empenho,elemento_despesa,33903099,(1),FORMULÁRIOS E IMPRESSOS
+empenho,elemento_despesa,33903099,(1),MATERIAL DE CONSERVAÇÃO E LIMPEZA URBANA
+empenho,elemento_despesa,33903099,(1),OUTROS MATERIAIS DE CONSUMO
+empenho,elemento_despesa,33903101,(1),PREMIAÇÕES CULTURAIS PECUNIÁRIAS
+empenho,elemento_despesa,33903101,(1),OUTRAS PREMIAÇÕES CULTURAIS
+empenho,elemento_despesa,33903102,(1),PREMIAÇÕES ARTÍSTICAS PECUNIÁRIAS
+empenho,elemento_despesa,33903102,(1),OUTRAS PREMIAÇÕES ARTÍSTICAS
+empenho,elemento_despesa,33903103,(1),PREMIAÇÕES CIENTÍFICAS PECUNIÁRIAS
+empenho,elemento_despesa,33903103,(1),OUTRAS PREMIAÇÕES CIENTÍFICAS
+empenho,elemento_despesa,33903104,(1),PREMIAÇÕES DESPORTIVAS PECUNIÁRIAS
+empenho,elemento_despesa,33903104,(1),OUTRAS PREMIAÇÕES DESPORTIVAS
+empenho,elemento_despesa,33903301,(1),PASSAGENS AÉREAS PARA O PAÍS - SERVIDORES
+empenho,elemento_despesa,33903301,(1),PASSAGENS AÉREAS PARA O PAÍS - NÃO SERVIDORES
+empenho,elemento_despesa,33903302,(1),PASSAGENS AÉREAS PARA O EXTERIOR - SERVIDORES
+empenho,elemento_despesa,33903302,(1),PASSAGENS AÉREAS PARA O EXTERIOR – NÃO SERVIDORES
+empenho,elemento_despesa,33903399,(1),OUTRAS DESPESAS COM LOCOMOÇÃO - SERVIDORES (EXCLUSIVE PASSAGEM AÉREA)
+empenho,elemento_despesa,33903399,(1),OUTRAS DESPESAS COM LOCOMOÇÃO – NÃO SERVIDORES (EXCLUSIVE PASSAGEM AÉREA)
+empenho,elemento_despesa,33903606,(1),ARBITRAGENS ESPORTIVAS
+empenho,elemento_despesa,33903606,(1),AUTÔNOMOS
+empenho,elemento_despesa,33903606,(1),"PESQUISAS, ESTUDOS PRELIMINARES E PROJETOS"
+empenho,elemento_despesa,33903606,(1),HONORÁRIOS
+empenho,elemento_despesa,33903608,(1),PROGRAMA RESIDÊNCIA MÉDICA – LEI 12.498/2019
+empenho,elemento_despesa,33903608,(1),COMPLEMENTAÇÃO FORMAÇÃO MÉDICA
+empenho,elemento_despesa,33903608,(1),AUXÍLIO MORADIA
+empenho,elemento_despesa,33903608,(1),PRECEPTORIA
+empenho,elemento_despesa,33903645,(1),JETONS E GRATIFICAÇÕES A CONSELHEIROS  – RPPS
+empenho,elemento_despesa,33903645,(1),JETONS E GRATIFICAÇÕES A CONSELHEIROS  – RGPS
+empenho,elemento_despesa,33903699,(1),"APRESENTAÇÕES ARTÍSTICAS, CULTURAIS E/OU DESPORTIVAS"
+empenho,elemento_despesa,33903699,(1),SERVIÇOS DE OFICINEIROS
+empenho,elemento_despesa,33903699,(1),OUTROS SERVIÇOS PESSOA FÍSICA
+empenho,elemento_despesa,33903905,(1),ARBITRAGENS ESPORTIVAS
+empenho,elemento_despesa,33903905,(1),SERVIÇOS DE OFICINEIROS
+empenho,elemento_despesa,33903905,(1),SERVIÇOS TÉCNICOS ESPECIALIZADOS
+empenho,elemento_despesa,33903905,(1),"PESQUISA, ESTUDOS PRELIMINARES E PROJETOS"
+empenho,elemento_despesa,33903905,(1),SERVIÇOS DE TOPOGRAFIA
+empenho,elemento_despesa,33903912,(1),LOCAÇÃO DE MÁQUINAS E EQUIPAMENTOS
+empenho,elemento_despesa,33903912,(1),LOCAÇÃO DE MÁQUINAS PESADAS
+empenho,elemento_despesa,33903916,(1),SERVIÇO DE CONSERVAÇÃO DE BENS IMÓVEIS
+empenho,elemento_despesa,33903917,(1),"SERVIÇO DE INSTALAÇÃO, TRANSPORTE E CONSERVAÇÃO DE BENS MÓVEIS E MÁQUINAS"
+empenho,elemento_despesa,33903917,(1),CONSERVAÇÃO E MANUTENÇÃO DE APARELHOS DE AR CONDICIONADO
+empenho,elemento_despesa,33903917,(1),"SERVIÇO DE INSTALAÇÃO, TRANSPORTE E CONSERVAÇÃO DE BENS DE PRODUÇÃO"
+empenho,elemento_despesa,33903917,(1),CONSERVAÇÃO DE MÁQUINAS E MOTORES
+empenho,elemento_despesa,33903917,(1),CONSERVAÇÃO DE INSTRUMENTOS DE LABORATÓRIO
+empenho,elemento_despesa,33903917,(1),MANUTENÇÃO DE RELÓGIO PONTO
+empenho,elemento_despesa,33903919,(1),SERVIÇOS DE MANUTENÇÃO E CONSERVAÇÃO DE VEÍCULOS
+empenho,elemento_despesa,33903921,(1),SERVIÇO DE CONSERVAÇÃO DE VIAS URBANAS E DE ESTRADAS DE RODAGEM
+empenho,elemento_despesa,33903921,(1),SERVIÇO DE SINALIZAÇÃO VIÁRIA
+empenho,elemento_despesa,33903922,(1),"CONGRESSOS, SIMPÓSIOS E CONFERÊNCIAS"
+empenho,elemento_despesa,33903922,(1),DESPESAS COM CARNAVAL
+empenho,elemento_despesa,33903922,(1),"TRANSPORTE, ALIMENTAÇÃO, HOSPEDAGEM DE DELEGAÇÕES"
+empenho,elemento_despesa,33903922,(1),MONTAGEM/DESMONTAGEM DE PALCOS E ESTANDES
+empenho,elemento_despesa,33903922,(1),"EVENTOS PREVENTIVOS, INFORMATIVOS E EDUCATIVOS"
+empenho,elemento_despesa,33903923,(1),APRESENTAÇÕES ARTÍSTICAS E/OU CULTURAIS
+empenho,elemento_despesa,33903932,(1),TRANSPORTE ESCOLAR - LEI 12.944
+empenho,elemento_despesa,33903932,(1),TRANSPORTE ESCOLAR - OUTROS
+empenho,elemento_despesa,33903941,(1),DESPESAS COM ALIMENTAÇÃO
+empenho,elemento_despesa,33903941,(1),PRÓ-LANCHE
+empenho,elemento_despesa,33903941,(1),DESPESAS DE ALIMENTAÇÃO – PACIENTES EM TRATAMENTO DE SAÚDE
+empenho,elemento_despesa,33903941,(1),RESTAURANTE POPULAR DE PORTO ALEGRE
+empenho,elemento_despesa,33903941,(1),VALE-REFEIÇÃO
+empenho,elemento_despesa,33903944,(1),CORSAN
+empenho,elemento_despesa,33903944,(1),LIGAÇÃO DE ÁGUA
+empenho,elemento_despesa,33903944,(1),LIGAÇÃO DE ESGOTO
+empenho,elemento_despesa,33903947,(1),DESPESAS COM CORREIOS
+empenho,elemento_despesa,33903948,(1),TREINAMENTO DE PESSOAL - SERVIDOR
+empenho,elemento_despesa,33903948,(1),CURSO DE CAPACITAÇÃO PROFISSIONAL – NÃO SERVIDOR
+empenho,elemento_despesa,33903948,(1),TREINAMENTO DE PESSOAL – CONSELHEIROS
+empenho,elemento_despesa,33903948,(1),SERVIÇO DE SELEÇÃO
+empenho,elemento_despesa,33903948,(1),CURSO PRÉ-VESTIBULAR
+empenho,elemento_despesa,33903950,(1),ANÁLISES LABORATORIAIS
+empenho,elemento_despesa,33903950,(1),ASSISTÊNCIA MÉDICO-HOSPITALAR
+empenho,elemento_despesa,33903950,(1),PAGAMENTO AOS PRESTADORES DE SERVIÇOS DE SAÚDE
+empenho,elemento_despesa,33903950,(1),SERVIÇO DE ANESTESISTA
+empenho,elemento_despesa,33903950,(1),"EXAMES, DIAGNÓSTICOS E PROCEDIMENTOS CORRELATOS"
+empenho,elemento_despesa,33903950,(1),SERVIÇO DE DOSIMETRIA PESSOAL
+empenho,elemento_despesa,33903950,(1),TRANSPORTE SANITÁRIO ELETIVO
+empenho,elemento_despesa,33903953,(1),HOSPEDAGEM SOCIAL
+empenho,elemento_despesa,33903953,(1),FORNECIMENTO DE ALIMENTAÇÃO - REFEIÇÃO SOCIAL
+empenho,elemento_despesa,33903953,(1),ACOLHIMENTO INSTITUCIONAL ESPECIALIZADO
+empenho,elemento_despesa,33903958,(1),SERVIÇOS DE TELEFONIA FIXA
+empenho,elemento_despesa,33903958,(1),OUTROS SERVIÇOS DE TELECOMUNICAÇÕES
+empenho,elemento_despesa,33903959,(1),"SERVIÇO DE ÁUDIO, VÍDEO E FOTO"
+empenho,elemento_despesa,33903963,(1),SERVIÇOS DE IMPRESSÃO E EDITORIAIS
+empenho,elemento_despesa,33903965,(1),SERVIÇOS DE APOIO AO ENSINO
+empenho,elemento_despesa,33903965,(1),SERVIÇOS DE APOIO AO ENSINO - EDUCAÇÃO DE JOVENS E ADULTOS - EJA
+empenho,elemento_despesa,33903965,(1),FORNECIMENTO DE VAGAS NA EDUCAÇÃO INFANTIL
+empenho,elemento_despesa,33903965,(1),OFERTA DE VAGAS EM INSTITUIÇÕES PRIVADAS - EDUCAÇÃO INFANTIL
+empenho,elemento_despesa,33903966,(1),SERVIÇOS JUDICIAIS
+empenho,elemento_despesa,33903966,(1),SERVIÇOS JUDICIAIS DIVERSOS
+empenho,elemento_despesa,33903966,(1),CUSTAS JUDICIAIS RELACIONADAS A SERVIÇOS DE POSTAGEM
+empenho,elemento_despesa,33903966,(1),SERVIÇOS DE CARTÓRIO
+empenho,elemento_despesa,33903966,(1),CONSULTA/FORNECIMENTO DE MATRÍCULAS DE REGISTRO DE IMÓVEIS ONLINE
+empenho,elemento_despesa,33903969,(1),SEGUROS EM GERAL
+empenho,elemento_despesa,33903972,(1),VALE-TRANSPORTE
+empenho,elemento_despesa,33903973,(1),SERVIÇOS DE TRANSPORTE DE SERVIDORES – EXCLUSIVE PASSAGENS AÉREAS
+empenho,elemento_despesa,33903977,(1),SERVIÇO DE VIGILÂNCIA E/OU ZELADORIA
+empenho,elemento_despesa,33903978,(1),LIMPEZA URBANA
+empenho,elemento_despesa,33903978,(1),CAPINA E ROÇADA
+empenho,elemento_despesa,33903978,(1),MANUTENÇÃO E RECUPERAÇÃO DE ATERROS SANITÁRIOS
+empenho,elemento_despesa,33903978,(1),"CONSERVAÇÃO DE PRAÇAS, PARQUES E JARDINS"
+empenho,elemento_despesa,33903978,(1),CONSERVAÇÃO DA REDE DE ILUMINAÇÃO PÚBLICA
+empenho,elemento_despesa,33903978,(1),RECUPERAÇÃO DE HIDRÔMETROS
+empenho,elemento_despesa,33903978,(1),REPAVIMENTAÇÃO
+empenho,elemento_despesa,33903978,(1),CONSERVAÇÃO DAS ETAS
+empenho,elemento_despesa,33903978,(1),SERVIÇO DE TRANSPORTE DE RESÍDUOS SÓLIDOS
+empenho,elemento_despesa,33903978,(1),"SERVIÇO DE ESTERILIZAÇÃO, DESINSETIZAÇÃO, HIGIENE, LIMPEZA E COZINHA"
+empenho,elemento_despesa,33903978,(1),"ADMINISTRAÇÃO, MANUTENÇÃO, APOIO, OPERAÇÃO E MELHORIA DA REDE PLUVIAL E ESGOTO SANITÁRIO"
+empenho,elemento_despesa,33903978,(1),SERVIÇO DE COLETA DE RESÍDUOS SÓLIDOS
+empenho,elemento_despesa,33903978,(1),SERVIÇOS SUBAQUÁTICOS
+empenho,elemento_despesa,33903978,(1),SERVIÇO DE ATERRO SANITÁRIO
+empenho,elemento_despesa,33903978,(1),SERVIÇO DE COLETA SELETIVA DE RESÍDUOS SÓLIDOS URBANOS
+empenho,elemento_despesa,33903978,(1),SERVIÇO DE TRIAGEM DE RESÍDUOS RECICLÁVEIS
+empenho,elemento_despesa,33903978,(1),OUTROS SERVIÇOS DE LIMPEZA E CONSERVAÇÃO
+empenho,elemento_despesa,33903979,(1),SERVIÇO DE CALL CENTER
+empenho,elemento_despesa,33903979,(1),"SERVIÇOS DE ARMAZENAMENTO, CONSULTAS E DISPONIBILIZAÇÃO DE DOCUMENTOS"
+empenho,elemento_despesa,33903979,(1),SERVIÇOS DE TAQUIGRAFIA
+empenho,elemento_despesa,33903979,(1),"OUTROS SERVIÇOS DE APOIO ADMINISTRATIVO, TÉCNICO E OPERACIONAL"
+empenho,elemento_despesa,33903981,(1),SERVIÇOS BANCÁRIOS
+empenho,elemento_despesa,33903981,(1),DESPESAS BANCÁRIAS COM ARRECADAÇÃO
+empenho,elemento_despesa,33903981,(1),ENCARGOS DO FUNDO DE DEPÓSITOS JUDICIAIS
+empenho,elemento_despesa,33903982,(1),SERVIÇO DE REMOÇÃO E CORTE DE ÁRVORES
+empenho,elemento_despesa,33903982,(1),PREVENÇÃO DE RISCOS AMBIENTAIS
+empenho,elemento_despesa,33903982,(1),CONTROLE AMBIENTAL DE VETORES
+empenho,elemento_despesa,33903982,(1),IMPLANTAÇÃO DE MUDAS
+empenho,elemento_despesa,33903999,(1),SERVIÇOS DE ESTAGIÁRIOS
+empenho,elemento_despesa,33903999,(1),"ASSOCIAÇÕES, FEDERAÇÕES E CONFEDERAÇÕES"
+empenho,elemento_despesa,33903999,(1),VEÍCULOS LOCADOS COM MOTORISTA
+empenho,elemento_despesa,33903999,(1),VALE COMBUSTÍVEL
+empenho,elemento_despesa,33903999,(1),VEÍCULOS LOCADOS SEM MOTORISTA
+empenho,elemento_despesa,33903999,(1),SERVIÇOS DE RADAR FIXO/MÓVEL E LOMBADA ELETRÔNICA
+empenho,elemento_despesa,33903999,(1),SERVIÇOS DE CONFECÇÃO DE CHAVES E CARIMBOS
+empenho,elemento_despesa,33903999,(1),DESPESAS COM ART E RRT
+empenho,elemento_despesa,33903999,(1),OUTROS SERVIÇOS DE TERCEIROS – PESSOA JURÍDICA
+empenho,elemento_despesa,33904011,(1),PROCESSAMENTO DE DADOS - PONTOS DE ACESSO - ESTAÇÕES DE TRABALHO E RELÓGIO PONTO
+empenho,elemento_despesa,33904011,(1),PROCESSAMENTO DE DADOS – OPERAÇÃO E MANUTENÇÃO DO SISTEMA DE RÁDIO TRUNKING
+empenho,elemento_despesa,33904011,(1),PROCESSAMENTO DE DADOS – PONTOS DE ACESSO – VIDEOMONITORAMENTO
+empenho,elemento_despesa,33904011,(1),PROCESSAMENTO DE DADOS – PONTOS DE ACESSO – HOTSPOT WIFI
+empenho,elemento_despesa,33904011,(1),PROCESSAMENTO DE DADOS – CABEAMENTO ESTRUTURADO – CONEXÃO DE REDE
+empenho,elemento_despesa,33904011,(1),PROCESSAMENTO DE DADOS – SERVIÇOS REGULARES
+empenho,elemento_despesa,33904011,(1),PROCESSAMENTO DE DADOS PARA DESENVOLVIMENTO E CONSULTORIA – SERVIÇOS VARIÁVEIS
+empenho,elemento_despesa,33904011,(1),PROCESSAMENTO DE DADOS – CABEAMENTO ESTRUTURADO – VIDEOMONITORAMENTO
+empenho,elemento_despesa,33904011,(1),PROCESSAMENTO DE DADOS – CABEAMENTO ESTRUTURADO – HOTSPOT WIFI
+empenho,elemento_despesa,33904014,(1),TELEFONIA FIXA - PACOTE DE COMUNICAÇÃO DE DADOS
+empenho,elemento_despesa,33904014,(1),TELEFONIA MÓVEL - PACOTE DE COMUNICAÇÃO DE DADOS
+empenho,elemento_despesa,33904099,(1),DESPESAS COM TELEPROCESSAMENTO
+empenho,elemento_despesa,33904099,(1),OUTROS SERVIÇOS DE T.I.C.
+empenho,elemento_despesa,33904601,(1),INDENIZAÇÃO AUXÍLIO-ALIMENTAÇÃO - SERVIDORES
+empenho,elemento_despesa,33904601,(1),INDENIZAÇÃO AUXÍLIO-ALIMENTAÇÃO - SERVIDORES - RPPS
+empenho,elemento_despesa,33904601,(1),INDENIZAÇÃO AUXÍLIO-ALIMENTAÇÃO - SERVIDORES RGPS
+empenho,elemento_despesa,33904601,(1),AUXÍLIO ALIMENTAÇÃO EXTRA - SERVIDORES
+empenho,elemento_despesa,33904601,(1),AUXÍLIO ALIMENTAÇÃO EXTRA – SERVIDORES - RPPS
+empenho,elemento_despesa,33904601,(1),AUXÍLIO ALIMENTAÇÃO EXTRA – SERVIDORES - RGPS
+empenho,elemento_despesa,33904712,(1),PASEP - SERVIDORES
+empenho,elemento_despesa,33904801,(1),AUXÍLIO FINANCEIRO A FAMÍLIAS
+empenho,elemento_despesa,33904801,(1),BOLSA-AUXÍLIO APRENDIZAGEM
+empenho,elemento_despesa,33904801,(1),AUXÍLIO A PESSOAS FÍSICAS – DECORRENTES DE DECISÃO JUDICIAL
+empenho,elemento_despesa,33904801,(1),OUTRAS TRANSFERÊNCIAS A PESSOAS
+empenho,elemento_despesa,33904803,(1),AUXÍLIO MORADIA – DECRETO 20.575/2020
+empenho,elemento_despesa,33904803,(1),AUXÍLIO ALIMENTAÇÃO – DECRETO 20.575/2020
+empenho,elemento_despesa,33904804,(1),AUXÍLIO MORADIA – DECRETO 19.885/2017
+empenho,elemento_despesa,33904804,(1),BOLSA AUXÍLIO APRENDIZAGEM - DECRETO 19.885/2017
+empenho,elemento_despesa,33904805,(1),BOLSA AUXÍLIO – LEI 12.661/2020
+empenho,elemento_despesa,33904806,(1),BOLSA AUXÍLIO – LEI 12.662/2020
+empenho,elemento_despesa,33904901,(1),INDENIZAÇÃO AUXÍLIO-TRANSPORTE – SERVIDORES RPPS
+empenho,elemento_despesa,33904901,(1),INDENIZAÇÃO AUXÍLIO-TRANSPORTE – SERVIDORES RGPS
+empenho,elemento_despesa,33904901,(1),ANTECIPAÇÃO DE AUXÍLIO-TRANSPORTE - ESTAGIÁRIOS
+empenho,elemento_despesa,33909101,(1),RPV – SENTENÇAS JUDICIAIS DE PEQUENO VALOR – EXCETO SERVIDORES
+empenho,elemento_despesa,33909102,(1),PRECATÓRIOS – EXCETO SERVIDORES – PRINCIPAL (TJ/RS)
+empenho,elemento_despesa,33909102,(1),PRECATÓRIOS – EXCETO SERVIDORES – ATUALIZAÇÃO MONETÁRIA (TJ/RS)
+empenho,elemento_despesa,33909102,(1),PRECATÓRIOS – EXCETO SERVIDORES – PERÍCIAS (TJ/RS)
+empenho,elemento_despesa,33909102,(1),PRECATÓRIOS – EXCETO SERVIDORES – HONORÁRIOS ADVOCATÍCIOS (TJ/RS)
+empenho,elemento_despesa,33909102,(1),PRECATÓRIOS – EXCETO SERVIDORES – PRINCIPAL (TRT/RS)
+empenho,elemento_despesa,33909102,(1),PRECATÓRIOS – EXCETO SERVIDORES – ATUALIZAÇÃO MONETÁRIA (TRT/RS)
+empenho,elemento_despesa,33909102,(1),PRECATÓRIOS – EXCETO SERVIDORES – PERÍCIAS (TRT/RS)
+empenho,elemento_despesa,33909102,(1),PRECATÓRIOS – EXCETO SERVIDORES – HONORÁRIOS ADVOCATÍCIOS (TRT/RS)
+empenho,elemento_despesa,33909102,(1),PRECATÓRIOS – EXCETO SERVIDORES – CUSTAS JUDICIAIS (TJ/RS)
+empenho,elemento_despesa,33909102,(1),PRECATÓRIOS – EXCETO SERVIDORES – CUSTAS JUDICIAIS (TRT/RS)
+empenho,elemento_despesa,33909102,(1),SENTENÇAS JUDICIAIS – OUTRAS SENTENÇAS JUDICIAIS
+empenho,elemento_despesa,33909103,(1),SENTENÇAS JUDICIAIS – MEDICAMENTOS
+empenho,elemento_despesa,33909103,(1),"SENTENÇAS JUDICIAIS – TRATAMENTO DE SAÚDE (CIRURGIA, EXAMES E OUTROS)"
+empenho,elemento_despesa,33909103,(1),SENTENÇAS JUDICIAIS – ABRIGAGEM DE IDOSOS E DEFICIENTES
+empenho,elemento_despesa,33909103,(1),SENTENÇAS JUDICIAIS – HONORÁRIOS ADVOCATÍCIOS – FADEP – AÇÕES SMS
+empenho,elemento_despesa,33909103,(1),SENTENÇAS JUDICIAIS – CRECHES
+empenho,elemento_despesa,33909103,(1),SENTENÇAS JUDICIAIS – HONORÁRIOS ADVOCATÍCIOS – FADEP – AÇÕES SMED
+empenho,elemento_despesa,33909103,(1),SENTENÇAS JUDICIAIS – FRALDAS E OUTROS INSUMOS
+empenho,elemento_despesa,33909103,(1),SENTENÇAS JUDICIAIS – ATENÇÃO DOMICILIAR
+empenho,elemento_despesa,33909103,(1),SENTENÇAS JUDICIAIS – OXIGENOTERAPIA
+empenho,elemento_despesa,33909103,(1),SENTENÇAS JUDICIAIS - OUTRAS DECISÕES JUDICIAIS
+empenho,elemento_despesa,33909199,(1),DIVERSAS SENTENÇAS
+empenho,elemento_despesa,33909199,(1),SENTENÇAS JUDICIAIS – PESSOAL INATIVO - PRINCIPAL
+empenho,elemento_despesa,33909199,(1),SENTENÇAS JUDICIAIS – PESSOAL INATIVO – ATUALIZAÇÃO MONETÁRIA
+empenho,elemento_despesa,33909199,(1),SENTENÇAS JUDICIAIS – PENSIONISTA – PRINCIPAL
+empenho,elemento_despesa,33909199,(1),SENTENÇAS JUDICIAIS – PENSIONISTAS – ATUALIZAÇÃO MONETÁRIA
+empenho,elemento_despesa,33909199,(1),SENTENÇAS JUDICIAIS DE PEQUENO VALOR
+empenho,elemento_despesa,33909199,(1),SENTENÇAS JUDICIAIS DE PEQUENO VALOR – ACORDO ARROIO FEIJÓ
+empenho,elemento_despesa,33909208,(1),AUXÍLIO FUNERAL
+empenho,elemento_despesa,33909208,(1),OUTROS BENEFÍCIOS ASSISTENCIAIS
+empenho,elemento_despesa,33909233,(1),PASSAGENS E DESPESAS COM LOCOMOÇÃO
+empenho,elemento_despesa,33909233,(1),OUTRAS DESPESAS COM LOCOMOÇÃO
+empenho,elemento_despesa,33909233,(1),OUTRAS DESPESAS COM LOCOMOÇÃO - NÃO SERVIDORES - EXCUSIVE PASSAGEM AÉREA - DEA
+empenho,elemento_despesa,33909236,(1),CONDOMÍNIOS - DEA
+empenho,elemento_despesa,33909236,(1),LOCAÇÃO DE IMÓVEIS - DEA
+empenho,elemento_despesa,33909236,(1),OUTRAS DESPESAS – PESSOA FÍSICA - DEA
+empenho,elemento_despesa,33909236,(1),OUTROS SERVIÇOS PRESTADOS POR PESSOA FÍSICA - DEA
+empenho,elemento_despesa,33909239,(1),CONDOMÍNIOS - DEA
+empenho,elemento_despesa,33909239,(1),LOCAÇÃO DE IMÓVEIS - DEA
+empenho,elemento_despesa,33909239,(1),SERVIÇOS DE ENERGIA ELÉTRICA - DEA
+empenho,elemento_despesa,33909239,(1),PAGAMENTO DE PRESTADORES DE SAÚDE - DEA
+empenho,elemento_despesa,33909239,(1),SERVIÇOS DE TELEFONIA FIXA - DEA
+empenho,elemento_despesa,33909239,(1),"ADMINISTRAÇÃO, MANUTENÇÃO, APOIO, OPERAÇÃO E MELHORIA DA REDE PLUVIAL E ESGOTO SANITÁRIO - DEA"
+empenho,elemento_despesa,33909239,(1),SERVIÇOS BANCÁRIOS - DEA
+empenho,elemento_despesa,33909239,(1),OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA - DEA
+empenho,elemento_despesa,33909239,(1),VEÍCULOS COM MOTORISTA – DEA
+empenho,elemento_despesa,33909239,(1),VEÍCULOS SEM MOTORISTA – DEA
+empenho,elemento_despesa,33909239,(1),OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA - DEA
+empenho,elemento_despesa,33909240,(1),LOCACAO DE EQUIPAMENTOS DE T.I.C. - ATIVOS DE REDE - DEA
+empenho,elemento_despesa,33909240,(1),LOCAÇÃO DE EQUIPAMENTOS DE T.I.C. – COMPUTADORES - DEA
+empenho,elemento_despesa,33909240,(1),LOCAÇÃO DE EQUIPAMENTOS DE T.I.C. - SERVIDORES/STORAGE DEA
+empenho,elemento_despesa,33909240,(1),LOCAÇÃO DE EQUIPAMENTOS DE T.I.C. - IMPRESSORAS - DEA
+empenho,elemento_despesa,33909240,(1),LOCAÇÃO DE EQUIPAMENTOS DE T.I.C. - TELEFONIA - DEA
+empenho,elemento_despesa,33909240,(1),LOCAÇÃO DE SOFTWARE - DEA
+empenho,elemento_despesa,33909240,(1),MANUTENÇÃO CORRETIVA/ADAPTATIVA E SUSTENTAÇÃO SOFTWARES - DEA
+empenho,elemento_despesa,33909240,(1),HOSPEDAGEM DE SISTEMAS - DEA
+empenho,elemento_despesa,33909240,(1),SUPORTE A USUÁRIOS DE T.I.C. - DEA
+empenho,elemento_despesa,33909240,(1),SUPORTE DE INFRAESTRUTURA DE T.I.C. - DEA
+empenho,elemento_despesa,33909240,(1),PROCESSAMENTO DE DADOS - PONTOS DE ACESSO - ESTAÇÕES DE TRABALHO E RELÓGIO PONTO - DEA
+empenho,elemento_despesa,33909240,(1),PROCESSAMENTO DE DADOS – OPERAÇÃO E MANUTENÇÃO DO SISTEMA DE RÁDIO TRUNKING - DEA
+empenho,elemento_despesa,33909240,(1),PROCESSAMENTO DE DADOS – PONTOS DE ACESSO VIDEOMONITORAMENTO - DEA
+empenho,elemento_despesa,33909240,(1),PROCESSAMENTO DE DADOS – PONTOS DE ACESSO – HOTSPOT WIFI - DEA
+empenho,elemento_despesa,33909240,(1),PROCESSAMENTO DE DADOS – CABEAMENTO ESTRUTURADO – ESTAÇÃO DE TRABALHO E RELÓGIO PONTO
+empenho,elemento_despesa,33909240,(1),PROCESSAMENTO DE DADOS – SERVIÇOS REGULARES – DEA
+empenho,elemento_despesa,33909240,(1),PROCESSAMENTO DE DADOS PARA DESENVOLVIMENTO E CONSULTORIA – SERVIÇOS VARIÁVEIS - DEA
+empenho,elemento_despesa,33909240,(1),PROCESSAMENTO DE DADOS – CABEAMENTO ESTRUTURADO – VIDEOMONITORAMENTO - DEA
+empenho,elemento_despesa,33909240,(1),PROCESSAMENTO DE DADOS – CABEAMENTO ESTRUTURADO – HOTSPOT WIFI - DEA
+empenho,elemento_despesa,33909240,(1),MANUTENÇÃO E CONSERVAÇÃO DE EQUIPAMENTOS DE T.I.C. – DEA
+empenho,elemento_despesa,33909240,(1),COMUNICAÇÃO DE DADOS - DEA
+empenho,elemento_despesa,33909240,(1),TELEFONIA FIXA E MÓVEL - PACOTE DE COMUNICAÇÃO DE DADOS - DEA
+empenho,elemento_despesa,33909240,(1),TELEFONIA FIXA - PACOTE DE COMUNICAÇÃO DE DADOS - DEA
+empenho,elemento_despesa,33909240,(1),TELEFONIA MÓVEL - PACOTE DE COMUNICAÇÃO DE DADOS - DEA
+empenho,elemento_despesa,33909240,(1),DIGITALIZAÇÃO/INDEXAÇÃO DE DOCUMENTOS - DEA
+empenho,elemento_despesa,33909240,(1),OUTSOURCING DE IMPRESSÃO - DEA
+empenho,elemento_despesa,33909240,(1),COMPUTAÇÃO EM NUVEM - INFRAESTRUTURA COMO SERVIÇO (IAAS) - DEA
+empenho,elemento_despesa,33909240,(1),COMPUTAÇÃO EM NUVEM - PLATAFORMA COMO SERVIÇO (PAAS) - DEA
+empenho,elemento_despesa,33909240,(1),COMPUTAÇÃO EM NUVEM - SOFTWARE COMO SERVIÇO (SAAS) - DEA
+empenho,elemento_despesa,33909240,(1),TREINAMENTO/CAPACITAÇÃO EM T.I.C. - DEA
+empenho,elemento_despesa,33909240,(1),SERVIÇOS TÉCNICOS PROFISSIONAIS DE T.I.C. - DEA
+empenho,elemento_despesa,33909240,(1),OUTROS SERVIÇOS DE T.I.C. - DEA
+empenho,elemento_despesa,33909240,(1),DESPESA COM TELEPROCESSAMENTO - DEA
+empenho,elemento_despesa,33909240,(1),DESPESAS COM CERTIFICAÇÃO DIGITAL - DEA
+empenho,elemento_despesa,33909240,(1),OUTRAS DESPESAS COM T.I.C - DEA
+empenho,elemento_despesa,33909241,(1),REPASSE RELATIVO A CONVÊNIO COM A EPTC - DEA
+empenho,elemento_despesa,33909246,(1),AUXÍLIO-ALIMENTAÇÃO - SERVIDORES RPPS
+empenho,elemento_despesa,33909246,(1),AUXÍLIO-ALIMENTAÇÃO - SERVIDORES RGPS
+empenho,elemento_despesa,33909248,(1),OUTRAS TRANSFERÊNCIAS A PESSOAS FÍSICAS - DEA
+empenho,elemento_despesa,33909248,(1),PROJETO MAIS DIGNIDADE - DECRETO 19.885/2017  – DEA
+empenho,elemento_despesa,33909248,(1),AUXÍLIO MORADIA – DECRETO 19.885/2017 – DEA
+empenho,elemento_despesa,33909248,(1),BOLSA APRENDIZAGEM – 19.885/2017 – DEA
+empenho,elemento_despesa,33909249,(1),AUXÍLIO-TRANSPORTE – SERVIDORES RPPS
+empenho,elemento_despesa,33909249,(1),AUXÍLIO-TRANSPORTE – SERVIDORES RGPS
+empenho,elemento_despesa,33909291,(1),RPV – SENTENÇAS JUDICIAIS DE PEQUENO VALOR – EXCETO SERVIDORES
+empenho,elemento_despesa,33909291,(1),PRECATÓRIOS – EXCETO SERVIDORES – PRINCIPAL (TJ/RS)
+empenho,elemento_despesa,33909291,(1),PRECATÓRIOS – ATUALIZAÇÃO MONETÁRIA (TJ/RS)
+empenho,elemento_despesa,33909291,(1),PRECATÓRIOS – EXCETO SERVIDORES – PERÍCIAS (TJ/RS)
+empenho,elemento_despesa,33909291,(1),PRECATÓRIOS – EXCETO SERVIDORES - HONORÁRIOS ADVOCATÍCIOS (TJ/RS)
+empenho,elemento_despesa,33909291,(1),PRECATÓRIOS – EXCETO SERVIDORES – PRINCIPAL (TRT)
+empenho,elemento_despesa,33909291,(1),PRECATÓRIOS – EXCETO SERVIDORES – ATUALIZAÇÃO MONETÁRIA (TRT)
+empenho,elemento_despesa,33909291,(1),PRECATÓRIOS – EXCETO SERVIDORES – PERÍCIAS (TRT)
+empenho,elemento_despesa,33909291,(1),PRECATÓRIOS – EXCETO SERVIDORES – HONORÁRIOS ADVOCATÍCIOS (TRT
+empenho,elemento_despesa,33909291,(1),SENTENÇAS JUDICIAIS – MEDICAMENTOS
+empenho,elemento_despesa,33909291,(1),"SENTENÇAS JUDICIAIS – TRATAMENTO DE SAÚDE (CIRURGIAS, EXAMES E OUTROS)"
+empenho,elemento_despesa,33909291,(1),SENTENÇAS JUDICIAIS – ABRIGAGEM DE IDOSOS E DEFICIENTES
+empenho,elemento_despesa,33909291,(1),SENTENÇAS JUDICIAIS – HONORÁRIOS ADVOCATÍCIOS - FADEP AÇÕES SMS
+empenho,elemento_despesa,33909291,(1),SENTENÇAS JUDICIAIS – CRECHES
+empenho,elemento_despesa,33909291,(1),SENTENÇAS JUDICIAIS – HONORÁRIOS ADVOCATÍCIOS - FADEP AÇÕES SMED
+empenho,elemento_despesa,33909291,(1),PRECATÓRIOS – EXCETO SERVIDORES – CUSTAS JUDICIAIS (TJ/RS)
+empenho,elemento_despesa,33909291,(1),PRECATÓRIOS – EXCETO SERVIDORES – CUSTAS JUDICIAIS (TRT)
+empenho,elemento_despesa,33909291,(1),FRALDAS E OUTROS INSUMOS (DEA)
+empenho,elemento_despesa,33909291,(1),OUTRAS SENTENÇAS JUDICIAIS
+empenho,elemento_despesa,33909299,(1),ESTAGIÁRIOS
+empenho,elemento_despesa,33909299,(1),PARCELAMENTO DE FORNECEDORES – LEI 12.287/2017
+empenho,elemento_despesa,33909299,(1),PARCELAMENTO DE FORNECEDORES – LEI 12.447/2018
+empenho,elemento_despesa,33909299,(1),PARCELAMENTO DE FORNECEDORES – LEI 12.636/2019
+empenho,elemento_despesa,33909299,(1),OUTRAS DESPESAS CORRENTES
+empenho,elemento_despesa,33909301,(1),INDENIZAÇÃO IMOBILIÁRIA
+empenho,elemento_despesa,33909301,(1),INDENIZAÇÃO POR DANOS MATERIAIS A TERCEIROS
+empenho,elemento_despesa,33909301,(1),INDENIZAÇÃO PELA UTILIZAÇÃO DE VEÍCULOS DE SERVIDORES
+empenho,elemento_despesa,33909301,(1),INDENIZAÇÃO POR DANOS MORAIS
+empenho,elemento_despesa,33909301,(1),INDENIZAÇÕES – MULTAS DE TRÂNSITO
+empenho,elemento_despesa,33909302,(1),RESTITUIÇÕES DE DESPESAS  EVENTUAIS COM ALIMENTAÇÃO
+empenho,elemento_despesa,33909302,(1),"RESTITUIÇÕES DE IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA"
+empenho,elemento_despesa,33909302,(1),RESTITUIÇÕES DO INSS AOS AGENTES POLÍTICOS
+empenho,elemento_despesa,33909302,(1),RESTITUIÇÕES DE CONVÊNIOS COM ENTIDADES PRIVADAS
+empenho,elemento_despesa,33909302,(1),RESTITUIÇÕES DE CONVÊNIOS COM ENTIDADES ESTRANGEIRAS
+empenho,elemento_despesa,33909314,(1),RESSARCIMENTO DE PASSAGENS AÉREAS PARA O PAÍS
+empenho,elemento_despesa,33909314,(1),RESSARCIMENTO DE PASSAGENS AÉREAS PARA O PAÍS – SERVIDORES
+empenho,elemento_despesa,33909314,(1),RESSARCIMENTO DE PASSAGENS AÉREAS PARA O PAÍS – NÃO SERVIDORES
+empenho,elemento_despesa,33909314,(1),RESSARCIMENTO DE PASSAGENS AÉREAS PARA O EXTERIOR
+empenho,elemento_despesa,33909314,(1),RESSARCIMENTO DE PASSAGENS AÉREAS PARA O EXTERIOR - SERVIDORES
+empenho,elemento_despesa,33909314,(1),RESSARCIMENTO DE PASSAGENS AÉREAS PARA O EXTERIOR - NÃO SERVIDORES
+empenho,elemento_despesa,33909399,(1),CORREÇÃO MONETÁRIA – DEVOLUÇÃO DE GARANTIA CONTRATUAL
+empenho,elemento_despesa,33909399,(1),INDENIZAÇÃO PELA OCUPAÇÃO E MANUTENÇÃO DE ESPAÇOS FÍSICOS
+empenho,elemento_despesa,33909399,(1),DIVERSAS INDENIZAÇÕES E RESTITUIÇÕES
+empenho,elemento_despesa,33913999,(1),DESPESAS COM CONVÊNIOS – DESPESAS INTRAORÇAMENTÁRIAS
+empenho,elemento_despesa,33913999,(1),DESPESAS COM ÁGUA E ESGOTOS
+empenho,elemento_despesa,33913999,(1),DIVERSOS SERVIÇOS DE TERCEIROS PESSOA JURÍDICA– OPERAÇÕES INTRAORÇAMENTÁRIAS
+empenho,elemento_despesa,33919293,(1),INDENIZAÇÕES
+empenho,elemento_despesa,33919293,(1),RESTITUIÇÕES
+empenho,elemento_despesa,33919293,(1),RECOMPOSIÇÃO DE RENDIMENTOS FINANCEIROS
+empenho,elemento_despesa,33919399,(1),CERTIFICADO DE COMPENSAÇÃO POR TRANSFERÊNCIA DE SERVIÇOS AMBIENTAIS
+empenho,elemento_despesa,33919399,(1),COMPENSAÇÃO VEGETAL DEMHAB – DECRETO 19.439/2016
+empenho,elemento_despesa,33919399,(1),OUTRAS COMPENSAÇÕES VEGETAIS
+empenho,elemento_despesa,33919399,(1),MULTAS PREVISTAS EM LEGISLAÇÃO ESPECÍFICA - AUTO DE INFRAÇÃO
+empenho,elemento_despesa,44404239,(1),OUTROS AUXÍLIOS
+empenho,elemento_despesa,44903099,(1),MATERIAL PARA SUBSTITUIÇÃO – EXTENSÃO DE REDES DE ÁGUA
+empenho,elemento_despesa,44903099,(1),MATERIAL PARA SUBSTITUIÇÃO – EXTENSÃO DE REDES DE ESGOTO
+empenho,elemento_despesa,44903099,(1),OUTROS MATERIAIS DE CONSUMO
+empenho,elemento_despesa,44903999,(1),SERVIÇO TÉCNICO ESPECIALIZADO
+empenho,elemento_despesa,44903999,(1),DESPESAS COM CARNAVAL
+empenho,elemento_despesa,44905299,(1),"MÁQUINAS, MOTORES E / OU APARELHOS DIVERSOS"
+empenho,elemento_despesa,44905299,(1),EQUIPAMENTOS PARA ATIVIDADES ARTÍSTICAS
+empenho,elemento_despesa,44905299,(1),"MATERIAL E EQUIPAMENTO P/ ILUMINAÇÃO PÚBLICA, SINALIZAÇÃO E SEGURANÇA"
+empenho,elemento_despesa,44905299,(1),OUTROS MATERIAIS PERMANENTES
+empenho,elemento_despesa,44906199,(1),OBRAS EM ANDAMENTO
+empenho,elemento_despesa,44906199,(1),INSTALAÇÕES
+empenho,elemento_despesa,44906199,(1),OUTRAS AQUISIÇÕES DE BENS IMÓVEIS
+empenho,elemento_despesa,44909105,(1),SENTENÇAS JUDICIAIS TRANSITADAS EM JULGADO
+empenho,elemento_despesa,44909105,(1),SENTENÇAS JUDICIAIS – ATUALIZAÇÃO MONETÁRIA
+empenho,elemento_despesa,44909105,(1),SENTENÇAS JUDICIAIS – BENS EM COMODATO
+empenho,elemento_despesa,44909240,(1),DESENVOLVIMENTO DE SOFTWARE - DEA
+empenho,elemento_despesa,44909291,(1),SENTENÇAS JUDICIAIS - DEA - PRECATÓRIOS
+empenho,elemento_despesa,44909291,(1),SENTENÇAS JUDICIAIS – BENS EM COMODATO
+empenho,elemento_despesa,44909299,(1),OUTRAS DESPESAS DIVERSAS – DEA
+empenho,elemento_despesa,45209399,(1),RESTITUIÇÃO DE CONVÊNIOS E TRANSFERÊNCIAS RECEBIDAS DA UNIÃO
+empenho,elemento_despesa,45309399,(1),RESTITUIÇÃO DE  CONVÊNIOS E TRANSFERÊNCIAS RECEBIDAS DO ESTADO
+empenho,elemento_despesa,45409399,(1),RESTITUIÇÕES DE CONVÊNIOS E TRANSFERÊNCIAS RECEBIDAS DOS MUNICÍPIOS
+empenho,elemento_despesa,45906601,(1),"CONCESSÃO DE EMPRÉSTIMOS A CONTRIBUINTES (ART.32, §3°, I, LRF)"
+empenho,elemento_despesa,45906602,(1),"CONCESSÃO DE FINANCIAMENTOS A CONTRIBUINTES (ART.32, §3°, I, LRF)"
+empenho,elemento_despesa,45906602,(1),FINANCIAMENTOS PARA PEQUENOS PRODUTORES RURAIS
+empenho,elemento_despesa,46907101,(1),AMORTIZAÇÃO DA DIVIDA CONTRATADA COM INSTITUIÇÕES FINANCEIRAS
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DO INSS
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DO FGTS
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DO PASEP
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DA CEEE
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DA CORSAN
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTO DO GRUPO GHC
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTO DO GRUPO GHC – DMAE - PMPA
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DA CEEE - TERMO DE ACORDO
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DA CEEE - SINALEIRAS
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DE SR’S E SALDOS DA DEPURAÇÃO
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DE PRÊMIO DE SEGUROS
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DO PROGRAMA RELUZ - CEEE-D
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DO PROGRAMA PRÓ- GUAÍBA
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DO PIS
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DO COFINS
+empenho,elemento_despesa,46907102,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTOS DE CSLL
+empenho,elemento_despesa,46907103,(1),AMORTIZAÇÃO DA DÍVIDA CONTRATADA NO EXTERIOR
+empenho,elemento_despesa,46907199,(1),OUTRAS AMORTIZAÇÕES DA DÍVIDA CONTRATADA
+empenho,elemento_despesa,46907199,(1),PRINCIPAL DA DÍVIDA INTERNA - CONTRATUAL RESGATADO
+empenho,elemento_despesa,46907199,(1),PRINCIPAL DA DÍVIDA INTERNA – PRAD SANTA TECLA
+empenho,elemento_despesa,46907399,(1),CORREÇÃO MONETÁRIA DA DÍVIDA COM INSTITUIÇÕES FINANCEIRAS
+empenho,elemento_despesa,46907399,(1),CORREÇÃO MONETÁRIA DA DÍVIDA CONTRATADA COM GOVERNOS
+empenho,elemento_despesa,46907399,(1),CORREÇÃO MONETÁRIA DA DÍVIDA COM PARCELAMENTOS DE INSS
+empenho,elemento_despesa,46907399,(1),CORREÇÃO MONETÁRIA DA DÍVIDA COM PARCELAMENTOS DE FGTS
+empenho,elemento_despesa,46907399,(1),CORREÇÃO MONETÁRIA DA DÍVIDA COM PARCELAMENTOS DE PASEP
+empenho,elemento_despesa,46907399,(1),CORREÇÃO MONETÁRIA DA DÍVIDA COM PARCELAMENTOS DE CEEE
+empenho,elemento_despesa,46907399,(1),CORREÇÃO MONETÁRIA DE PARCELAMENTOS DA CORSAN
+empenho,elemento_despesa,46907399,(1),CORREÇÃO CAMBIAL DA DÍVIDA CONTRATADA COM EXTERIOR
+empenho,elemento_despesa,46907399,(1),CORREÇÃO MONETÁRIA DE OUTRAS DÍVIDAS CONTRATADAS
+empenho,elemento_despesa,46907601,(1),DÍVIDA MOBILIÁRIA INTERNA
+empenho,elemento_despesa,46907601,(1),DÍVIDA MOBILIÁRIA  EXTERNA
+empenho,elemento_despesa,46909299,(1),DESPESAS DE EXERCÍCIOS ANTERIORES - AMORTIZAÇÃO DA DÍVIDA INTERNA
+empenho,elemento_despesa,46909299,(1),DESPESAS DE EXERCÍCIOS ANTERIORES - AMORTIZAÇÃO DA DÍVIDA EXTERNA
+empenho,elemento_despesa,46909299,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTO DE FORNECEDORES – LEI 12.287/2017
+empenho,elemento_despesa,46909299,(1),AMORTIZAÇÃO DA DÍVIDA COM PARCELAMENTO DE FORNECEDORES – LEI 12.447/2018
+empenho,elemento_despesa,46917199,(1),OUTRAS AMORTIZAÇÕES DA DÍVIDA CONTRATADA - INTRAORÇAMENTÁRIAS
+empenho,elemento_despesa,46917199,(1),PARCELAMENTO DE DÉBITOS - RPPS
+empenho,elemento_despesa,46917199,(1),PARCELAMENTO DE DÉBITOS – RPPS – LC 750/14
+empenho,elemento_despesa,46917199,(1),PARCELAMENTO DE DÉBITOS - RPPS - LEI 12.371/2018 - TERMO 00682/2018
+licitacao,modalidade,1,(1),Convite
+licitacao,modalidade,2,(1),Tomada de Preços
+licitacao,modalidade,3,(1),Concorrência
+licitacao,modalidade,4,(1),Pregão
+licitacao,modalidade,5,(1),Pregão Presencial
+licitacao,modalidade,6,(1),Pregão Eletrônico
+licitacao,modalidade,7,(1),Leilão
+licitacao,modalidade,8,(1),Dispensa
+licitacao,modalidade,9,(1),Dispensa BEC
+licitacao,modalidade,10,(1),Inexigibilidade
+licitacao,modalidade,11,(1),Concurso
+licitacao,modalidade,12,(1),Regime Diferenciado de Contratações (RDC)
+licitacao,modalidade,13,(1),BIRD - Contratação Direta (CD)
+licitacao,modalidade,14,(1),BIRD - Comparação de Preços (CP)
+licitacao,modalidade,15,(1),BIRD - Seleção Baseada na Qualidade e Custo (SBQC)
+licitacao,modalidade,16,(1),BIRD - Licitação Pública Internacional (ICB)
+licitacao,modalidade,17,(1),BIRD - Consultor Individual (CI)
+licitacao,modalidade,18,(1),BIRD - Licitação Pública Nacional (NCB)
+licitacao,modalidade,19,(1),BIRD - Seleção Pelo Menor Custo (SMC)
+licitacao,modalidade,20,(1),BIRD - Seleção Baseada nas Qualificações do Consultor (SQC)
+licitacao,modalidade,21,(1),BID - Contratação Direta (CD)
+licitacao,modalidade,22,(1),BID - Comparação de Preços (CP)
+licitacao,modalidade,23,(1),BID - Seleção Baseada na Qualidade e Custo (SBQC)
+licitacao,modalidade,24,(1),BID - Consultor Individual (CI)
+licitacao,modalidade,25,(1),BID - Licitação Pública Nacional (LPN)
+licitacao,modalidade,26,(1),BID - Licitação Pública Internacional (LPI)
+licitacao,modalidade,27,(1),BID - Seleção Baseada no Menor Custo (SMC)
+licitacao,modalidade,28,(1),BID - Seleção Baseada nas Qualificações do Consultor (SQC)
+licitacao,modalidade,29,(1),RIN - Regras Internacionais
+licitacao,modalidade,30,(1),Chamamento Público
+licitacao,modalidade,31,(1),Chamada Pública
+licitacao,natureza_objeto,1,(1),Obras e Serviços de Engenharia
+licitacao,natureza_objeto,2,(1),Compras e Serviços
+licitacao,natureza_objeto,3,(1),Locação de Imóveis
+licitacao,natureza_objeto,4,(1),Concessão
+licitacao,natureza_objeto,5,(1),Permissão
+licitacao,natureza_objeto,6,(1),Alienação de Bens
+licitacao,natureza_objeto,7,(1),Compras para Obras/Serviços de Engenharia
+licitacao,natureza_objeto,8,(1),Compras
+licitacao,natureza_objeto,9,(1),Outros Serviços
+licitacao,natureza_objeto,10,(1),Locação de Bens
+licitacao,natureza_objeto,11,(1),Concessão de Direito Real de Uso
+licitacao,natureza_objeto,12,(1),Cessão de Direitos 
+licitacao,natureza_objeto,13,(1),Privatização
+licitacao,natureza_objeto,14,(1),Parceria Público-Privada
+licitacao,natureza_objeto,15,(1),Serviços de Saúde
+licitacao,natureza_objeto,16,(1),Informática – TIC
+licitacao,natureza_processo,1,(1),Normal
+licitacao,natureza_processo,2,(1),Registro de Preços
+licitacao,natureza_processo,3,(1),Credenciamento / Chamada Pública
+licitacao,natureza_processo,4,(1),"Lei Ordinária nº 13.303/2016 - Dados Abertos, Lei Ordinária nº 13.303/2016 - Dados Sigilosos, Normal,"
+licitacao,natureza_processo,5,(1),"Lei Ordinária nº 13.303/2016 - Dados Abertos, Lei Ordinária nº 13.303/2016 - Dados Sigilosos, Normal, Proc.de Disp.Inc I e II do art.24 da Lei 8666/93,"
+licitacao,natureza_processo,6,(1),"Credenciamento, Lei Ordinária nº 13.303/2016 - Dados Abertos, Lei Ordinária nº 13.303/2016 - Dados Sigilosos, Normal, Registro de Preços,"
+licitacao,situacao,1,(1),Concluída
+licitacao,situacao,2,(1),Em Andamento
+licitacao,situacao,3,(1),Revogada
+licitacao,situacao,4,(1),Deserta
+licitacao,situacao,5,(1),Fracassada
+licitacao,situacao,6,(1),Anulada
+licitacao,situacao,7,(1),Processo Sustado por Determinação do TCE
+licitacao,situacao,8,(1),Processo Suspenso por Determinação Judicial
+licitacao,situacao,9,(1),Processo Suspenso por Decisão Administrativa
+licitacao,situacao,10,(1),Edital Impugnado Aguardando Retificação
+licitacao,estagio,1,(1),Processo Instaurado
+licitacao,estagio,2,(1),Edital Publicado
+licitacao,estagio,3,(1),Licitantes Cadastrados
+licitacao,estagio,4,(1),Habilitação/Propostas
+licitacao,estagio,5,(1),Habilitação Concluída
+licitacao,estagio,6,(1),Julgamento Concluído
+licitacao,estagio,7,(1),Processo Adjudicado / Homologado / Ratificado
+licitacao,tipo,1,(1),Menor Preço
+licitacao,tipo,2,(1),Melhor Técnica
+licitacao,tipo,3,(1),Técnica e Preço
+licitacao,tipo,4,(1),Maior Lance ou Oferta
+licitacao,tipo,5,(1),Maior Retorno Econômico
+licitacao,tipo,6,(1),Dispensa/Inexigibilidade
+licitacao,tipo,7,(1),Melhor Conteúdo Artistico 
+licitacao,tipo,8,(1),Maior Oferta de Outorga
+licitacao,tipo,9,(1),Maior Oferta de Outorga e Melhor Técnica
+licitacao,tipo,10,(1),Menor Valor da Tarifa
+licitacao,tipo,11,(1),Menor Valor da Tarifa e Maior Oferta de Outorga
+licitacao,tipo,12,(1),Menor Valor da Tarifa e Melhor Técnica
+licitacao,tipo,13,(1),Menor Taxa
+licitacao,tipo,14,(1),Não se aplica
+licitacao,contratacao,1,(1),Por Itens
+licitacao,contratacao,2,(1),Por Lotes
+licitacao,contratacao,3,(1),Integral sem Itens
+licitacao,contratacao,4,(1),Integral com Itens
+licitacao,contratacao,5,(1),Integral sem Itens com Percentual Proposto
+licitacao,contratacao,6,(1),Por Lotes com Percentual Proposto
+licitacao,contratacao,7,(1),Por Itens com Percentual Proposto
+licitacao,contratacao,8,(1),Integral com Itens com Percentual Proposto
+licitacao,tipo_cadastro,1,(1),Cadastro Inicial
+licitacao,tipo_cadastro,2,(1),Retificação
+licitacao,forma_pagamento,1,(1),À vista
+licitacao,forma_pagamento,2,(1),Duas parcelas
+licitacao,forma_pagamento,3,(1),Três parcelas
+licitacao,forma_pagamento,4,(1),Parcelado
+licitacao,forma_pagamento,5,(1),Mensal
+licitacao,forma_pagamento,6,(1),Quinzenal
+licitacao,forma_pagamento,7,(1),Entrada e 30 60 dias
+licitacao,forma_pagamento,8,(1),Na Entrega
+licitacao,forma_pagamento,9,(1),Após a prestação do serviço
+licitacao,forma_pagamento,10,(1),10 dias
+licitacao,forma_pagamento,11,(1),Contra apresentação de NF
+licitacao,forma_pagamento,12,(1),Conforme o Edital
+licitacao,forma_pagamento,13,(1),Conforme Cronograma
+licitacao,forma_pagamento,14,(1),Conforme Contrato
+licitacao,forma_pagamento,15,(1),Até 15 dias
+licitacao,forma_pagamento,16,(1),30 dias
+licitacao,forma_pagamento,17,(1),30 após a emissão da Nota Fiscal
+licitacao,forma_pagamento,18,(1),Até 30 dias após o recebimento definitivo dos bens ou serviços
+licitacao,forma_pagamento,19,(1),15 dias após a apresentação do documento fiscal
+licitacao,forma_pagamento,20,(1),Até o dia 20 do mês subsequente a entrega do objeto ou prestação do serviço
+licitacao,forma_pagamento,21,(1),Até 5 dias após a liquidação da despesa
+licitacao,forma_pagamento,22,(1),Até 10 dias do mês subsequente mediante Nota Fiscal
+licitacao,forma_pagamento,23,(1),Até o décimo terceiro dia do mês subsequente da prestação de serviços
+licitacao,forma_pagamento,24,(1),Mediante a apresentação do relatório de medição
+licitacao,forma_pagamento,25,(1),Mediante a entrega do relatório final
+licitacao,forma_pagamento,26,(1),Não Informado
+licitacao_participante,habilitado,1,(1),Habilitado
+licitacao_participante,habilitado,0,(1),Não Habilitado
+licitacao_participante,classificado,1,(1),Classificado
+licitacao_participante,classificado,0,(1),Não Classificado 
+licitacao_participante,vencedor,1,(1),Vencedor
+licitacao_participante,vencedor,0,(1),Não Vencedor
+licitacao_participante,tipo,1,(1),PJ
+licitacao_participante,tipo,2,(1),PF

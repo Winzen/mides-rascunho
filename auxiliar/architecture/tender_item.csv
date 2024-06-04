@@ -1,0 +1,27 @@
+name,bigquery_type,description,temporal_coverage,covered_by_dictionary,directory_column,measurement_unit,has_sensitive_data,observations,coluna_ce,coluna_pe,coluna_mg,coluna_pr,coluna_rs,coluna_pb,coluna_to,coluna_sc
+ano,int64,Ano,(1),no,br_bd_diretorios_data_tempo.ano:ano,year,no,,[nome do arquivo],,num_ano_referencia,nrAnolicitacao,ANO_LICITACAO,,,
+sigla_uf,string,Sigla da Unidade de Federação,(1),no,br_bd_diretorios_brasil.uf:sigla,,no,,,,,,,,,
+id_municipio,string,ID Município - IBGE 7 Dígitos,(1),no,br_bd_diretorios_brasil.municipio:id_municipio,,no,"Em SC essa variável foi obtida a partir da string com nome municipio. No CE os códigos não são do IBGE, mas há um arquivo com as correspondências.",,,[nome do arquivo],cdIBGE,CD_MUNICIPIO_IBGE,,,
+orgao,string,ID Órgão,2014(1),yes,,,no,,,,seq_orgao,,CD_ORGAO,,,
+unidade_gestora,string,ID Unidade Gestora,2015(1),no ,,,no,,,,,,,,,Unidade Gestora
+id_unidade_gestora,string,ID Unidade Gestora,2013(1),yes,,,no,,,,,idPessoa,,,,
+id_licitacao_bd,string,ID Licitação ,(1),no,,,no,Variável construída. Ver documentação.,,,,,,,,
+id_licitacao,string,Código da Licitação,(1),no,,,no,No RS essa variável foi construída a partir do NR_LICITACAO. Ver documentação.,numero_licitacao,,seq_licitacao,idlicitacao,,,,Número do Edital
+id_dispensa,string,Código da Dispensa,2014(1),no,,,no,,,,seq_dispensa,,,,,
+id_item_bd,string,ID Item,(1),no,,,no,Variável construída. Ver documentação.,,,,,,,,
+id_item,string,Código do Item,(1),no,,,no,"Existente apenas em MG. Para os demais estados, esta variável foi construída. Ver documentação.",,,seq_item_licitacao,,,,,
+descricao,string,Descrição do Item,(1),no,,,no,,descricao_item_licitacao,,dsc_item,dsitem,DS_ITEM,,,Descrição do Item
+numero,int64,Número do item,(1),no,,,no,,numero_sequencial_item_licitacao,,num_item,nritem,NR_ITEM,,,Item
+numero_lote,int64,Número do lote,2013(1),no,,,no,,,,num_lote,nrlote,NR_LOTE,,,
+unidade_medida,string,Unidade de medida,(1),no,,,no,,descricao_unidade_item_licitacao,,dsc_unid_medida,dsUnidadeMedida,SG_UNIDADE_MEDIDA,,,Unidade de Medida
+quantidade_cotada,int64,Quantidade Cotada,2014(1),no,,,no,,,,num_quant_item_cotado,,QT_ITENS,,,
+valor_unitario_cotacao,float64,Valor Unitário Cotação,2014(1),no,,brl,no,,,,"vlr_cot_preco_unit, 
+ vlr_item",,VL_UNITARIO_ESTIMADO,,,
+quantidade,int64,Quantidade Homologada,(1),no,,,no,No RS essa variável é o valor total dividido pelo valor unitário.,numero_quantidade_item_licitacao,,num_quant_item,nrQuantidadeVencedorLicitacao,,,,Quantidade
+valor_unitario,float64,Valor Unitário Homologado,(1),no,,brl,no,,valor_unitario_item_licitacao,,vlr_unitario,,VL_UNITARIO_HOMOLOGADO,,,Valor Unitário
+valor_total,float64,Valor Total,(1),no,,brl,no,Em MG essa variável é o valor_unitario multiplicado pela quantidade. No PR essa variável é o valor_vencedor multiplicado pela quantidade.,valor_vencedor_item_licitacao,,,,VL_TOTAL_HOMOLOGADO,,,Valor Total
+quantidade_proposta,int64,Quantidade da proposta,2013(1),no,,,no,,,,,nrQuantidadePropostaLicitacao,,,,
+valor_proposta,float64,Valor unitário da proposta,2013(1),no,,brl,no,,,,,vlPropostaItem,,,,
+valor_vencedor,float64,Valor Homologado,2013(1),no,,brl,no,,,,,vlLicitacaoVencedorLicitacao,,,,
+nome_vencedor,string,Nome do vencedor,(1),no,,,no,,nome_negociante,,nom_vencedor,nmPessoa,NM_PESSOA,,,Razão Social Participante
+documento,string,CPF/CNPJ do vencedor,(1),no,,,yes,,numero_documento_negociante,,num_doc_vencedor,nrDocumento,NR_DOCUMENTO,,,CPF/CNPJ Participante

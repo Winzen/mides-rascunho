@@ -1,0 +1,19 @@
+name,bigquery_type,description,temporal_coverage,covered_by_dictionary,directory_column,measurement_unit,has_sensitive_data,observations,coluna_ce,coluna_pe,coluna_mg,coluna_pr,coluna_rs,coluna_pb,coluna_to,coluna_sc
+ano,int64,Ano,(1),no,br_bd_diretorios_data_tempo.ano:ano,year,,,[nome do arquivo],[nome do arquivo],num_ano_referencia,nranolicitacao,ANO_LICITACAO,ano_homologacao_licitacao,,
+sigla_uf,string,Sigla da Unidade de Federação,(1),no,br_bd_diretorios_brasil.uf:sigla,,,,,,,,,,,
+id_municipio,string,ID Município - IBGE 7 Dígitos,(1),no,br_bd_diretorios_brasil.municipio:id_municipio,,,"Na PB, no TO e em SC, essa variável foi obtida a partir da string com o nome do municipio. No CE e em PE os códigos não são do IBGE, mas há um arquivo com as correspondências.",,[arquivo municipios],[nome do arquivo],cdibge,CD_MUNICIPIO_IBGE,,,
+orgao,string,Órgão,2014(1),yes,,,,,,,seq_orgao,,CD_ORGAO,,,
+unidade_gestora,string,Nome Unidade Gestora,2017(1),,,,,,,,,,,,Unidade gestora,Unidade Gestora
+id_unidade_gestora,string,ID Unidade Gestora,2012(1),yes,,,,,,codigoug,,idEntidade,,cd_ugestora,,
+id_licitacao_bd,string,ID Licitação,(1),no ,,,,Variável construída. Ver documentação.,,,,,,,,
+id_licitacao,string,Código da Licitação,(1),no ,,,,,numero_licitacao,codigopl,seq_licitacao,idLicitacao,NR_LICITACAO,protocolo_licitacao,ID SICAP-LCO,Número do Edital
+id_dispensa,string,Código da Dispensa,2014(1),no ,,,,,,,seq_dispensa,,,,,
+razao_social,string,Razão Social,(1),no ,,,,,nome_negociante,razaosocial,"nom_pessoa, nom_vencedor",nmParticipanteLicitacao,,nome_proponente,Participantes;Vencedores,Razão Social Participante
+documento,string,CPF/CNPJ do participante,(1),no ,,,yes,,numero_documento_negociante,numerodocumentoajustado,num_documento,nrDocParticipanteLicitacao,NR_DOCUMENTO,cpf_cnpj_proponente,Participantes;Vencedores,CPF/CNPJ Participante
+habilitado,int64,Participante habilitado,2012(1),yes,,,,,,resultadohabilitacao,[arquivo habilitados],dsTipoSituacaoParticipante,TP_RESULTADO_HABILITACAO,,,
+classificado,int64,Participante classificado,2013(1)2016,yes,,,,,,,,dsTipoSituacaoParticipante,,,,
+vencedor,int64,Participante Vencedor,2012(1),yes,,,,,,adjudicada,,,,situacao_proposta,Participantes;Vencedores,Vencedor
+endereco,string,Endereço,(1),no ,,,,,endereco_negociante,,,,,,,
+cep,string,CEP,(1),no ,,,,,cep_negociante,,,,,,,
+municipio_participante,string,Município do Participante,(1),no ,,,,,nome_municipio_negociante,,,,,,,
+tipo,string,PF ou PJ,(1),yes,,,,"Em PE, MG, PB, TO e SC essa variável é construída a partir do comprimento da variável documento.",codigo_tipo_negociante,,,sgDocParticipanteLicitacao,TP_DOCUMENTO,,,

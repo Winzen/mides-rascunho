@@ -1,0 +1,905 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../procurement/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.23">
+    
+    
+      
+        <title>Budget execution - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#budget-execution" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../images/logo1_mides_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Budget execution
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Modo noturno"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo noturno" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../images/logo1_mides_white.png" alt="logo">
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    MiDES
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            MiDES
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Budget execution
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Budget execution
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descriptive-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descriptive statistics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../procurement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Procurement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aplication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aplication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../original_source/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Original Sources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descriptive-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descriptive statistics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="budget-execution">Budget Execution</h1>
+<p>Budget execution refers to the implementation of the annual budget that is approved by the local legislature. While much of the analytical work presented in this paper focuses on budget execution of public procurement, the tables on budget execution include all activities performed by municipalities, including payment of salaries, transfers, and others<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p>The budget execution process in Brazil is similar to that in other countries<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. It consists of three distinct steps: commitment, verification, and payment. The commitment (<em>empenho</em>) phase is the moment when governments set aside part of the budget appropriated to them for a specific activity, such as buying goods from a supplier or paying salaries of health workers. From a budgetary perspective, this is often seen as the moment an expenditure is recognized, since committed amounts are deducted from the budget appropriation. The second step of the budget execution is the verification (<em>liquidação</em>). It occurs when the government acknowledges that a certain service or good has been provided. This is the equivalent of recognizing a debt with a provider and is considered an expenditure from an accrual accounting point of view. In fact, if an expenditure was verified but not paid, it is recorded as accounts payable (<em>restos a pagar processados</em>), and, as with firms, increases in this amount might reflect a deterioration in the ability of governments to meet short-term obligations<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. The final step of the budget execution is the payment (<em>pagamento</em>), when governments transfer the money to their suppliers. </p>
+<h2 id="data">Data</h2>
+<p>Our municipal budget execution dataset is organized into three tables: <em>commitment</em>, <em>verification</em>, and <em>payment</em>.</p>
+<p>In the <em>commitment</em> table, one observation is a commitment by one agency in a given municipality. Commitments vary from very large expenses, such as the commitment for the entire wage bill of the mayor's office in a month, to very specific commitments such as the acquisition of replacement parts for a car. Each commitment is often linked to four levels of "functional programming" that map the nature of a commitment (such as Transportation &gt; Road Transportation &gt; Road Recovery &gt; Recovery of a specific road in a given street), as well as a text that explicitly describes the nature of the commitment<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>. After an initial commitment, officials can increase or decrease the amounts committed as well as annul them. Across municipalities in our dataset, the quality of tracking these actions after initial commitment varies, but we include initial, increases, annulments, adjustments, and net amounts for each commitment when these are available. Each commitment is also linked to a unique identifier (<code>id_empenho_bd</code>) that allows users to connect a commitment to verification and payments linked to them.</p>
+<p><img alt="Figure1" src="../images/budget_execution.png" /></p>
+<p align="center"><em>Figure 1: Budget Execution flowchart</em></p>
+
+<p>In the <em>verification</em> table, observations are verifications by some agency in a given municipality, which are always linked to a specific commitment. The key information available for each verification is the date when they happen, the initial value verified, any adjustments to the original value and the final value. One commitment might generate one or more verifications, so each verification is uniquely identified by the variable <code>id_liquidacao_bd</code> and can be connected to commitments by the variable <code>id_empenho_bd</code>.</p>
+<p>Finally, for the <em>payment</em> table, each observation is a payment made to a specific entity. Payments can often (but not always) be linked back to a specific verification. The key information available in the payments table is the date of payment and values. The dataset also includes variables with the names and "document number" of payees - these are often unique national identifiers for individuals (CPF) and firms (CNPJ) but are not available for all payments or municipalities. Again, one verification event can lead to one or multiple payments, so payments are uniquely identified by the variable <code>id_pagamento_bd</code> and can be linked back to verification events by <code>id_liquidacao_bd</code> and to commitments by <code>id_empenho_bd</code>.</p>
+<p>More details on the data architecture with information about the variables, including the original data from each state, can be found at <a href="https://github.com/municipal-budget-execution/mides/tree/main/auxiliary_files/architec">mides/auxiliary_files/architecture</a> </p>
+<h3 id="descriptive-statistics">Descriptive statistics</h3>
+<p>Statistics for the budget execution dataset are presented in Tabela 1. Our budget execution dataset includes over 880 million observations - over 250 million commitments, around 300 million verifications and over 300 million payments. For all three stages of the budget execution, we present the total number of observations and the total number of <em>distinct</em> events - in some cases, we are unable to assess whether two commitment observations, for example, refer to the same commitment or not. In those cases, we set our respective identifier variable to missing to flag to users that we are unsure whether these are unique events that can be tracked across datasets. Using the budget classification discussed previously, we estimate that between 25%-35% of total budget commitment events are related to the procurement of goods and materials - this is a sample we exploit in more detail in the coming Sections. We also show that for an overwhelming proportion of commitments values are non-zero and can be matched to some verification and payment - allowing us to track the entire cycle of budget execution. We also highlight that our dataset currently encompasses over 3.5 trillion BRL in payments (in 2021 prices) or the equivalent of 38% of GDP in 2021, made to over 9 million different unique agents (identified by national tax IDs).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>CE</th>
+<th>DF</th>
+<th>MG</th>
+<th>PB</th>
+<th>PE</th>
+<th>PR</th>
+<th>RJ</th>
+<th>RS</th>
+<th>SC</th>
+<th>SP</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><em>Commitments</em></strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Observations</td>
+<td>7,634,745</td>
+<td>870,042</td>
+<td>39,015,657</td>
+<td>20,323,928</td>
+<td>8,338,666</td>
+<td>35,792,154</td>
+<td>13,335,395</td>
+<td>77,116,438</td>
+<td>7,658,152</td>
+<td>93,043,077</td>
+<td>303,128,254</td>
+</tr>
+<tr>
+<td>Distinct commitments</td>
+<td>7,634,743</td>
+<td>870,042</td>
+<td>39,015,657</td>
+<td>20,319,861</td>
+<td>-</td>
+<td>35,792,154</td>
+<td>9,990,998</td>
+<td>52,333,090</td>
+<td>7,559,354</td>
+<td>92,046,726</td>
+<td>265,562,625</td>
+</tr>
+<tr>
+<td>Related to procurements (%)</td>
+<td>26.7</td>
+<td>23.8</td>
+<td>30.3</td>
+<td>19.1</td>
+<td>19.9</td>
+<td>29.3</td>
+<td>26.1</td>
+<td>26.6</td>
+<td>0.3</td>
+<td>31.3</td>
+<td>27.8</td>
+</tr>
+<tr>
+<td>Greather than zero (%)</td>
+<td>97.8</td>
+<td>86.0</td>
+<td>96.5</td>
+<td>98.7</td>
+<td>95.9</td>
+<td>96.9</td>
+<td>87.3</td>
+<td>96.4</td>
+<td>95.8</td>
+<td>95.6</td>
+<td>95.7</td>
+</tr>
+<tr>
+<td>Has verification information (%)</td>
+<td>96.0</td>
+<td>68.6</td>
+<td>95.0</td>
+<td>63.0</td>
+<td>-</td>
+<td>98.0</td>
+<td>88.9</td>
+<td>97.0</td>
+<td>100.0</td>
+<td>96.8</td>
+<td>92.3</td>
+</tr>
+<tr>
+<td>Has payment information (%)</td>
+<td>92.0</td>
+<td>14.3</td>
+<td>89.0</td>
+<td>95.0</td>
+<td>-</td>
+<td>97.0</td>
+<td>88.7</td>
+<td>96.0</td>
+<td>100.0</td>
+<td>92.1</td>
+<td>89.5</td>
+</tr>
+<tr>
+<td><strong><em>Verifications</em></strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Observations</td>
+<td>15,189,831</td>
+<td>2,743,609</td>
+<td>63,757,882</td>
+<td>13,787,845</td>
+<td>15,229,631</td>
+<td>40,457,210</td>
+<td>13,958,112</td>
+<td>65,789,353</td>
+<td>7,658,152</td>
+<td>90,086,651</td>
+<td>328,658,276</td>
+</tr>
+<tr>
+<td>Distinct verifications</td>
+<td>-</td>
+<td>274,2081</td>
+<td>63,753,322</td>
+<td>-</td>
+<td>-</td>
+<td>40,457,210</td>
+<td>1,031,606</td>
+<td>34,941,675</td>
+<td>-</td>
+<td>87,926,566</td>
+<td>230,852,460</td>
+</tr>
+<tr>
+<td><strong><em>Payments</em></strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Observations</td>
+<td>13,930,424</td>
+<td>4,831,978</td>
+<td>64,127,137</td>
+<td>22,113,067</td>
+<td>21,449,922</td>
+<td>52,545,469</td>
+<td>15,075,127</td>
+<td>74,023,098</td>
+<td>7,658,152</td>
+<td>85,597,392</td>
+<td>361,351,766</td>
+</tr>
+<tr>
+<td>Distinct payments</td>
+<td>13,243,955</td>
+<td>1,067,900</td>
+<td>64,127,137</td>
+<td>22,109,079</td>
+<td>-</td>
+<td>52,545,469</td>
+<td>956,690</td>
+<td>72,428,292</td>
+<td>-</td>
+<td>74,440,056</td>
+<td>300,918,578</td>
+</tr>
+<tr>
+<td>Number of distinct sellers</td>
+<td>585,503</td>
+<td>82,688</td>
+<td>1,710,005</td>
+<td>1,326,612</td>
+<td>-</td>
+<td>758,735</td>
+<td>31,662</td>
+<td>1,541,115</td>
+<td>295,455</td>
+<td>3,363,870</td>
+<td>9,695,645</td>
+</tr>
+<tr>
+<td>Number of distinct municipalities</td>
+<td>182</td>
+<td>1</td>
+<td>853</td>
+<td>223</td>
+<td>181</td>
+<td>399</td>
+<td>92</td>
+<td>497</td>
+<td>276</td>
+<td>645</td>
+<td>3349</td>
+</tr>
+</tbody>
+</table>
+<h3 id="validation">Validation</h3>
+<p>The flagship dataset for information on municipal public finances in Brazil is the <em>Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro</em> (SICONFI)<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>. SICONFI contains self-reported information on municipalities revenues, expenditures, and balance sheets starting in 1989, with details on amounts per category and budget execution phase (i.e. commitment, verification, payment). These data have been extensively used and validated in empirical research using data on public finances in Brazil (Gadenne, 2017; Corbi et al., 2019; Shamsuddin et al.,
+2021). Moreover, the federal government performs several checks to guarantee an adequate level of quality. Our data is much more granular than SICONFI, measuring individual commitments, verification and payments, but once we aggregate at levels such as municipality-year we should expect to match totals from SICONFI. A natural validation of the quality of our dataset therefore is to compare our aggregates with those provided by SICONFI<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>.</p>
+<p>In Figure 1, we present the histogram of the percentage deviation of <em>committed amounts</em> from SICONFI, across states. Our key takeaway is that for nine states (CE, ES, GO, MG, PB, PE,  SC, SP, and TO), our aggregates are almost identical to those from SICONFI - for each state, over 75% of deviations are below 1%, and often precisely zero. For PR, RJ and RS our deviations are centered around zero but with larger mass slightly above or slightly below - in both states three-quarters of deviations are in the range [-0.5%, 5%], but with more mass for larger absolute deviations in some municipality-years. We also present the same deviations but considering total committed amounts at the municipality-year-function level, where one observation is, for example, the total amount committed by one city for the Health function in 2020. </p>
+<p><img alt="Image" src="../images/validation_siconfi_commitment.png" /></p>
+<p align="center"><em> Figure 1: Validation with SICONFI data - commitment</em></p>
+
+<!-- We also provide the distribution of deviations from SICONFI in verification and payment amounts in Figure 2 and Figure 3, respectively. Here our concordance with SICONFI is less precise - while PB and SP show very small deviations, in the remaining states we systematically _overestimate_ total amounts of verification and payments. The distributions of deviations are somewhat similar across states, centered at around 5%-8% and with some mass up to 15%-20% in some municipality-years - meaning that the aggregate amount in our data exceeds that in SICONFI by that amount. These deviations do not seem to be driven by specific municipalities or to be systematically different across years, suggesting that there are consistent differences between our measures of verification and payments and those of SICONFI. -->
+
+<!-- While we are unable to precisely explain those differences, we expect they are partly driven by amounts carried over across fiscal years, the so-called _restos a pagar_. In most states we are  unable to assert whether payments in a given year were committed and/or verified in the previous year; furthermore, annulments of verifications and cancellations of payments can be common, and are not always precisely measured in our dataset. We believe both of these factors might drive the systematic overestimation of aggregate amounts in our dataset compared to SICONFI. Finally, we also highlight that results in both our dataset and SICONFI are self-reported by municipalities, meaning there could be systematic discrepancies not due to errors in one source, but due to inconsistent reporting by subnational agents.
+
+While we document that in some states we systematically overestimate total amounts verified and paid, these deviations $D_{mt}$ are only weakly correlated with municipal characteristics. We perform a predictive OLS exercise regressing $D_{mt}$ on a list of observables including each municipality's log population and log GDP per capita. In \autoref{tab:deviations_correlates} we report results from regressions with only year fixed effects in odd columns and with year and state fixed effects in even columns. In odd columns we find that deviations are negatively correlated with $ln(Population)$ and positively correlated with $ln(GDP)$. For both deviations in commitment and verification amounts, these correlations become much smaller in magnitude and mostly not statistically different from zero once we include state fixed-effects. For deviations in payment amounts, we still observer marginally significant correlations (at 10% significance level) for both population and GDP - in column (6), a one log point increase in GDP correlates with 0.5 p.p. smaller deviation in payments, or about 12% of the mean. A one log point increase in GDP per capita roughly corresponds to going from p25 to p75 of the distribution, so this is a small magnitude.
+
+In sum these results suggest that our data's aggregate deviations from SICONFI totals are partially correlated with municipalities' characteristics, although only weakly. Researchers using our data may want to control for such characteristics depending on the research question at hand. -->
+
+<!-- Footnotes -->
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Brazil adopts a budget classification system (see <a href="https://www.gov.br/economia/pt-br/assuntos/planejamento-e-orcamento/orcamento/legislacao-sobre-orcamento/portariainterm1632001.pdf">here</a> for more details) in which the  economic classification of expenses (<em>elemento de despesa</em>) is comprised of 69 groups that are identified by a two-digit code. For the analyses of the payment delays part of this paper, we restrict the data to three groups related to purchase of goods and materials: consumption material (code 30), material for free distribution (code 32), and equipment and permanent material (code 52).&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>For an overview of recommended budget execution practices and a cross-country comparison, see \citet{potter_guidelines_1999}, Chapter 4.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>As of December 2022, the local and state governments registered as accounts payable to suppliers of goods and services (account <em>Fornecedores e Contas a Pagar a Curto Prazo</em>)
+a total of R$ 75.6 billion (or 0.76% of the GDP).&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>For a detailed discussion of expenditure functions see <a href="https://www1.siop.planejamento.gov.br/mto/lib/exe/fetch.php/mto2023:mto2023-atual.pdf">Manual do Orçamento</a> (<em>in Portuguese</em>).&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>The dataset was formerly called <em>Finanças Brasileiras</em> (Finbra).&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>We note that SICONFI contains self-reported information and as a result can also contain errors. Moreover, some differences may arise due to different  aggregation methods and the inclusion of government entities besides the municipal executive branch, such as state-owned companies.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
+      
+        <script src="../js/termynal.js"></script>
+      
+        <script src="../js/custom.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>

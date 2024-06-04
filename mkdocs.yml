@@ -1,0 +1,72 @@
+site_name: Documentation
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Modo noturno
+    - scheme: slate
+      #primary: deep purple
+      toggle:
+        icon: material/toggle-switch
+        name: Modo claro
+  logo: images/logo1_mides_white.png
+language: pt
+font:
+  text: Lato
+favicon: images/logo1_mides_black.png
+
+  
+
+features:
+    - header.autohide
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - navigation.tabs
+
+extra:
+  version: 2.0
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/municipal-budget-execution/data-paper
+nav:
+  - Home:
+    - Introduction: index.md
+    - MiDES:
+      - Budget execution: budget_execution.md
+      - Procurement: procurement.md
+      - Aplication: aplication.md
+    - Original Sources: original_source.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.extra
+  #- mkdocs_click
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.arithmatex
+  - pymdownx.tilde:
+      subscript: true
+  
+extra_javascript:
+- js/termynal.js
+- js/custom.js
+- https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
+
+
+extra:
+  arithmatex:
+    inline: ['$', '$']
+    block: ['$$', '$$']
+
+# extra_css:
+# - css/termynal.css
+# - css/custom.css

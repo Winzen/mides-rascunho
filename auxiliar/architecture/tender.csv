@@ -1,0 +1,34 @@
+name,bigquery_type,description,temporal_coverage,covered_by_dictionary,directory_column,measurement_unit,has_sensitive_data,observations,coluna_ce,coluna_pe,coluna_mg,coluna_pr,coluna_rs,coluna_pb,coluna_to,coluna_sc
+ano,int64,Ano,(1),no,br_bd_diretorios_data_tempo.ano:ano,year,,,[nome do arquivo],[nome do arquivo],num_ano_referencia,nrAnoLicitacao,ANO_LICITACAO,[nome do arquivo],,
+mes,int64,Mês,2014(1),no,br_bd_diretorios_data_tempo.mes:mes,month,,,,,num_mes_referencia,,,,,
+sigla_uf,string,Sigla da Unidade de Federação,(1),no,br_bd_diretorios_brasil.uf:sigla,,,,,,,,,,,
+id_municipio,string,ID Município - IBGE 7 Dígitos,(1),no,br_bd_diretorios_brasil.municipio:id_municipio,,,"Na PB e no TO, essa variável foi obtida a partir da string nome_municipio. No CE e em PE os códigos não são do IBGE, mas há um arquivo com as correspondências.",codigo_municipio,codigotce,cod_municipio,cdibge,CD_MUNICIPIO_IBGE,,,
+orgao,string,Órgão,2014(1),yes,,,,,,,seq_orgao,,CD_ORGAO,,,
+unidade_gestora,string,Nome Unidade Gestora,2017(1),no,,,,,,,,,,,Unidade gestora,Unidade Gestora
+id_unidade_gestora,string,ID Unidade Gestora,2012(1),yes,,,,,,codigoug,seq_unidade,identidade,,cd_ugestora,,
+id_licitacao_bd,string,ID Licitação ,(1),no,,,,Variável construída. Ver documentação,,,,,,,,
+id_licitacao,string,Código da Licitação,(1),no,,,,No RS essa variável foi construída a partir do NR_LICITACAO. Ver documentação.,numero_licitacao,codigopl,seq_licitacao,idlicitacao,,protocolo_licitacao,ID SICAP-LCO,Número do Edital
+id_dispensa,string,Código da Dispensa,2014(1),no,,,,Em MG as dispensas encontram-se em arquivos separados,,,seq_dispensa,,,,,
+ano_processo,int64,Ano do processo,2012(1),no,,year,,No TO o ano do processo foi construído a partir dos últimos 4 dígitos do número do processo administrativo,,anoprocesso,num_ano_processo,,ANO_PROCESSO,,Processo administrativo ,
+data_abertura,date,Data de Abertura,(1),no,,day,,,data_realizacao_licitacao,,,,DT_ABERTURA,,Data da abertura,
+data_edital,date,Data de Emissão do Edital,2012(1),no,,day,,,,dataemissaoedital,dat_pub_edital,dtEdital,,,Data da publicação,
+data_homologacao,date,Data de Publicação da Homologação,2013(1),no,,day,,,data_homologacao,datapublicacaohomologacao,,dtOcorrencia,DT_HOMOLOGACAO,data_homologacao_licitacao,Data da homologação,
+data_publicacao_dispensa,date,Data de Publicação da Dispensa,2014(1),no,,day,,,,,dat_pub_termo,,,,,
+descricao_objeto,string,Especificação do Objeto Licitado,(1),no,,,,,descricao1_objeto_licitacao,descricaoobjeto,dsc_objeto_licitacao,dsObjeto,DS_OBJETO,objeto_licitacao,Objeto,Objeto
+natureza_objeto,string,Natureza do Objeto,2012(1),yes,,,,,,nomenatureza,dsc_nat_objeto,dsclassificacaoobjetolicitacao,TP_OBJETO,,Tipo Objeto Licitação,Tipo Objeto Licitação
+modalidade,string,Modalidade da Licitação,(1),yes,,,,,modalidade_licitacao; modalidade_processo_administrativo,nomemodalidade,dsc_modalidade,dsmodalidadelicitacao,CD_TIPO_MODALIDADE,nome_modalidade_licitacao,Modalidade,Modalidade
+natureza_processo,string,Natureza do Processo,2013(1),yes,,,,"No TO é possível construir essa variável a partir da descrição da modalidade (Ex: ""Licitação > Concorrência > ATA-SRP"").",,,dsc_nat_processo,dsnaturezalicitacao,TP_NATUREZA,,,
+tipo,string,Tipo de Licitação - Critério de Julgamento,(1),yes,,,,,tipo_licitacao,,dsc_tipo_licitacao,dsavaliacaolicitacao,TP_LICITACAO,,Tipo de licitação,Tipo de Licitação
+forma_pagamento,string,Forma de Pagamento,2014(1),yes,,,,,,,dsc_forma_pagamento,,,,,
+valor_orcamento,float64,Valor do Orçamento,2012(1),no,,brl,,,valor_orcado_estimado,valororcamentoestimativo,vlr_recurso,vllicitacao,VL_LICITACAO,valor_estimado_licitacao,Valor orçado,Valor Previsto
+valor,float64,Valor da Licitação,2012(1),no,,brl,,"Em MG, PR e SC essa variável vem da agrageação dos valores da base de itens",,totaladjudicadolicitacao,,,VL_HOMOLOGADO,valor_licitado_licitacao,Somatório da contratação,
+valor_corrigido,float64,Valor Corrigido,2012(1),no,,brl,,Mínimo entre valor e valor_orcamento,,,,,,,,
+situacao,string,Situação da Licitação,2012(1),yes,,,,,,situacaolicitacao,,dstiposituacaolicitacao,TP_RESULTADO_GLOBAL,situacao_fracassada_licitacao,,Situação Processo Licitatório
+estagio,string,Estágio da Licitação,2012(1),yes,,,,,,estagiolicitacao,,,,,,
+preferencia_micro_pequena,string,Preferência de contratação para as microempresas e empresas de pequeno porte,2014(1),no,,,,,,,dsc_ind_pref_micro,,TP_BENEFICIO_MICRO_EPP,,,
+exclusiva_micro_pequena,string,Destinação exclusiva a Microempresas e empresas de pequeno porte,2014(1),no,,,,,,,dsc_ind_exclusiva_micro,,TP_BENEFICIO_MICRO_EPP,,,
+contratacao,string,Contratação por Itens ou Lotes,2012(1),yes,,,,,,caracteristicaobjeto,,,TP_CARACTERISTICA_OBJETO,,,
+quantidade_convidados,int64,Número de convidados (modalidade convite),2014(1),no,,,,,,,num_convidados,,,,,
+tipo_cadastro,string,Tipo Cadastro (inicial ou retificação),2014(1),yes,,,,,,,dsc_tipo_cadastro,,,,,
+carona,string,Licitação Carona ,(1),no,,,,Na PB há uma indicação sobre adesão à ata de registro de preços na variável modalidade. O mesmo vale para o RS. No TO há indicações sobre adesão  à ata de registro de preços nas variáveis descrição do objeto e modalidade.,modalidade_processo_administrativo,,,,,,,
+covid_19,string,Licitação ou dispensa no âmbito da COVID-19,2014(1),no,,,,"Na PB algumas dispensas constam como ""Dispensa COVID-19""",,,,,BL_COVID19,,,

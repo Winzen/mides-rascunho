@@ -1,0 +1,937 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../aplication/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.23">
+    
+    
+      
+        <title>Original Sources - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#original-sources" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../images/logo1_mides_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Original Sources
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Modo noturno"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo noturno" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../images/logo1_mides_white.png" alt="logo">
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    MiDES
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            MiDES
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../budget_execution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Budget execution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../procurement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Procurement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aplication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aplication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Original Sources
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Original Sources
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ce-ceara" class="md-nav__link">
+    <span class="md-ellipsis">
+      CE - Ceará
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#df-distrito-federal" class="md-nav__link">
+    <span class="md-ellipsis">
+      DF - Distrito Federal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#es-espirito-santo" class="md-nav__link">
+    <span class="md-ellipsis">
+      ES - Espírito Santo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#go-goias" class="md-nav__link">
+    <span class="md-ellipsis">
+      GO - Goiás
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mg-minas-gerais" class="md-nav__link">
+    <span class="md-ellipsis">
+      MG - Minas Gerais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ms-mato-grosso-do-sul" class="md-nav__link">
+    <span class="md-ellipsis">
+      MS - Mato Grosso do Sul
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pb-paraiba" class="md-nav__link">
+    <span class="md-ellipsis">
+      PB - Paraíba
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pe-pernambuco" class="md-nav__link">
+    <span class="md-ellipsis">
+      PE - Pernambuco
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pi-piaui" class="md-nav__link">
+    <span class="md-ellipsis">
+      PI - Piauí
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pr-parana" class="md-nav__link">
+    <span class="md-ellipsis">
+      PR - Paraná
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rj-rio-de-janeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      RJ - Rio de Janeiro
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rn-rio-grande-do-norte" class="md-nav__link">
+    <span class="md-ellipsis">
+      RN - Rio Grande do Norte
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ro-rondonia" class="md-nav__link">
+    <span class="md-ellipsis">
+      RO - Rondônia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rs-rio-grande-do-sul" class="md-nav__link">
+    <span class="md-ellipsis">
+      RS - Rio Grande do Sul
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sc-santa-catarina" class="md-nav__link">
+    <span class="md-ellipsis">
+      SC - Santa Catarina
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sp-sao-paulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      SP - São Paulo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-tocantins" class="md-nav__link">
+    <span class="md-ellipsis">
+      TO - Tocantins
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ce-ceara" class="md-nav__link">
+    <span class="md-ellipsis">
+      CE - Ceará
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#df-distrito-federal" class="md-nav__link">
+    <span class="md-ellipsis">
+      DF - Distrito Federal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#es-espirito-santo" class="md-nav__link">
+    <span class="md-ellipsis">
+      ES - Espírito Santo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#go-goias" class="md-nav__link">
+    <span class="md-ellipsis">
+      GO - Goiás
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mg-minas-gerais" class="md-nav__link">
+    <span class="md-ellipsis">
+      MG - Minas Gerais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ms-mato-grosso-do-sul" class="md-nav__link">
+    <span class="md-ellipsis">
+      MS - Mato Grosso do Sul
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pb-paraiba" class="md-nav__link">
+    <span class="md-ellipsis">
+      PB - Paraíba
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pe-pernambuco" class="md-nav__link">
+    <span class="md-ellipsis">
+      PE - Pernambuco
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pi-piaui" class="md-nav__link">
+    <span class="md-ellipsis">
+      PI - Piauí
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pr-parana" class="md-nav__link">
+    <span class="md-ellipsis">
+      PR - Paraná
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rj-rio-de-janeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      RJ - Rio de Janeiro
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rn-rio-grande-do-norte" class="md-nav__link">
+    <span class="md-ellipsis">
+      RN - Rio Grande do Norte
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ro-rondonia" class="md-nav__link">
+    <span class="md-ellipsis">
+      RO - Rondônia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rs-rio-grande-do-sul" class="md-nav__link">
+    <span class="md-ellipsis">
+      RS - Rio Grande do Sul
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sc-santa-catarina" class="md-nav__link">
+    <span class="md-ellipsis">
+      SC - Santa Catarina
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sp-sao-paulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      SP - São Paulo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-tocantins" class="md-nav__link">
+    <span class="md-ellipsis">
+      TO - Tocantins
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="original-sources">Original Sources</h1>
+<p>This documentation contains information about the main files and sources used in the construction of public procurement and budget execution tables. All details about treatment and data configuration is available <a href="https://github.com/municipal-budget-execution/mides/tree/main/code/treatment">here</a>. Additionally, we list open questions and limitations encountered throughout the project by state.</p>
+<h2 id="ce-ceara">CE - Ceará</h2>
+<p><img alt="TCE-CE" src="../images/original_source_ce.png" />
+Available at https://api.tce.ce.gov.br/ since 2009. The State Court offers an API to get the data. </p>
+<p>The <strong>bid</strong> from files (<em>licitacoes</em>) bring together general information about competitive bids and exemptions/non-enforceability. For the <strong>bid-iten</strong> table we merge <em>itens_licitacoes</em> and <em>licitantes</em> files. The first contains information about the bid items and the second about the winners. For the <strong>bid-participant</strong> we remove duplicates at the id, municipality and year level, e.g., participants who win more than one item in the same bid. The construction of <code>id_licitacao_bd</code> not generate unique id (around 0.87% are duplicated) analyzing the relevant variables as municipality, entity, year. For example, we have a bid with same number, description and values (described better <a href="https://municipios-transparencia.tce.ce.gov.br/index.php/municipios/licitacoes/mun/031/versao/2019">here</a>), but directioned to different entities:<br />
+FMS04.03.002/19<br />
+PMB04.03.002/19<br />
+FMA04.03.002/19<br />
+FME04.03.002/19
+These cases give reasons to believe that we have the same bid, altought we exclude here the observations duplicated. </p>
+<p>In <strong>commitment</strong> table we use <em>notas_empenhos</em> and <em>anulacoes_empenho</em>, while <strong>verification</strong> is based in <em>liquidacoes</em> and <em>estornos_liquidacoes</em>, as <strong>payment</strong> table is from <em>notas_pagamentos</em> and <em>estornos_pagamentos</em>. All this observations is identified by a commitment number not unique. We create <em>id_empenho_bd</em> concatenating some variables as municipality, year and entity ensuring the uniqueness of observations. </p>
+<h2 id="df-distrito-federal">DF - Distrito Federal</h2>
+<p><img alt="TCE-DF" src="../images/original_source_df.png" />
+Available at https://www.transparencia.df.gov.br/#/downloads#des since 2009. The State Court offers the data for download in the click-point model. In addition, offering a visualization panel with the main results of expenses and revenues in the municipality of Brasília. </p>
+<p>We don't have <strong>bid</strong> data yet. The <strong>commitment</strong> table is the result of files: <em>Despesa_Empenho</em>, <em>Despesa_Empenho_Descricao</em>, and <em>Despesa_Empenho_Subelement</em> which together classify completely the observation. As the files <em>Despesa_Nota_Lancamento_Evento</em> and <em>Despesa_Nota_Lancamento_x_Nota_Empenho</em> show the required information about <strong>verification</strong>. This last file contains the identification between commitment and verification observations. The payment table is based on <em>Despesa_Pagamento</em>. Some observations are broken because of the original data format. </p>
+<h2 id="es-espirito-santo">ES - Espírito Santo</h2>
+<p>The data were made available upon request to the Information Access System with protocol 00075.000006/2024-99 on the Espírito Santo Court of Auditors website.</p>
+<p>The only limitation of the data concerns about dates and description. The tables provided from 2018 do not include commitment, verification or payment dates, only year and month. The field <em>descricao</em> in the data provides the justification for the use of public money, giving more details beyond the function or project in which the commitment is used, however this variable does not exist in the data provided.</p>
+<h2 id="go-goias">GO - Goiás</h2>
+<p><img alt="TCE-GO" src="../images/original_source_go.png" />
+Available at https://www.tcmgo.tc.br/pentaho/api/repos/cidadao/app/index.html since 2019. The data collected is the result of scraping the State Court website with information for citizens.</p>
+<p>All data is offered in a single table with no verification or payment date. A limitation of the data is that there is no bidding information that can connect with bid data to be added in the future.</p>
+<h2 id="mg-minas-gerais">MG - Minas Gerais</h2>
+<p><img alt="TCE-MG" src="../images/original_source_mg.png" />
+Available at https://dadosabertos.tce.mg.gov.br/ since 2014. The State Court offers download data by municipality or all files by year and theme. The files are disagregated but the conecction is made by an id created by own State Court. Some municipalities seems to have incomplete data for recent years with discrepancies in values and total of observations.</p>
+<p>In the file <em>licitacao.licitacao</em> we have all competitive bids and the file <em>licitacao.dispensa</em> all observations of exemption or ineligibility. In the files <em>licitacao.recLicitacao</em> and <em>licitacao.recDispensa</em> we obtained the bid estimated value. If we aggregate by bid the total value we obtain the homologated value through the files <em>licitacao.homologLicitacao</em> and <em>licitacao.fornDispensa</em>.  To compose <strong>bid-item</strong> table we use <em>licitacao.itemLicitacao</em>, <em>licitacao.cotacaoLicitacao</em>, <em>licitacao.refLicitacao</em>, <em>licitacao.homologLicitacao</em>, <em>licitacao.itemDispensa</em>, <em>licitacao.cotDispensa</em>, and <em>licitacao.fornDispensa</em>. We merge these files to obtain your respective quotations or reference prices. We also include the winners, quantities and the values. For the <strong>bid-participant</strong> we have all qualified participants by bidding in <em>licitacao.habLicitacao</em>. We can find out which of these are winners by merging with the item bidding table. We detected inconsistencies between ‘total_value’ and ‘budget_value with more details <a href="https://docs.google.com/document/d/1jcNyUQOOXfAKCQmjQD4eIUIx5gqVdqf3Re7o8KioaK0/edit?usp=sharing">here</a>. The original data has 1.2M observations, but using document and company name there are only 330,747 unique participants. Some participants appear more than 3,000 times on the base. Examples: BIOHOSP PRODUTOS HOSPITALARES LTDA, ALFALAGOS LTDA. Some observations we construct an identification about participant type (CPF or CNPJ) due to a discrepancy in the total number of digits. </p>
+<p>For the budget execution part we join the <em>despesa</em> files trough the variable <em>seq_empenho</em>. The files with <em>rsp</em> in the name shows verifications and payments from another periods that are verified or paid the sequence. Every observation has a sequence that makes that observation unique. For the sake of caution, we still created the id_bd variable</p>
+<h2 id="ms-mato-grosso-do-sul">MS - Mato Grosso do Sul</h2>
+<p>In contact with <a href="https://www.tce.ms.gov.br/ouvidoria/manifestacoes/nova/3">TCE-MS</a> through Access Information Law under protocol 2207437, it did not provide information that could satisfy the request about municipalities budget execution.</p>
+<h2 id="pb-paraiba">PB - Paraíba</h2>
+<p><img alt="TCE-PB" src="../images/original_source_pb.png" />
+Available at https://dados.tce.pb.gov.br since 2008, the TCE-PB offers data in an unique file in .txt format. </p>
+<p>To build the <strong>bid</strong> table at the bidding level exclusively, we exclude variables related to participants and also duplicate rows in the set municipality, entity and year, keeping only information about bids. The same file provided for the bid table (<em>Licitacoes_Propostas</em>), contains the information to generate the <strong>bid-participant</strong> table as participants and proposals information. However, there is no data to feed the <strong>bid-item</strong> table.</p>
+<p>From the files <em>TCE-PB-SAGRES-Empenhos_Esfera_Municipal</em> and <em>TCE-PB-SAGRES-Estornos_Esfera_Municipal</em> they form the <strong>commitment</strong> table. The reversal is only recorded in this table, since the moment of the reversal cannot be identified and in the other tables there is no guaranteed uniqueness of the observation.The files of <strong>verification</strong> and <strong>payment</strong> generate from <em>TCE-PB-SAGRES-Liquidacoes_Esfera_Municipal</em> and <em>TCE-PB-SAGRES-Pagamentos_Esfera_Municipal</em>, respectively. In the payment table there is no information regarding the verification number, therefore the variable <code>id_liquidacao_bd</code> cannot be recreated in payment table, therefore it is not created in verification table.</p>
+<h2 id="pe-pernambuco">PE - Pernambuco</h2>
+<p><img alt="TCE-PE" src="../images/original_source_pe.png" />
+Available at https://sistemas.tce.pe.gov.br/DadosAbertos/Exemplo!listar since 2013. The State Court offers an API to get the data. </p>
+<p>Initially, a disparity in the identifier did not allow the creation of an <code>id_empenho_bd</code> nor a cross-section analysis of the data, especially because the <em>Empenho-Resumo</em> file showed all the movement about reinforcements and cancellations, however, it was impossible to connect all phases. We assume now with the updated data, that only <em>VALOREMPENHO</em> variable as commitment final value. As in all states, we create the <code>id_empenho_bd</code> obeying the variables available in all tables.</p>
+<h2 id="pi-piaui">PI - Piauí</h2>
+<p>In contact with <a href="https://www.tcepi.tc.br/">TCE-PI</a> through Access Information Law under protocol 0325/2024, it did not provide information that could satisfy the request about municipalities budget execution.</p>
+<h2 id="pr-parana">PR - Paraná</h2>
+<p><img alt="TCE-PR" src="../images/original_source_pr.png" />
+Available at https://servicos.tce.pr.gov.br/TCEPR/Tribunal/Relacon/Dados/DadosConsulta/Consolidado since 2013, the TCE-PR offers data in .xml format that is converted and harmonized and offered in BigQuery. </p>
+<p>The original data offers a unique <code>id</code> connecting all data between tables without the necessity of more treatment in data, just the adjustments due to the main table format.</p>
+<h2 id="rj-rio-de-janeiro">RJ - Rio de Janeiro</h2>
+<p>Rio de Janeiro offers a particularity, as do a few other states: the capital has the municipal Court of Auditors, while the other municipalities are supervised by the State Court of Auditors.</p>
+<p><img alt="TCE-RJ_State" src="../images/original_source_rj1.png" />
+Available at http://tce.rj.gov.br/auditormunicipio/Default.aspx since 2002, a script was needed to collect data using scraping techniques for download from all 91 municipalities. The data is decentralized for each phase of budget execution: commitment (also cancellation), verification and payment, as well as for the management units, i.e., for each municipality the data is made available through public administration entities.</p>
+<p>A limitation of the data concerns the creditor's documentation. In general terms, the <em>CPF</em> or <em>CNPJ</em> is not provided in the data and despite the company name being present, the search for the identifier could lead to errors.</p>
+<p><img alt="TCE-RJ_Municipality" src="../images/original_source_rj2.png" />
+Budget execution data for the capital of Rio de Janeiro is available at http://www.rio.rj.gov.br/web/contasrio/dados-abertos#titleo on the site <em>Contas Rio</em> operated by the General Comptroller of the municipality.</p>
+<p>The data is available since 2008, however exists two versions of data. Before 2017 the data is offered just in wide format with only commitment date in <em>open_Data_Empenho_</em> file. From 2017, the budget execution is in long format with act description as commtiment, cancellation, verification or payment with respectives dates. In a way, the file <em>open_Data_Desp_por_Ato_</em> is more complete. The Genetral Comptroller offers the data from 2014, but the files of 2014, 2015 and 2016 are corrupted.</p>
+<h2 id="rn-rio-grande-do-norte">RN - Rio Grande do Norte</h2>
+<p>Available at https://apidadosabertos.tce.rn.gov.br/swagger/ui/index#/ since 2016, the State Court offers an API to obtain the data with certain limitations on the variables. The API provides separate tables for commitment, verification, and payment. We have scraped all available commitments, <u>however the verification and payments are in progress to obtain all observations due to the format with all parameters in the verification or payment part</u>.</p>
+<p>The data is considered limited because it does not provide information mainly about the function of the commitment, nor the nature of the expense (<em>elemento_despesa</em>), since this variable is responsible in our research for determining public purchases.</p>
+<p>The API also provides state and municipal data showing data from management units administered by the State; however, we limited ourselves to municipal administration entities. To this end, a table was created based on the original file of institutions, assigning the name of the municipality and its governance.</p>
+<h2 id="ro-rondonia">RO - Rondônia</h2>
+<p><img alt="TCE-RO" src="../images/original_source_ro.png" /></p>
+<p>We developed a script for the Rondônia data that captures municipal-level data for all municipalities, all entities, all years, and months at the <strong>accounting</strong> level available at https://transparencia.tce.ro.gov.br/transparenciatce/Remessa/Pesquisar. The original folder is presented as <em>Sigap_yearmonth_entity_id</em> with all files with fiscal informations, included commitment, verification and payment data in .xml type. The site is limited to data from 2019 and 2020. An auxiliary file is created to ensure the connection and identification between units and their respective municipalities.</p>
+<p>Due to the limited availability of data (only 2 years), the data appears to be incomplete in relation to the total observations. This is because, in validation with Siconfi, our results are underestimated compared to the totals presented by the 52 municipalities of the State.</p>
+<h2 id="rs-rio-grande-do-sul">RS - Rio Grande do Sul</h2>
+<p><img alt="TCE-RS" src="../images/original_source_rs.png" />
+Available at https://dados.tce.rs.gov.br from 2004. The State Court offers a CKAN system to get the data. </p>
+<p>Despite the availability of data since 2004, with a few observations dated from 1995 onwards, the quality of the original data is only guaranteed from 2010. Data validation is guaranteed by comparing the aggregated values ​​at the year-municipality level with the Public Accounts Fiscal System (<em>Siconfi</em>).</p>
+<p>The original file brings all commitments from 497 municipalities in a year. This data is in long format, i.e., the same commitment show repeated many times in file. The variable <em>tipo_operacao</em> classify commitment (<em>E</em>), verification (<em>L</em>) and payment (<em>P</em>). To garantee the unique identification of observation we create many dummies to register duplicated and set <code>id_empenho_bd</code>as null in case if this condition is true.</p>
+<h2 id="sc-santa-catarina">SC - Santa Catarina</h2>
+<p><img alt="TCE-SC" src="../images/original_source_sc2.png" />
+The data collected is from the dashboard developed by <em>TCE-SC</em> available at https://paineistransparencia.tce.sc.gov.br/extensions/appDespesasMunicipaisExternoNovo/index.html since 2021. From the data available in the <em>Detalhes Orçamentários</em> menu, we obtained aggregated results for commitment, verification, and payment. There is only the commitment date, making a cross-section analysis of budget execution impossible.
+A disclaimer is that the data shows some instability. During the scraping exercise, the number of observations in the tables varied between collections and their respective updates. </p>
+<p>The bidding data was captured in the same way available at https://paineistransparencia.tce.sc.gov.br/extensions/AppLicitacoesExterno/index.html. In the case of SC, the data only includes the names of the management units. Additionally, there are significant variations in spelling, such as <em>Fundacao Municipal de Esporte</em> and <em>Fundacao Municipal de Desporto</em>. We then clean this variable by removing the names of the municipalities, such as in the case of <em>Fundo Municipal de Saude de Blumenau</em>, and also correcting for possible spelling differences as in the previous example. The cleaned variable is only used as an auxiliary to generate an ID for each management unit. Thus, all Municipal Health Funds receive the same code, and all Municipal Sports Funds receive the same code. We use this auxiliary ID in the construction of the <code>id_licitacao_bd</code>. In this table, each observation is a bid - a notice number, in a specific municipality and management unit. In the <em>despesa_itens_participante</em> file reports participants at the item level. We excluded information about items and left only information about the participants.</p>
+<h2 id="sp-sao-paulo">SP - São Paulo</h2>
+<p>Just like Rio de Janeiro, the municipality of São Paulo, capital of the State, has a single Comptroller's Office while the other 644 municipalities have a State Audit Court that legislates over them.</p>
+<p><img alt="TCE-SP" src="../images/original_source_sp1.png" />
+Available at https://transparencia.tce.sp.gov.br/apis since 2008. The data is in year-municipality level with the variable <em>tp_despesa</em> classifying commitment, verification and payment, i.e., long format. As in Rio Grande do Sul, we create many dummies to create a unique <code>id_empenho_bd</code> setting null when in case of duplicated. </p>
+<p><img alt="TCM-SP" src="../images/original_source_sp2.png" />
+Available at https://iris.tcm.sp.gov.br/Iris/148870 since 2005. The data for the municipality of São Paulo is in wide format, as we only have the commitment date identified with all values aggregated at the commitment level.</p>
+<h2 id="to-tocantins">TO - Tocantins</h2>
+<p><img alt="TCE-TO" src="../images/original_source_to.png" />
+We created a scraping code to capture data from the commitments, verifications, payments, and bidding tables from the <em>TCE-TO</em> website, available at https://portaldocidadao.tce.to.gov.br/estadomunicipios/index since 2013, with .xls files at the year-municipality level. The data refers to the <em>remessa Consolidada</em>, obtaining the files from the <em>Dados Abertos</em> option.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
+      
+        <script src="../js/termynal.js"></script>
+      
+        <script src="../js/custom.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
