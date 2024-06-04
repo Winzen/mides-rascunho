@@ -1,7 +1,7 @@
 <!-- Header -->
 <p align="center">
   <a href="https://basedosdados.org">
-    <img src="docs/images/logo1_mides_white.png" width="340" alt="MiDES">
+    <img src="/docs/images/logo1_mides_black.png" width="340" alt="MiDES">
   </a>
 </p>
 
@@ -15,24 +15,9 @@ MiDES (_Expenditure Microdata of Subnational Entities_ in English) is a disaggre
 Our data is generated from State Audit Courts (_TCEs_ in Portuguese) with standardization efforts. Unlike the [data-paper repo](https://github.com/municipal-budget-execution/data-paper), which shows the reproducibility codes for the results of the article [MiDES: New Data and Facts from Local Procurement and Budget Execution in Brazil](https://elibrary.worldbank.org/doi/abs/10.1596/1813-9450-10598), published in November 2023 with a photograph of the data until then, this repository aims to show the most current work developed with fiscal data.
 
 ## Data Coverage
-State|Years|Budget data|Procurement data|Original Source
-|:-:|:-:|:-:|:-:|:-|
-BA   |2010(1)||✓|LAI|
-DF   |2009(1)|✓||https://www.transparencia.df.gov.br/#/downloads#des|
-ES   |2018(1)|✓||LAI|
-CE   |2009(1)|✓|✓|https://api.tce.ce.gov.br/|
-GO   |2019(1)|✓||https://www.tcmgo.tc.br/pentaho/api/repos/cidadao/app/index.html|
-MG   |2014(1)|✓|✓|https://dadosabertos.tce.mg.gov.br/|
-PB   |2003(1)|✓|✓|https://dados.tce.pb.gov.br|
-PE   |2013(1)|✓|✓|https://sistemas.tce.pe.gov.br/DadosAbertos/Exemplo!listar|
-PR   |2013(1)|✓|✓|https://servicos.tce.pr.gov.br/TCEPR/Tribunal/Relacon/Dados/DadosConsulta/Consolidado|
-RJ   |2002(1)|✓||https://tce.rj.gov.br/auditormunicipio/Default.aspx|
-RN   |2016(1)|✓||https://apidadosabertos.tce.rn.gov.br/swagger/ui/index#/|
-RO   |2019(1)2020 |✓||https://transparencia.tce.ro.gov.br/transparenciatce/Remessa/Pesquisar|
-RS   |2010(1)|✓|✓|https://dados.tce.rs.gov.br|
-SC   |2015(1)|✓|✓|https://servicos.tce.sc.gov.br/farol_externo/index.html|
-SP   |2008(1)|✓||https://transparencia.tce.sp.gov.br/conjunto-de-dados|
-TO   |2013(1)|✓|✓|https://portaldocidadao.tce.to.gov.br/estadomunicipios/index|
+flag|nome|sigla|online|link_site|update|sistema|ip_estrageiro|link_raspador|link_drive|link_storage|link_licitacao
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+<img src="http://www.educadores.diaadia.pr.gov.br/modules/galeria/uploads/11/normal_1409852743bandeirasantacatarina.png">|Santa Catarina|SC|✓|[:link:](https://servicos.tce.sc.gov.br/farol_externo/index.html)|✓|qlik sense|✓|[:link:](https://colab.research.google.com/drive/1qPmvIOuwZ9lubCFUpTyhnlyJBqJe0Ns4#scrollTo=K6x8DQzjKeyx)|[:link:](https://drive.google.com/drive/u/0/folders/1VvDVFLQ9CHo2TZiyx-IOE9ebIq-yfnSl)|[:link:](https://console.cloud.google.com/storage/browser/basedosdados-dev/staging/world_wb_mides/raw_empenho_sc?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&cloudshell=false&project=basedosdados-dev)|[:link:](https://drive.google.com/drive/u/0/folders/1phCHuuMHJNNFnzd6wm10KvIy7eAWL5o0)
 
 ## Data Access
 The data is available on [BasedosDados](https://basedosdados.org/dataset/d3874769-bcbd-4ece-a38a-157ba1021514?table=14c5d05b-9830-4710-b7ac-7e0ca1bf9d8b)' public data-lake. We follow the methodology of Base dos Dados ([Dahis et al., 2022](https://osf.io/preprints/socarxiv/r76yg)) in harmonization schema and data lake storage. Base dos Dados is a non-profit organization with the mission to universalize access to high-quality data. They provide a platform in Google Cloud with more than 100 treated tables. Between the benefits, we can cross our data with population, GDP, companies, public treasure dataset, etc.  
