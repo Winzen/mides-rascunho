@@ -15,7 +15,7 @@ MiDES (_Expenditure Microdata of Subnational Entities_ in English) is a disaggre
 Our data is generated from State Audit Courts (_TCEs_ in Portuguese) with standardization efforts. Unlike the [data-paper repo](https://github.com/municipal-budget-execution/data-paper), which shows the reproducibility codes for the results of the article [MiDES: New Data and Facts from Local Procurement and Budget Execution in Brazil](https://elibrary.worldbank.org/doi/abs/10.1596/1813-9450-10598), published in November 2023 with a photograph of the data until then, this repository aims to show the most current work developed with fiscal data.
 
 ## Data Coverage
-flag|nome|sigla|online|link_site|update|sistema|ip_estrageiro|link_raspador|link_drive|link_storage|link_licitacao
+flag|nome|sigla|online|link_site|pipeline|sistema|ip_estrageiro|link_raspador|link_drive|link_storage|link_licitacao
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 <img src="http://www.educadores.diaadia.pr.gov.br/modules/galeria/uploads/11/normal_1409852743bandeirasantacatarina.png">|Santa Catarina|SC|✓|[:link:](https://servicos.tce.sc.gov.br/farol_externo/index.html)|✓|qlik sense|✓|[:link:](https://colab.research.google.com/drive/1qPmvIOuwZ9lubCFUpTyhnlyJBqJe0Ns4#scrollTo=K6x8DQzjKeyx)|[:link:](https://drive.google.com/drive/u/0/folders/1VvDVFLQ9CHo2TZiyx-IOE9ebIq-yfnSl)|[:link:](https://console.cloud.google.com/storage/browser/basedosdados-dev/staging/world_wb_mides/raw_empenho_sc?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&cloudshell=false&project=basedosdados-dev)|[:link:](https://drive.google.com/drive/u/0/folders/1phCHuuMHJNNFnzd6wm10KvIy7eAWL5o0)
 
