@@ -20,13 +20,14 @@ Categoria|Detalhe|
 Bandeira|<img src="http://www.educadores.diaadia.pr.gov.br/modules/galeria/uploads/11/normal_1409852740bandeiraacre.png" width=50>
 Nome|Acre
 Sigla| AC
+Municípios| 22
 Cobertura do Raspador| 2014 - 2023
-pipeline|✓
-sistema|qlik sense
-ip_estrageiro|✓
-link_drive|[:link:](https://drive.google.com/drive/u/0/folders/1XRxr0CilhDWyiGfa2XPFcFZRCzUTdpz3)
-link_storage|X
-link_licitacao|X
+Pipeline|✓
+Sistema|qlik sense
+Ip_estrageiro|✓
+Link_drive|[:link:](https://drive.google.com/drive/u/0/folders/1XRxr0CilhDWyiGfa2XPFcFZRCzUTdpz3)
+Link_storage|X
+Link_licitacao|X
 
 # Logica do Site
 
