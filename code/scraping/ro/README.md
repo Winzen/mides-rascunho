@@ -29,10 +29,13 @@ Server|Sem Registros de Quedas
 Ip_estrageiro|✓
 Link_drive|[:link:](https://drive.google.com/drive/u/0/folders/1-ZkJqL6VfGOHua9A0Yca7C5t5XGYM87O)
 Link_storage|[:link:](https://console.cloud.google.com/storage/browser/basedosdados-dev/staging/world_wb_mides/raw_empenho_ro?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&cloudshell=false&project=basedosdados-dev)
-Link_licitacao|[:link:](https://drive.google.com/drive/u/0/folders/1flx-RFUy0NhdLI0EQ4dhXej26FFs6YSh)
+Link_licitacao|X
 
 # Logica do Site
 
-Rio Grande do Norte utiliza da [API](https://apidadosabertos.tce.rn.gov.br/swagger/ui/index) para disponibilizar seus dados.
+No Site de Rondônia foi utilizados de `POST`s para conseguir chegar ao link direto dos ZIPs.
 
-Porém, [API](https://apidadosabertos.tce.rn.gov.br/swagger/ui/index) se encontra atualmente indisponivel.
+Infelizmente, os unicos dados disponveis são 2019 e 2020.
+
+Após a coleta de todos os links de download dos zips.
+È feito o download e armazenamento dos mesmo.
