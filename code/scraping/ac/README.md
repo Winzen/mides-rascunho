@@ -22,6 +22,7 @@ Nome|Acre
 Sigla| AC
 Municípios| 22
 Cobertura do Raspador| 2014 - 2023
+Link_Site| [:link:](http://qlik.tceac.tc.br/extensions/gastospublicos/gastospublicos.html?_ga=2.234985153.1351290455.1696941468-160473323.1696941468&_gl=1*1udkbll*_ga*MTYwNDczMzIzLjE2OTY5NDE0Njg.*_ga_7W9X95Q11R*MTY5Njk0MTQ2Ny4xLjEuMTY5Njk0MTU4NS4wLjAuMA..*_ga_BGWR95NM02*MTY5Njk0MTQ2Ny4xLjEuMTY5Njk0MTU4NS4wLjAuMA..)
 Pipeline|✓
 Sistema|qlik sense
 Server|Ficou Offline algumas vezes
