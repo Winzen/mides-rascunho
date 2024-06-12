@@ -45,5 +45,24 @@ E temos mais de 15 milhoes de Empenhos para ser consultados.
 Para contornar isso, foi usado o [selenium](https://pypi.org/project/selenium/) apenas para gerar tokens do [reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3?hl=pt-br).
 
 Abrimos um quantidade X de navedores, cada navegador pode gerar 21 tokens.
+Usamos das funçoes abaixo dentro do selenium para conseguir gerar tokens. ⬇️
 
+```js
+function carregar_tokens(){
+    for (var i = 0; i < 21; i++) {
+    validar_ids(i + 1)
+    }
+};
+
+async function validar_ids(n_index){
+   await grecaptcha.ready(function() {
+            grecaptcha.execute('6Lc5jcsbAAAAADmXWT8NNXy_8mFEu944y99PVFUr', {action:'validate_captcha'})
+                      .then(function(token) {
+            $('.id_validation' + (n_index)).val(token);
+        });
+    });
+
+};
+carregar_tokens();
+```
 Colocamos os tokens gerado como parametros que são utilizados para gerar links que vão diretamente para os empenhos por via de requisição `GET`
