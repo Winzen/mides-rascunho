@@ -17,7 +17,7 @@
 # Detalhes
 Categoria|Detalhe|
 |:-:|:-:|
-Bandeira|src="http://www.educadores.diaadia.pr.gov.br/modules/galeria/uploads/11/normal_1409852743bandeirasergipe.png" width=50>
+Bandeira|<img src="http://www.educadores.diaadia.pr.gov.br/modules/galeria/uploads/11/normal_1409852743bandeirasergipe.png" width=50>
 Nome|Sergipe
 Sigla| SE
 Municípios| 75
@@ -25,7 +25,7 @@ Cobertura do Raspador| 2008 - 2016
 Link_Site| [:link:](https://www.tcese.tc.br/portaldatransparencia/Default.aspx)
 Pipeline|X
 Sistema| ASP.NET
-Server|Registro de Lentidão
+Server|Sem registros de Quedas
 Ip_estrageiro|✓
 Link_drive|[:link:](https://drive.google.com/drive/u/0/folders/1-3MIVVXrPobqvSfuQCJ1ylW3xxAx2Zwx)
 Link_storage|X
