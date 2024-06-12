@@ -24,7 +24,7 @@ Municípios| 246
 Cobertura do Raspador| 2019 - 2024
 Link_Site| [:link:](https://www.tcmgo.tc.br/pentaho/api/repos/cidadao/app/index.html)
 Pipeline|✓
-Sistema| ?
+Sistema| API
 Server|Sem quedas registradas
 Ip_estrageiro|X
 Link_drive|[:link:](https://drive.google.com/drive/u/0/folders/1-BZ5mjftq98f8en8HLLSmKUwXXLaraU1)
