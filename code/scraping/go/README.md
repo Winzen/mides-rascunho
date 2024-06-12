@@ -33,41 +33,35 @@ Link_licitacao|X
 
 # Logica do Site
 
-Site da Bahia utiliza de [reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3?hl=pt-br).
+Site de Goiás utiliza de uma API para ter acesso aos dados do site.
 
-Basicamente para acessar os elementos da pagina precisamos de um token gerado pelo google que será validado em cada interação.
-Normalmente é gerado um token por pagina, sendo assim você pode apenas fazer uma interação por vez.
-
-Te obrigando a seguir um caminho fixo para chegar até as paginas do devido empenho.
-O reCATCHA também tem a forçar um erro dado um certo numero de empenhos consultados em sequencia. Podendo varias entre 4 ou 6 empenhos em sequencia antes de algum erro acontecer.
-Depois de um erro ocorrer você teria que iniciar todos os filtros novamente, clickar pagina a pagina para voltar onde estava extraindo.
-
-E temos mais de 15 milhoes de Empenhos para ser consultados.
-
-Para contornar isso, foi usado o [selenium](https://pypi.org/project/selenium/) apenas para gerar tokens do [reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3?hl=pt-br).
-
-Abrimos um quantidade X de navedores, cada navegador pode gerar 21 tokens.
-Usamos das funçoes abaixo dentro do selenium para conseguir gerar tokens. ⬇️
-
-```js
-function carregar_tokens(){
-    for (var i = 0; i < 21; i++) {
-    validar_ids(i + 1)
-    }
-};
-
-async function validar_ids(n_index){
-   await grecaptcha.ready(function() {
-            grecaptcha.execute('6Lc5jcsbAAAAADmXWT8NNXy_8mFEu944y99PVFUr', {action:'validate_captcha'})
-                      .then(function(token) {
-            $('.id_validation' + (n_index)).val(token);
-        });
-    });
-
-};
-carregar_tokens();
+Em baixo temos o link base da API
+```py
+url = 'https://www.tcmgo.tc.br/pentaho/plugin/cda/api/doQuery'
 ```
-Colocamos os tokens gerado como parametros que são utilizados para gerar links que vão diretamente para os empenhos por via de requisição `GET`
+Com a função abaixo, apenas com o nome do municipio e o ano, conseguimos forma um link que retorna todos os empenhos referente ao municipio e o ano
 
-Só é possivel formar os links que vão direto ao empenho pegando informaçoes basicas dos empenhos posteriomente de um JSON em um `div`.
-Ele normalmente se encontra na primeira pagina de pesquisa de empenhos. Ele contem informaçoes basicas de todos os empenhos relacionados a consulta.
+```py
+def get_data_from_munipio_ano(municipio: str, ano: int) -> Dados:
+  # Define the URL you want to send a POST request to
+  url = 'https://www.tcmgo.tc.br/pentaho/plugin/cda/api/doQuery'
+
+  # Define the data you want to send in the POST request
+  data = {"paramparamMunicipio":	municipio,
+  "paramparamAno":	ano,
+  "path":	"/system/cidadao/dashboards/Despesas.cda",
+  "dataAccessId":	"sqlEmpenhos",
+  "outputIndexId":	1,
+  "pageSize":	0,
+  "pageStart":	0,
+  "paramsearchBox":	""}
+
+  # Make the POST request
+  # response = requests.post(url, data=data).json()
+  response = http.request('POST', url, fields=data).json()
+  dados = response["resultset"]
+  colunas = [column["colName"] for column in response['metadata']]
+
+  return Dados(municipio, ano, dados, colunas)
+
+```
