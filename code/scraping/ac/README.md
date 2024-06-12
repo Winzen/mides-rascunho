@@ -47,4 +47,4 @@ Para consegui fazer as requisiçoes usamos de uma função chamada `make_envios_
 ```py
 sends_hs = make_envios_get_data(ano_number=ano_number, municipio_number=municipio_number)
 ```
-
+`make_envios_get_data` receber dois paramentros `ano_number` e `municipio_number` esses parametros são responsaveis por alterar uma requisição responsavel por direcionar o ano e o municipio que será extraido
