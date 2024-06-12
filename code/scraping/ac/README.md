@@ -1,3 +1,19 @@
+<!-- Header -->
+<p align="center">
+  <a href="https://basedosdados.org">
+    <img src="/docs/images/logo1_mides_black.png" width="340" alt="MiDES">
+  </a>
+</p>
+
+<p align="center">
+    <em>Microdados de Despesas de Entes Subnacionais.</em>
+</p>
+
+# Index
+
+- [Detalhes](#detalhes)
+- [Logica do Site](#logica-do-site)
+
 # Detalhes
 Categoria|Detalhe|
 |:-:|:-:|
@@ -24,5 +40,11 @@ ws://qlik.tceac.tc.br/app/cb9dbe12-5f79-4af9-93a6-a778ae7ffffa?reloadUri=http%3A
 ```
 Apos conexão estabelecida, fazemos algumas requisiçoes para conseguir o nome dos municipios e as datas disponveis para a extração.
 
-Usamos o nome dos municipios e as datas para iniciar a extração, será extraido todos os anos disponiveis do municipio antes de passar para o proximo municipios disponivel
+Usamos o nome dos municipios e as datas para iniciar a extração, será extraido todos os anos disponiveis do municipio antes de passar para o proximo municipios disponivel.
+
+Para consegui fazer as requisiçoes usamos de uma função chamada `make_envios_get_data`. Ela forma a lista de requisiçoes necessarias para chegar até o dado.
+
+```py
+sends_hs = make_envios_get_data(ano_number=ano_number, municipio_number=municipio_number)
+```
 
