@@ -1,2 +1,28 @@
-## Diretorio em processo de limpeza de codigos e organização
- <p align="left"><img src="https://w7.pngwing.com/pngs/400/751/png-transparent-automation-computer-icons-workflow-graphics-orchestration-skills-icon-business-business-process-auto-part.png" alt="drawing" width="300" height="300"/></p>
+# Detalhes
+Categoria|Detalhe|
+|:-:|:-:|
+Bandeira|<img src="http://www.educadores.diaadia.pr.gov.br/modules/galeria/uploads/11/normal_1409852740bandeiraacre.png" width=50>
+Nome|Acre
+Sigla| AC
+Cobertura do Raspador| 2014 - 2023
+pipeline|✓
+sistema|qlik sense
+ip_estrageiro|✓
+link_drive|[:link:](https://drive.google.com/drive/u/0/folders/1XRxr0CilhDWyiGfa2XPFcFZRCzUTdpz3)
+link_storage|X
+link_licitacao|X
+
+# Logica do Site
+
+Raspador do Acre utiliza de [qlik sense API](https://help.qlik.com/en-US/sense-developer/May2024/Subsystems/EngineJSONAPI/Content/introduction.htm).
+
+Primeiro utilizamos da biblioteca [websockets](https://pypi.org/project/websockets/) para abrir uma conexão com o Socket da api.
+
+*Link da API:* 
+```bash
+ws://qlik.tceac.tc.br/app/cb9dbe12-5f79-4af9-93a6-a778ae7ffffa?reloadUri=http%3A%2F%2Fqlik.tceac.tc.br%2Fextensions%2Fgastospublicos%2Fgastospublicos.html%3F_ga%3D2.234985153.1351290455.1696941468-160473323.1696941468%26_gl%3D1*1udkbll*_ga*MTYwNDczMzIzLjE2OTY5NDE0Njg.*_ga_7W9X95Q11R*MTY5Njk0MTQ2Ny4xLjEuMTY5Njk0MTU4NS4wLjAuMA..*_ga_BGWR95NM02*MTY5Njk0MTQ2Ny4xLjEuMTY5Njk0MTU4NS4wLjAuMA..
+```
+Apos conexão estabelecida, fazemos algumas requisiçoes para conseguir o nome dos municipios e as datas disponveis para a extração.
+
+Usamos o nome dos municipios e as datas para iniciar a extração, será extraido todos os anos disponiveis do municipio antes de passar para o proximo municipios disponivel
+
