@@ -24,6 +24,7 @@ Municípios| 22
 Cobertura do Raspador| 2014 - 2023
 Pipeline|✓
 Sistema|qlik sense
+Server|Ficou Offline algumas vezes
 Ip_estrageiro|✓
 Link_drive|[:link:](https://drive.google.com/drive/u/0/folders/1XRxr0CilhDWyiGfa2XPFcFZRCzUTdpz3)
 Link_storage|X
