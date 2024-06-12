@@ -24,6 +24,7 @@ Municípios| 417
 Cobertura do Raspador| 2010 - 2024
 Pipeline|✓
 Sistema| reCAPTCHA v3
+Server|Ficou Offline algumas vezes
 Ip_estrageiro|X
 Link_drive|[:link:](https://drive.google.com/drive/u/0/folders/1HFhCqiUNC_AZawX43MQxs5hosY0B757V)
 Link_storage|X
