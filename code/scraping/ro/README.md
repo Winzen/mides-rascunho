@@ -21,7 +21,7 @@ Bandeira|<img src="http://www.educadores.diaadia.pr.gov.br/modules/galeria/uploa
 Nome|Rondônia
 Sigla| RO
 Municípios| 52
-Cobertura do Raspador| 2016 - 2023
+Cobertura do Raspador| 2019 - 2020
 Link_Site| [:link:](https://transparencia.tce.ro.gov.br/transparenciatce/Remessa/Pesquisar)
 Pipeline|X
 Sistema| POST
