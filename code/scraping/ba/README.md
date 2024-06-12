@@ -66,3 +66,6 @@ async function validar_ids(n_index){
 carregar_tokens();
 ```
 Colocamos os tokens gerado como parametros que são utilizados para gerar links que vão diretamente para os empenhos por via de requisição `GET`
+
+Só é possivel formar os links que vão direto ao empenho pegando informaçoes basicas dos empenhos posteriomente de um JSON em um `div`.
+Ele normalmente se encontra na primeira pagina de pesquisa de empenhos. Ele contem informaçoes basicas de todos os empenhos relacionados a consulta.
