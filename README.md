@@ -15,8 +15,14 @@ MiDES (_Expenditure Microdata of Subnational Entities_ in English) is a disaggre
 Our data is generated from State Audit Courts (_TCEs_ in Portuguese) with standardization efforts. Unlike the [data-paper repo](https://github.com/municipal-budget-execution/data-paper), which shows the reproducibility codes for the results of the article [MiDES: New Data and Facts from Local Procurement and Budget Execution in Brazil](https://elibrary.worldbank.org/doi/abs/10.1596/1813-9450-10598), published in November 2023 with a photograph of the data until then, this repository aims to show the most current work developed with fiscal data.
 
 ## Data Coverage
-State|Years|Budget data|Procurement data|Original Source
-|:-:|:-:|:-:|:-:|:-|
+Flags|State|Years|Budget data|Procurement data|Original Source
+|:-:||:-:|:-:|:-:|:-:|:-|
+img src="/docs/images/flags/ac.png"|AC|2009(1)|✓||[:link:](https://www.transparencia.df.gov.br/#/downloads#des)|
+img src="/docs/images/flags/ba.png"|BA|2010(1)||✓|LAI|
+img src="/docs/images/flags/ce.png"|CE|2009(1)|✓|✓|[:link:](https://api.tce.ce.gov.br/)|
+
+
+<!-- 
 BA   |2010(1)||✓|LAI|
 DF   |2009(1)|✓||https://www.transparencia.df.gov.br/#/downloads#des|
 ES   |2018(1)|✓||LAI|
@@ -32,7 +38,7 @@ RO   |2019(1)2020 |✓||https://transparencia.tce.ro.gov.br/transparenciatce/Rem
 RS   |2010(1)|✓|✓|https://dados.tce.rs.gov.br|
 SC   |2015(1)|✓|✓|https://servicos.tce.sc.gov.br/farol_externo/index.html|
 SP   |2008(1)|✓||https://transparencia.tce.sp.gov.br/conjunto-de-dados|
-TO   |2013(1)|✓|✓|https://portaldocidadao.tce.to.gov.br/estadomunicipios/index|
+TO   |2013(1)|✓|✓|https://portaldocidadao.tce.to.gov.br/estadomunicipios/index| -->
 
 ## Data Access
 The data is available on [BasedosDados](https://basedosdados.org/dataset/d3874769-bcbd-4ece-a38a-157ba1021514?table=14c5d05b-9830-4710-b7ac-7e0ca1bf9d8b)' public data-lake. We follow the methodology of Base dos Dados ([Dahis et al., 2022](https://osf.io/preprints/socarxiv/r76yg)) in harmonization schema and data lake storage. Base dos Dados is a non-profit organization with the mission to universalize access to high-quality data. They provide a platform in Google Cloud with more than 100 treated tables. Between the benefits, we can cross our data with population, GDP, companies, public treasure dataset, etc.  

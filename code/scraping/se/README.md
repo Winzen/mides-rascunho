@@ -17,7 +17,7 @@
 # Detalhes
 Categoria|Detalhe|
 |:-:|:-:|
-Bandeira|<img src="http://www.educadores.diaadia.pr.gov.br/modules/galeria/uploads/11/normal_1409852743bandeirasergipe.png" width=50>
+Bandeira|<img src="/docs/images/flags/se.png" width=50>
 Nome|Sergipe
 Sigla| SE
 Municípios| 75

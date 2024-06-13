@@ -17,7 +17,7 @@
 # Detalhes
 Categoria|Detalhe|
 |:-:|:-:|
-Bandeira|<img src="http://www.educadores.diaadia.pr.gov.br/modules/galeria/uploads/11/normal_1409852742bandeirariograndedonorte.png" width=50>
+Bandeira|<img src="/docs/images/flags/rn.png" width=50>
 Nome|Rio Grande do Norte
 Sigla| RN
 Municípios| 167

@@ -17,7 +17,7 @@
 # Detalhes
 Categoria|Detalhe|
 |:-:|:-:|
-Bandeira|<img src="http://www.educadores.diaadia.pr.gov.br/modules/galeria/uploads/11/normal_1409852741bandeirabahia.png" width=50>
+Bandeira|<img src="/docs/images/flags/ba.png" width=50>
 Nome|Bahia
 Sigla| BA
 Municípios| 417
