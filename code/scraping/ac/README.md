@@ -17,7 +17,7 @@
 # Detalhes
 Categoria|Detalhe|
 |:-:|:-:|
-Bandeira|<img src="docs\images\flags\ac.png" width=50>
+Bandeira|<img src="/docs/images/flags/ac.png" width=50>
 Nome|Acre
 Sigla| AC
 Municípios| 22
