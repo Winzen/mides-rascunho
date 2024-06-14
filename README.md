@@ -17,31 +17,21 @@ Our data is generated from State Audit Courts (_TCEs_ in Portuguese) with standa
 ## Data Coverage
 Flags|State|Years|Budget data|Procurement data|Original Source
 |:-:|:-:|:-:|:-:|:-:|:-:|
-<img src="/docs/images/flags/ac.png" width=50>|AC|?|||?|
-<img src="/docs/images/flags/al.png" width=50>|AL|?|||?|
-<img src="/docs/images/flags/am.png" width=50>|AM|?|||?|
-<img src="/docs/images/flags/ap.png" width=50>|AP|?|||?|
+
 <img src="/docs/images/flags/ba.png" width=50>|BA|2010(1)||✓|LAI|
 <img src="/docs/images/flags/ce.png" width=50>|CE|2009(1)|✓|✓|[:link:](https://api.tce.ce.gov.br/)|
 <img src="/docs/images/flags/df.png" width=50>|DF|2009(1)|✓||[:link:](https://www.transparencia.df.gov.br/#/downloads#des)|
 <img src="/docs/images/flags/es.png" width=50>|ES|2018(1)|✓||LAI|
 <img src="/docs/images/flags/go.png" width=50>|GO|2019(1)|✓||[:link:](https://www.tcmgo.tc.br/pentaho/api/repos/cidadao/app/index.html)|
-<img src="/docs/images/flags/ma.png" width=50>|MA|?|||?|
 <img src="/docs/images/flags/mg.png" width=50>|MG|2014(1)|✓|✓|[:link:](https://dadosabertos.tce.mg.gov.br/)|
-<img src="/docs/images/flags/ms.png" width=50>|MS|?|||?|
-<img src="/docs/images/flags/mt.png" width=50>|MT|?|||?|
-<img src="/docs/images/flags/pa.png" width=50>|PA|?|||?|
 <img src="/docs/images/flags/pb.png" width=50>|PB|2003(1)|✓|✓|[:link:](https://dados.tce.pb.gov.br)|
 <img src="/docs/images/flags/pe.png" width=50>|PE|2013(1)|✓|✓|[:link:](https://sistemas.tce.pe.gov.br/DadosAbertos/Exemplo!listar)|
-<img src="/docs/images/flags/pi.png" width=50>|PI|?|||?|
 <img src="/docs/images/flags/pr.png" width=50>|PR|2013(1)|✓|✓|[:link:](https://servicos.tce.pr.gov.br/TCEPR/Tribunal/Relacon/Dados/DadosConsulta/Consolidado)|
 <img src="/docs/images/flags/rj.png" width=50>|RJ|2002(1)|✓||[:link:](https://tce.rj.gov.br/auditormunicipio/Default.aspx)|
 <img src="/docs/images/flags/rn.png" width=50>|RN|2016(1)|✓||[:link:](https://apidadosabertos.tce.rn.gov.br/swagger/ui/index#/)|
 <img src="/docs/images/flags/ro.png" width=50>|RO|2019(1)2020 |✓||[:link:](https://transparencia.tce.ro.gov.br/transparenciatce/Remessa/Pesquisar)|
-<img src="/docs/images/flags/rr.png" width=50>|RR|?|||?|
 <img src="/docs/images/flags/rs.png" width=50>|RS|2010(1)|✓|✓|[:link:](https://dados.tce.rs.gov.br)|
 <img src="/docs/images/flags/sc.png" width=50>|SC|2015(1)|✓|✓|[:link:](https://servicos.tce.sc.gov.br/farol_externo/index.html)|
-<img src="/docs/images/flags/se.png" width=50>|SE|?|||?|
 <img src="/docs/images/flags/sp.png" width=50>|SP|2008(1)|✓||[:link:](https://transparencia.tce.sp.gov.br/conjunto-de-dados)|
 <img src="/docs/images/flags/to.png" width=50>|TO|2013(1)|✓|✓|[:link:](https://portaldocidadao.tce.to.gov.br/estadomunicipios/index)|
 
