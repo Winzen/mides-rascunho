@@ -16,10 +16,10 @@ Our data is generated from State Audit Courts (_TCEs_ in Portuguese) with standa
 
 ## Data Coverage
 Flags|State|Years|Budget data|Procurement data|Original Source
-|:-:||:-:|:-:|:-:|:-:|:-|
-img src="/docs/images/flags/ac.png"|AC|2009(1)|✓||[:link:](https://www.transparencia.df.gov.br/#/downloads#des)|
-img src="/docs/images/flags/ba.png"|BA|2010(1)||✓|LAI|
-img src="/docs/images/flags/ce.png"|CE|2009(1)|✓|✓|[:link:](https://api.tce.ce.gov.br/)|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+<img src="/docs/images/flags/ac.png" width=50>|AC|2009(1)|✓||[:link:](https://www.transparencia.df.gov.br/#/downloads#des)|
+<img src="/docs/images/flags/ba.png" width=50>|BA|2010(1)||✓|LAI|
+<img src="/docs/images/flags/ce.png" width=50>|CE|2009(1)|✓|✓|[:link:](https://api.tce.ce.gov.br/)|
 
 
 <!-- 
