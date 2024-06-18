@@ -35,7 +35,7 @@ Link_licitacao|X
 
 Site de Tocantins utiliza de `GET`s para chegar ao download do `.xls` que guarda empenhos, liquidaçoes, e pagamentos
 
-# Raspador
+# [Raspador](https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/to/%5Bto%5Dextrair.ipynb#scrollTo=FWmN7s8nVVEt)
 
 ## [Constante](https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/to/%5Bto%5Dextrair.ipynb#scrollTo=nFe35mrJ5Ctw)
 ## [Verificar IP](https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/to/%5Bto%5Dextrair.ipynb#scrollTo=9ptCC5xP2ssI)
