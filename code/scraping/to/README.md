@@ -16,10 +16,12 @@
 - [Raspador](#raspador)
   - [Constante](#constante)
   - [Verificar IP](#verificar-ip)
-  - [Constante](#constante)
-  - [Constante](#constante)
-  - [Constante](#constante)
-  - [Constante](#constante)
+  - [Importação](#importação)
+  - [Extrair](#extrair)
+  - [Registrar ID municipios e Entidades](#registrar-id-municipios-e-entidades)
+  - [Raspagem](#raspagem)
+  - [Verificar dados perdidos](#verificar-dados-perdidos)
+  - [Mandar para o drive Manualmente](#mandar-para-o-drive-manualmente)
  
     
 # Detalhes
