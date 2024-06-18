@@ -1,7 +1,7 @@
 <!-- Header -->
 <p align="center">
   <a href="https://basedosdados.org">
-    <img src="docs/images/logo1_mides_black.png" width="340" alt="MiDES">
+    <img src="docs/images/logo1_mides_white.png" width="340" alt="MiDES">
   </a>
 </p>
 
