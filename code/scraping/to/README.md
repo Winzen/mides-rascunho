@@ -13,7 +13,15 @@
 
 - [Detalhes](#detalhes)
 - [Logica do Site](#logica-do-site)
-
+- [Raspador](#raspador)
+  - [Constante](#constante)
+  - [Verificar IP](#verificar-ip)
+  - [Constante](#constante)
+  - [Constante](#constante)
+  - [Constante](#constante)
+  - [Constante](#constante)
+ 
+    
 # Detalhes
 Categoria|Detalhe|
 |:-:|:-:|
