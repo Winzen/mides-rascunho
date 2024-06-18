@@ -49,8 +49,8 @@ Link Licitação|X
 
   Para a raspagem ser realizada é preciso de um arquivo de mapeamento das entidades que é gerado na sessão [registrar ID municipios e entidades][registrar-ids].
   Esse diretorios já tem gerado esse [mapeamento][csv] por padrão, mas caso seja necessario pode ser realizado a criação dele novamente utilizado os codigos em [registrair][registrar-ids].
-  Depois de escolheremos o ano desejado para raspagem em [constantes][constantes] podemos iniciar a [raspagem][raspagem].
-  Caso definido um caminho para o salvamento no drive em [constantes][constantes]. Podemos utilizar do auto-salvamento colocado no codigo de [raspagem][raspagem] ou mandar manualmente    em [Mandar para o drive][mandar-drive].
+  Depois de escolheremos o ano desejado para raspagem em [constantes][constante] podemos iniciar a [raspagem][raspagem].
+  Caso definido um caminho para o salvamento no drive em [constantes][constante]. Podemos utilizar do auto-salvamento colocado no codigo de [raspagem][raspagem] ou mandar manualmente    em [Mandar para o drive][mandar-drive].
   *Apesar do dado extraido ser um `.xls` na verdade ele é um table html.*
  
 ## [Constante][constante]
@@ -76,7 +76,7 @@ Link Licitação|X
 ## [Importação][importação]
   Grupo responsavel por ativar todas as funçoes e bibliotecas necessarias para as de mais celulas do notebook.
 ## [Extrair][extrair]
-  Sessão responsavel por extrair possiveis dados já salvos do caminhos definido em [constantes][constantes].
+  Sessão responsavel por extrair possiveis dados já salvos do caminhos definido em [constantes][constante].
 ## [Registrar ID municipios e Entidades][registrar-ids]
   Sessão responsavel por gerar um csv de mapeamente do site. Esse csv é utilizado futuralmente para a raspagem dos dados.
 
@@ -190,7 +190,7 @@ for row in nao_coletados:
 ## [Mandar para o drive Manualmente][mandar-drive]
 
 Sessão responsavel por salvar os dados coletados para o google drive caso seja necessario.
-Para utilizar dessa sessão é preciso preencher um caminho de salvamento em [constantes][constantes].
+Para utilizar dessa sessão é preciso preencher um caminho de salvamento em [constantes][constante].
 Também verificar se foi gerado a conexão com o google drive ao ponto do notebook.
 
 Exemplo da sessão em codigo ⬇️:
