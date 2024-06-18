@@ -41,11 +41,17 @@ Link Drive|[:link:][link-drive]
 Link Storage|[:link:][link-storage]
 Link Licitação|X
 
-# Logica do Site
+# [Logica do Site][link-site]
 
-Site de Tocantins utiliza de `GET`s para chegar ao download do `.xls` que guarda empenhos, liquidaçoes, e pagamentos
+  Site de Tocantins utiliza de `GET`s para chegar ao download do `.xls` que guarda empenhos, liquidaçoes, e pagamentos
 
 # [Raspador][raspador]
+
+  Para a raspagem ser realizada é preciso de um arquivo de mapeamento das entidades que é gerado na sessão [registrar ID municipios e entidades][registrar-ids].
+  Esse diretorios já tem gerado esse [mapeamento][csv] por padrão, mas caso seja necessario pode ser realizado a criação dele novamente utilizado os codigos em [registrair][registrar-ids].
+  Depois de escolheremos o ano desejado para raspagem em [constantes][constantes] podemos iniciar a [raspagem][raspagem].
+  Caso definido um caminho para o salvamento no drive em [constantes][constantes]. Podemos utilizar do auto-salvamento colocado no codigo de [raspagem][raspagem] ou mandar manualmente    em [Mandar para o drive][mandar-drive].
+  *Apesar do dado extraido ser um `.xls` na verdade ele é um table html.*
  
 ## [Constante][constante]
   
