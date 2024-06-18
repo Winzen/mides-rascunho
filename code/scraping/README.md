@@ -10,9 +10,9 @@
     <em>Microdados de Despesas de Entes Subnacionais.</em>
 </p>
 
-Nesse diretorios temos como foco armazenar e informar sobre os codigos de raspagem utilizados durante a coleta de dados do projeto
+Nesse diretorios temos como foco armazenar e informar sobre os codigos de raspagem utilizados durante a coleta de dados do projeto. A ideia também é você conseguir fazer extraçoes facialmente pelos codigos.
 
-Cada raspador funciona de uma forma um tanto diferente. Você pode conseguir informaçoes sobre como eles funcionar e acessar os devidos codigos acessando diretamente ao diretorio ou usando a tabela [abaixo](/code/scraping#resumo)
+Cada raspador funciona de uma forma um tanto diferente. Você pode conseguir informaçoes sobre como eles funcionam e acessar os devidos codigos indo diretamente ao diretorio ou usando a tabela [abaixo](/code/scraping#resumo)
 
 ## Resumo
 flag|nome|sigla|online|link_site|pipeline|sistema|ip_estrageiro|link_raspador|link_drive|link_storage|link_licitacao
