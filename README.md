@@ -22,7 +22,7 @@ Flags|State|Years|Budget data|Procurement data|Original Source
 |:-:|:-:|:-:|:-:|:-:|:-:|
 <img src="/docs/images/flags/ba.png" width=50>|BA|2010(1)||✓|LAI|
 <img src="/docs/images/flags/ce.png" width=50>|CE|2009(1)|✓|✓|[:link:][link-ce]|
-<img src="/docs/images/flags/df.png" width=50>|DF|2009(1)|✓||[:link:](link-df]|
+<img src="/docs/images/flags/df.png" width=50>|DF|2009(1)|✓||[:link:][link-df]|
 <img src="/docs/images/flags/es.png" width=50>|ES|2018(1)|✓||LAI|
 <img src="/docs/images/flags/go.png" width=50>|GO|2019(1)|✓||[:link:][link-go]|
 <img src="/docs/images/flags/mg.png" width=50>|MG|2014(1)|✓|✓|[:link:][link-mg]|
@@ -68,4 +68,3 @@ We created this page as a way of keeping the graphs and tables from the article 
 [link-sc]: https://servicos.tce.sc.gov.br/farol_externo/index.html
 [link-sp]: https://transparencia.tce.sp.gov.br/conjunto-de-dados
 [link-to]: https://portaldocidadao.tce.to.gov.br/estadomunicipios/index
-
