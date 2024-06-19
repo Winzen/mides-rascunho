@@ -1,10 +1,13 @@
 <!-- Header -->
 <p align="center">
-  <a href="https://basedosdados.org">
-    <img src="docs/images/logo1_mides_black.png" width="340" alt="MiDES">
+   <a href="https://basedosdados.org">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="docs/images/logo1_mides_white.png">
+      <source media="(prefers-color-scheme: light)" srcset="docs/images/logo1_mides_black.png">
+      <img src="docs/images/logo1_mides_white.png" width="340" alt="MiDES">
+  </picture>
   </a>
 </p>
-
 
 <p align="center">
     <em>Microdados de Despesas de Entes Subnacionais.</em>
