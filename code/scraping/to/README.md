@@ -55,7 +55,10 @@ Link Licitação|X
   Esse diretorios já tem gerado esse [mapeamento][csv] por padrão, mas caso seja necessario pode ser realizado a criação dele novamente utilizado os codigos em [registrair][registrar-ids].
   Depois de escolheremos o ano desejado para raspagem em [constantes][constante] podemos iniciar a [raspagem][raspagem].
   Caso definido um caminho para o salvamento no drive em [constantes][constante]. Podemos utilizar do auto-salvamento colocado no codigo de [raspagem][raspagem] ou mandar manualmente    em [Mandar para o drive][mandar-drive].
+  
   *Apesar do dado extraido ser um `.xls` na verdade ele é um table html.*
+  
+  *Codigo pega dados de todas a entidades, porém apenas a primeira entidade de cada ano e municipio e necessario. Porque eles disponibilizam o dado de todas as entidades no mesmo arquivos. (foi descoberto no tratamento do dado)*
  
 ## [Constante][constante]
   
@@ -83,6 +86,8 @@ Link Licitação|X
   Sessão responsavel por extrair possiveis dados já salvos do caminhos definido em [constantes][constante].
 ## [Registrar ID municipios e Entidades][registrar-ids]
   Sessão responsavel por gerar um csv de mapeamente do site. Esse csv é utilizado futuralmente para a raspagem dos dados.
+  
+  *Leva aproximadamente 23 minutos para ser completado*
 
    Exemplo da sessão em codigo ⬇️:
    ```py
