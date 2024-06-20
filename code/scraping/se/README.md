@@ -43,7 +43,14 @@ Um sistema onde podemos manipular uma sessão com sequencia de `POST`s. Apenas r
 
 # [Raspador][raspador]
 
-  Raspadores de Sergipe é divido em três notebooks.
+  Raspadores de Sergipe é divido em três notebooks [[se]extrair.ipynb][extrair], [[se]extrair_mapeamento.ipynb][extrair-mapeamento] e [[se]mapear_empenho.ipynb][mapear].
+  - [[se]extrair.ipynb][extrair] é responsavel por completar a extração dos empenhos depois do mapeamento estiver pronto
+  - [[se]extrair_mapeamento.ipynb][extrair-mapeamento] é responsavel por extrair as paginas de empenhos para pode gerar o mapeamento.
+  - [[se]mapear_empenho.ipynb][mapear] forma o mapeamento dos empenhos e divide eles por ano. 
+
+   Para mais informaçoes do funcionamento de [[se]extrair_mapeamento.ipynb][extrair-mapeamento] e [[se]mapear_empenho.ipynb][mapear].
+   
+   Acesse suas documentaçoes: [doc-[se]extrair_mapeamento.ipynb][doc-mapeamento] e [doc-[se]mapear_empenho.ipynb][doc-mapeamento]
  
 ## [Constante][constante]
   
@@ -199,7 +206,11 @@ send_folder_drive(path_drive_input,
 
 <!-- Referencias -->
 
+[extrair]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb
+[extrair-mapeamento]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair_mapeamento.ipynb
+[mapear]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dmapear_empenho.ipynb
 
+[doc-mapeamento]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/docs-se/%5Bse%5Dextrair_mapeamento.md
 
 [link-site]: https://portaldocidadao.tce.to.gov.br/estadomunicipios/index
 [link-drive]: https://drive.google.com/drive/u/0/folders/1iYI1BUNfKa7C82drQvAlg23KHxF8NqWN
