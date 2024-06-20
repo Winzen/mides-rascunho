@@ -27,29 +27,13 @@
   - [Mandar para o drive Manualmente](#mandar-para-o-drive-manualmente)
  
     
-# [Logica do Site][link-site]
-
-  Site de Tocantins utiliza de `GET`s para chegar ao download do `.xls` que guarda empenhos, liquidaçoes, e pagamentos
-
-# [Raspador][raspador]
-
-  Para a raspagem ser realizada é preciso de um arquivo de mapeamento das entidades que é gerado na sessão [registrar ID municipios e entidades][registrar-ids].
-  Esse diretorios já tem gerado esse [mapeamento][csv] por padrão, mas caso seja necessario pode ser realizado a criação dele novamente utilizado os codigos em [registrair][registrar-ids].
-  Depois de escolheremos o ano desejado para raspagem em [constantes][constante] podemos iniciar a [raspagem][raspagem].
-  Caso definido um caminho para o salvamento no drive em [constantes][constante]. Podemos utilizar do auto-salvamento colocado no codigo de [raspagem][raspagem] ou mandar manualmente    em [Mandar para o drive][mandar-drive].
-  
-  *Apesar do dado extraido ser um `.xls` na verdade ele é um table html.*
-  
-  *Codigo pega dados de todas a entidades, porém apenas a primeira entidade de cada ano e municipio e necessario. Porque eles disponibilizam o dado de todas as entidades no mesmo arquivos. (foi descoberto no tratamento do dado)*
- 
 ## [Constante][constante]
   
   Nessa sessão controlamos qual ano será raspado, definimos o caminho para o csv que se encontra as entidades e caminho para salvar e extrair arquivos raspados.
   Exemplo da sessão em codigo ⬇️:
    ```py
-    ano = 2018
-    csv_entidade_git = "https://raw.githubusercontent.com/Winzen/mides-rascunho/main/code/scraping/to/municipios-entidades/entidades_to.csv?      token=GHSAT0AAAAAACJFESHXRUQPOWT6TB5XH3QSZTQ44KQ"
-    path_drive_input = None # Definir caso você queira salvar os arquivos em algum lugar automaticamente ou extrair eles
+   path_drive_input = None # Definir caminho para salver as paginas do mapeamento
+   path_drive_csv = None # Definir caminho para salver o csv das entidades
    ```
 ## [Verificar IP][verificar-ip]
 
