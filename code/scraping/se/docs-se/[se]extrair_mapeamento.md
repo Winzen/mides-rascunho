@@ -15,7 +15,6 @@
 
 # Index
 
-- [Detalhes](#detalhes)
 - [Logica do Site](#logica-do-site)
 - [Raspador](#raspador)
   - [Constante](#constante)
@@ -28,23 +27,6 @@
   - [Mandar para o drive Manualmente](#mandar-para-o-drive-manualmente)
  
     
-# Detalhes
-Categoria|Detalhe|
-|:-:|:-:|
-Bandeira|<img src="/docs/images/flags/to.png" width=50>
-Nome|Tocantins
-Sigla| TO
-Municípios| 139
-Cobertura do Raspador| 2013 - 2024
-Link Site| [:link:][link-site]
-Pipeline|✓
-Sistema| GET
-Server|Sem registros de Quedas
-Ip_estrageiro|✓
-Link Drive|[:link:][link-drive]
-Link Storage|[:link:][link-storage]
-Link Licitação|X
-
 # [Logica do Site][link-site]
 
   Site de Tocantins utiliza de `GET`s para chegar ao download do `.xls` que guarda empenhos, liquidaçoes, e pagamentos
