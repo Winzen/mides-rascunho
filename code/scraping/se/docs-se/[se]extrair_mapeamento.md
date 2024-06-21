@@ -21,9 +21,8 @@
   - [Verificar IP](#verificar-ip)
   - [Importação](#importação)
   - [Extrair](#extrair)
-  - [Registrar ID municipios e Entidades](#registrar-id-municipios-e-entidades)
-  - [Raspagem](#raspagem)
-  - [Verificar dados perdidos](#verificar-dados-perdidos)
+  - [Formar DataFrame das entidades](#formar-dataframe-das-entidades)
+  - [Extrair Paginas de coleta Mapeamento](#extrair-paginas-de-coleta-mapeamento)
   - [Mandar para o drive Manualmente](#mandar-para-o-drive-manualmente)
  
     
@@ -50,7 +49,7 @@
   Grupo responsavel por ativar todas as funçoes e bibliotecas necessarias para as de mais celulas do notebook.
 ## [Extrair][extrair]
   Sessão responsavel por extrair possiveis dados já salvos do caminhos definido em [constantes][constante].
-## [Registrar ID municipios e Entidades][registrar-ids]
+## [Formar DataFrame das entidades][dataframe]
   Sessão responsavel por gerar um csv de mapeamente do site. Esse csv é utilizado futuralmente para a raspagem dos dados.
   
   *Leva aproximadamente 23 minutos para ser completado*
@@ -88,7 +87,7 @@ df_entindade = pd.DataFrame(entidades_to_df, dtype=str)
 df_entindade.columns = df_entindade.columns.str.lower()
 df_entindade.to_csv("entidades_to.csv", index=False)
    ```
-## [Raspagem][raspagem]
+## [Extrair Paginas de coleta Mapeamento][mapeamento]
 
   Sessão responsavel pela raspagem de dados do site. Apartir do csv com as entidades coletadas do site podemos conseguir forma links que nos leva diretamente para o download dos dados    alvos de Empenho.xls, Liquidação.xls e Pagamento.xls de cada entidade registrada no csv.
 
@@ -137,31 +136,6 @@ send_solo_drive()
 
    ```
 
-## [Verificar dados perdidos][verificar-dados]
-Sessão responsavel pela verificação dos dados que podem está sendo perdidos.
-Fazemos uma verificação entre os dados raspados e os registros de entidades para encontrar dados que não foram raspados com sucesso ou ainda estão na fila de raspagem.
-Podemos fazer uma verificação manual dos links que aparecem como não coletados caso necessario.
-
-Exemplo da sessão em codigo ⬇️:
-
-```py
-path = f"/content/input/{ano}/**/**/*"
-files = glob.glob(path)
-
-ids_entidades_coletados = [path.split("/")[-2] for path in files]
-ids_entidades_coletados = list(dict.fromkeys(ids_entidades_coletados))
-
-mask = ~entidade_ano_coleta.id.isin(ids_entidades_coletados)
-nao_coletados = entidade_ano_coleta[mask]
-
-categorias = ["empenho", "liquidacao", "pagamento"]
-nao_coletados = [form_link_to_data(entidade, categoria)
-                for entidade in nao_coletados.itertuples()
-                for categoria in categorias]
-
-for row in nao_coletados:
-  print(row.link)
-```
 ## [Mandar para o drive Manualmente][mandar-drive]
 
 Sessão responsavel por salvar os dados coletados para o google drive caso seja necessario.
