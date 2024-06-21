@@ -25,7 +25,7 @@
  
 # [Raspador][raspador]
 
-Raspador é utilizado para extrair as paginas que contem as informaçoes basicas de empenhos. Com elas podemos forma o link para acessar os empenhos detalhos com mais velocidade.
+Notebook responsavel por extrair as informaçoes das paginas de empenhos extraida com [[se]extrair_mapeamento][extrair-mapa] e colocar em CSVs para serém usados em [[se]extrair.ipynb][main-extrair]
    
 ## [Constante][constante]
   
@@ -68,7 +68,7 @@ df = pd.DataFrame(linhas, columns=colunas)
 df["coletado"] = False
 df.to_csv("csvs/se_mapeamentos_empenhos.csv", index=False)
    ```
-### [Dividir por anos][]
+### [Dividir por anos][dividir]
 
 Dividi todos os empenhos por anos em CSV.
 
@@ -98,6 +98,7 @@ send_folder_drive(path_drive_input,
 
 <!-- Referencias -->
 
+[main-extrair]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb
 [extrair-mapa]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/docs-se/%5Bse%5Dextrair_mapeamento.md
 
 [raspador]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair_mapeamento.ipynb#scrollTo=9ptCC5xP2ssI
