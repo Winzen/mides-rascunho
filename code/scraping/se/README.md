@@ -56,7 +56,7 @@ Um sistema onde podemos manipular uma sessão com sequencia de `POST`s. Apenas r
 
    Para mais informaçoes do funcionamento de [[se]extrair_mapeamento.ipynb][extrair-mapeamento] e [[se]mapear_empenho.ipynb][mapear].
    
-   Acesse suas documentaçoes: [doc-[se]extrair_mapeamento.ipynb][doc-mapeamento] e [doc-[se]mapear_empenho.ipynb][doc-mapeamento]
+   Acesse suas documentaçoes: [doc-[se]extrair_mapeamento.ipynb][doc-mapeamento] e [doc-[se]mapear_empenho.ipynb][doc-mapear]
  
 ## [Constante][constante]
   
@@ -169,6 +169,7 @@ send_folder_drive(path_drive_csv,
 [mapear]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dmapear_empenho.ipynb
 
 [doc-mapeamento]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/docs-se/%5Bse%5Dextrair_mapeamento.md
+[doc-mapear]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/docs-se/%5Bse%5Dmapear_empenho.md
 
 [raspador]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb#scrollTo=CpVNwZaGLZd0
 [constante]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb#scrollTo=iuLdqHBy_3co
