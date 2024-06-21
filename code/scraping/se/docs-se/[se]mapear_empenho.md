@@ -17,11 +17,10 @@
 
 - [Raspador](#raspador)
   - [Constante](#constante)
-  - [Verificar IP](#verificar-ip)
   - [Importação](#importação)
   - [Extrair](#extrair)
-  - [Formar DataFrame das entidades](#formar-dataframe-das-entidades)
-  - [Extrair Paginas de coleta Mapeamento](#extrair-paginas-de-coleta-mapeamento)
+  - [Mapear Empenhos](#mapear-empenhos)
+     - [Dividir por anos](#dividir-por-anos)
   - [Mandar para o drive Manualmente](#mandar-para-o-drive-manualmente)
  
 # [Raspador][raspador]
@@ -33,105 +32,59 @@ Raspador é utilizado para extrair as paginas que contem as informaçoes basicas
   Nessa sessão controlamos qual ano será raspado, definimos o caminho para o csv que se encontra as entidades e caminho para salvar e extrair arquivos raspados.
   Exemplo da sessão em codigo ⬇️:
    ```py
-   path_drive_input = None # Definir caminho para salver as paginas do mapeamento
-   path_drive_csv = None # Definir caminho para salver o csv das entidades
-   ```
-## [Verificar IP][verificar-ip]
-
-  Aqui verificamos o IP que o colab está utilizando na sessão. Caso o IP não for de alguma das americas é recondado que reinicei sessão até um IP das americas seja provido.
-  
-  Exemplo da sessão em codigo ⬇️:
-   ```py
-    import requests
-    
-    my_country = requests.get("https://api.myip.com/")
-    my_country.json()
+   path_drive_input = None # Onde será extraido e salvo as paginas de empenho
+   path_drive_csv = None # Onde será extraido e salvo o csv das entidades
+   path_drive_csv_mapeamento = # Onde será extraido e salvo os CSVs do mapeamento dos empenhos
    ```
 ## [Importação][importação]
   Grupo responsavel por ativar todas as funçoes e bibliotecas necessarias para as de mais celulas do notebook.
+
 ## [Extrair][extrair]
   Sessão responsavel por extrair possiveis dados já salvos do caminhos definido em [constantes][constante].
-## [Formar DataFrame das entidades][dataframe]
-  Sessão responsavel por gerar um csv com todas as entidades disponiveis para coleta.
-  
-   Exemplo da sessão em codigo ⬇️:
-   ```py
-link_confirmar_unidade = "https://www.tcese.tc.br/portaldatransparencia/Default.aspx"
-link_acesse_inicio_dados = "https://www.tcese.tc.br/portaldatransparencia/DadosUnidade.aspx"
 
+## [Mapear Empenhos][mapeamento]
 
-headers = {
-  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
-  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-  "Accept-Language": "pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3",
-  "Content-Type": "application/x-www-form-urlencoded",
-  "Connection": "keep-alive"
-}
-
-rows = []
-
-anos, municipios = get_anos_municipios()
-
-for municipio in municipios:
-  for ano in anos:
-    with requests.Session() as s:
-
-      inicial_response = s.get(link_confirmar_unidade, headers=headers)
-      soup_inicial = BeautifulSoup(inicial_response.text)
-      select_ano = form_data_post_ano(soup_inicial, ano, municipio, "ctl00$ContentPlaceHolder1$ddlAno")
-
-      response_ano = s.post(link_confirmar_unidade, headers=headers, data=select_ano)
-      soup_ano = BeautifulSoup(response_ano.text)
-      select_municipio = form_data_post_municipio(soup_ano, ano, municipio, "ctl00$ContentPlaceHolder1$ddlMunicipios")
-      response_municipio = s.post(link_confirmar_unidade, headers=headers, data=select_municipio)
-
-      soup_municipio = BeautifulSoup(response_municipio.text)
-
-      select_unidade = "select#ctl00_ContentPlaceHolder1_ddlUnidadeGestora option"
-      element_unidades = soup_municipio.select(select_unidade)
-      unidades = [form_row_entidades(municipio, unidade.text, unidade.get("value"), ano) for unidade in element_unidades]
-      rows += unidades
-
-df = pd.DataFrame(rows)
-df["coletado"] = "False"
-os.makedirs("csvs", exist_ok=True)
-df.to_csv("csvs/entidades.csv", index=False)
-   ```
-## [Extrair Paginas de coleta Mapeamento][mapeamento]
-
-  Sessão responsavel pela raspagem das paginas que contém os empenhos do site. 
+  Sessão responsavel pela criação de um CSV com todos os possiveis empenhos até o presente momento da extração com o [raspador][extrair-mapa].
 
   Exemplo da sessão em codigo ⬇️:
    ```py
-df_entidades = pd.read_csv("/content/csvs/entidades.csv", dtype=str)
-para_coletar = df_entidades[df_entidades["coletado"] == "False"]
+path_csvs = "/content/input/**/**/**/*.html"
+htmls = glob.glob(path_csvs)
 
-for n, row in enumerate(para_coletar.itertuples()):
+with concurrent.futures.ThreadPoolExecutor() as executor:
+  tasks = [task for task in executor.map(extrair, htmls)]
+  linhas_paginas = [task for task in tasks if type(task) != str]
+  erros = [task for task in tasks if type(task) == str]
 
-  coletado = coletar_paginas_empenho(row.municipio, row.ano, row.id_entidade)
+print(f"De {len(htmls)} paginas foram coletadas {len(linhas_paginas)} com sucesso")
 
-  if coletado:
-    df_entidades.loc[row.Index, "coletado"] = "True"
+linhas = [linha for linhas in linhas_paginas for linha in linhas]
 
-  if (n + 1) % 5 == 0:
-    print("Salvando..")
-    df_entidades.to_csv("/content/csvs/entidades.csv", index=False)
-    send_solo_drive()
-    print("Salvamento concluido.")
+colunas = ["ano", "municipio", "unidade",
+           "numero_empenho", "data_empenho", "participante",
+           "valor_empenhado", "valor_pago", "link"]
 
-
-print("Salvando..")
-df_entidades.to_csv("/content/csvs/entidades.csv", index=False)
-send_solo_drive()
-print("Salvamento concluido.")
-
+df = pd.DataFrame(linhas, columns=colunas)
+df["coletado"] = False
+df.to_csv("csvs/se_mapeamentos_empenhos.csv", index=False)
    ```
+### [Dividir por anos][]
+
+Dividi todos os empenhos por anos em CSV.
+
+Exemplo da sessão em codigo ⬇️:
+```py
+anos = df.ano.unique()
+for ano in anos:
+  df_ano = df[df.ano == ano]
+  df_ano.to_csv(f"csvs/se_mapeamentos_empenhos_{ano}.csv", index=False)
+```
 
 ## [Mandar para o drive Manualmente][mandar-drive]
 
 Sessão responsavel por salvar os dados coletados para o google drive caso seja necessario.
 Para utilizar dessa sessão é preciso preencher um caminho de salvamento em [constantes][constante].
-Também verificar se foi gerado a conexão com o google drive ao ponto do notebook.
+Também verificar se foi gerado a conexão com o google drive ao inicio do notebook.
 
 Exemplo da sessão em codigo ⬇️:
 
@@ -145,12 +98,7 @@ send_folder_drive(path_drive_input,
 
 <!-- Referencias -->
 
-[link-site]: https://portaldocidadao.tce.to.gov.br/estadomunicipios/index
-[link-drive]: https://drive.google.com/drive/u/0/folders/1iYI1BUNfKa7C82drQvAlg23KHxF8NqWN
-[link-storage]: https://console.cloud.google.com/storage/browser/basedosdados-dev/staging/world_wb_mides/raw_empenho_to?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&cloudshell=false&project=basedosdados-dev
-[link-licitacao]: ...
-
-[csv]: https://raw.githubusercontent.com/Winzen/mides-rascunho/main/code/scraping/to/municipios-entidades/entidades_to.csv?token=GHSAT0AAAAAACJFESHXRUQPOWT6TB5XH3QSZTQ44KQ
+[extrair-mapa]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/docs-se/%5Bse%5Dextrair_mapeamento.md
 
 [raspador]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair_mapeamento.ipynb#scrollTo=9ptCC5xP2ssI
 [constante]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair_mapeamento.ipynb#scrollTo=MT-Xd5hN1rhu
