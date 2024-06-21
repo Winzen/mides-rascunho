@@ -63,9 +63,10 @@ Um sistema onde podemos manipular uma sessão com sequencia de `POST`s. Apenas r
   Nessa sessão controlamos qual ano será raspado, definimos o caminho para o csv que se encontra as entidades e caminho para salvar e extrair arquivos raspados.
   Exemplo da sessão em codigo ⬇️:
    ```py
-    ano = 2018
-    csv_entidade_git = "https://raw.githubusercontent.com/Winzen/mides-rascunho/main/code/scraping/to/municipios-entidades/entidades_to.csv?      token=GHSAT0AAAAAACJFESHXRUQPOWT6TB5XH3QSZTQ44KQ"
-    path_drive_input = None # Definir caso você queira salvar os arquivos em algum lugar automaticamente ou extrair eles
+ano = 2016 # Ano de coleta
+csv_coleta_name = f"/content/csvs/se_mapeamentos_empenhos_{ano}.csv" # caminho para o CSV que tem os empenhos desejado
+path_drive_input = f"/content/drive/MyDrive/se/htmls_empenho/input_html_empenhos_{ano}" # Caminho para salvar os empenhos coletados e extrair
+path_drive_csv = f"/content/drive/MyDrive/se/mapeamentos_empenhos" # Para salvar a pasta com os CSVs dos empenhos e extrair ela
    ```
 ## [Verificar IP][verificar-ip]
 
@@ -152,9 +153,13 @@ Exemplo da sessão em codigo ⬇️:
 ```py
 drive.mount('/content/drive')
 
+df.to_csv(csv_coleta_name, index=False)
 
 send_folder_drive(path_drive_input,
-                f"/content/input/")
+                "/content/input/")
+
+send_folder_drive(path_drive_csv,
+                "/content/csvs")
 ```
 
 <!-- Referencias -->
