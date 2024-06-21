@@ -54,8 +54,6 @@ Raspador é utilizado para extrair as paginas que contem as informaçoes basicas
 ## [Formar DataFrame das entidades][dataframe]
   Sessão responsavel por gerar um csv com todas as entidades disponiveis para coleta.
   
-  *Leva aproximadamente 23 minutos para ser completado*
-
    Exemplo da sessão em codigo ⬇️:
    ```py
 link_confirmar_unidade = "https://www.tcese.tc.br/portaldatransparencia/Default.aspx"
