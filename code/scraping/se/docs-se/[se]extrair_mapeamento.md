@@ -15,7 +15,6 @@
 
 # Index
 
-- [Logica do Site](#logica-do-site)
 - [Raspador](#raspador)
   - [Constante](#constante)
   - [Verificar IP](#verificar-ip)
@@ -25,7 +24,10 @@
   - [Extrair Paginas de coleta Mapeamento](#extrair-paginas-de-coleta-mapeamento)
   - [Mandar para o drive Manualmente](#mandar-para-o-drive-manualmente)
  
-    
+# [Raspador][raspador]
+
+Raspador é utilizado para extrair as paginas que contem as informaçoes basicas de empenhos. Com elas podemos forma o link para acessar os empenhos detalhos com mais velocidade.
+   
 ## [Constante][constante]
   
   Nessa sessão controlamos qual ano será raspado, definimos o caminho para o csv que se encontra as entidades e caminho para salvar e extrair arquivos raspados.
@@ -50,89 +52,80 @@
 ## [Extrair][extrair]
   Sessão responsavel por extrair possiveis dados já salvos do caminhos definido em [constantes][constante].
 ## [Formar DataFrame das entidades][dataframe]
-  Sessão responsavel por gerar um csv de mapeamente do site. Esse csv é utilizado futuralmente para a raspagem dos dados.
+  Sessão responsavel por gerar um csv com todas as entidades disponiveis para coleta.
   
   *Leva aproximadamente 23 minutos para ser completado*
 
    Exemplo da sessão em codigo ⬇️:
    ```py
-http = PoolManager(maxsize=139, cert_reqs='CERT_NONE', block=True)
-disable_warnings(exceptions.InsecureRequestWarning)
-
-link = "https://portaldocidadao.tce.to.gov.br/estadomunicipios/index"
-response = http.request('GET', link)
-
-txt_html = response.data
-soup = BeautifulSoup(txt_html, 'html.parser')
-
-elementos_municipios = soup.select('select[name="comboMunicipio"] option')[1:]
-anos = soup.select('select[name="comboExercicio"] option')[1:]
-anos = [ano.get("value") for ano in anos]
-
-dataframe = {elemento.text: elemento.get("value") for elemento in elementos_municipios}
-
-entidades = []
-for ano in anos:
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-      entidades += [entidades_json
-                    for entidades_json in
-                    executor.map(
-                    lambda id_municipio: form_link_entidade(http, id_municipio, ano),
-                    dataframe.values()
-                    )]
+link_confirmar_unidade = "https://www.tcese.tc.br/portaldatransparencia/Default.aspx"
+link_acesse_inicio_dados = "https://www.tcese.tc.br/portaldatransparencia/DadosUnidade.aspx"
 
 
-entidades_to_df = [entidade for entidades_list in entidades for entidade in entidades_list]
-df_entindade = pd.DataFrame(entidades_to_df, dtype=str)
-df_entindade.columns = df_entindade.columns.str.lower()
-df_entindade.to_csv("entidades_to.csv", index=False)
+headers = {
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+  "Accept-Language": "pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3",
+  "Content-Type": "application/x-www-form-urlencoded",
+  "Connection": "keep-alive"
+}
+
+rows = []
+
+anos, municipios = get_anos_municipios()
+
+for municipio in municipios:
+  for ano in anos:
+    with requests.Session() as s:
+
+      inicial_response = s.get(link_confirmar_unidade, headers=headers)
+      soup_inicial = BeautifulSoup(inicial_response.text)
+      select_ano = form_data_post_ano(soup_inicial, ano, municipio, "ctl00$ContentPlaceHolder1$ddlAno")
+
+      response_ano = s.post(link_confirmar_unidade, headers=headers, data=select_ano)
+      soup_ano = BeautifulSoup(response_ano.text)
+      select_municipio = form_data_post_municipio(soup_ano, ano, municipio, "ctl00$ContentPlaceHolder1$ddlMunicipios")
+      response_municipio = s.post(link_confirmar_unidade, headers=headers, data=select_municipio)
+
+      soup_municipio = BeautifulSoup(response_municipio.text)
+
+      select_unidade = "select#ctl00_ContentPlaceHolder1_ddlUnidadeGestora option"
+      element_unidades = soup_municipio.select(select_unidade)
+      unidades = [form_row_entidades(municipio, unidade.text, unidade.get("value"), ano) for unidade in element_unidades]
+      rows += unidades
+
+df = pd.DataFrame(rows)
+df["coletado"] = "False"
+os.makedirs("csvs", exist_ok=True)
+df.to_csv("csvs/entidades.csv", index=False)
    ```
 ## [Extrair Paginas de coleta Mapeamento][mapeamento]
 
-  Sessão responsavel pela raspagem de dados do site. Apartir do csv com as entidades coletadas do site podemos conseguir forma links que nos leva diretamente para o download dos dados    alvos de Empenho.xls, Liquidação.xls e Pagamento.xls de cada entidade registrada no csv.
+  Sessão responsavel pela raspagem das paginas que contém os empenhos do site. 
 
   Exemplo da sessão em codigo ⬇️:
    ```py
-entidades = pd.read_csv(csv_entidade_git, dtype=str)
+df_entidades = pd.read_csv("/content/csvs/entidades.csv", dtype=str)
+para_coletar = df_entidades[df_entidades["coletado"] == "False"]
 
-chucksize = 30
+for n, row in enumerate(para_coletar.itertuples()):
 
-entidade_ano_coleta = entidades[entidades.ano == str(ano)]
-categorias = ["empenho", "liquidacao", "pagamento"]
-linha_coleta = [form_link_to_data(entidade, categoria)
-                for entidade in entidade_ano_coleta.itertuples()
-                for categoria in categorias]
+  coletado = coletar_paginas_empenho(row.municipio, row.ano, row.id_entidade)
 
-chunks = list(batched(linha_coleta, chucksize))
+  if coletado:
+    df_entidades.loc[row.Index, "coletado"] = "True"
 
-for n, chunk in enumerate(chunks):
-
-  try:
-
-    start_time = time.time()
-    print(f"Chunk: {n+1}/{len(chunks)} Iniciado\n")
-
-    rows_to_extract = [row for row in chunk if verify_exists(row)]
-
-    if rows_to_extract:
-
-      with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.map(download_dado, rows_to_extract)
-
-      if (n + 1) % 2 == 0:
-        send_solo_drive()
-
-      sleep(1)
-
-    print(f"Duração da execução: {(time.time() - start_time) / 60:.2f}\n{'-' * 30}")
+  if (n + 1) % 5 == 0:
+    print("Salvando..")
+    df_entidades.to_csv("/content/csvs/entidades.csv", index=False)
+    send_solo_drive()
+    print("Salvamento concluido.")
 
 
-  except Exception as erro:
-    print(f"Erro: {erro}\nFalha chunk {n+1}")
-    sleep(10)
-
-
+print("Salvando..")
+df_entidades.to_csv("/content/csvs/entidades.csv", index=False)
 send_solo_drive()
+print("Salvamento concluido.")
 
    ```
 
