@@ -45,7 +45,9 @@ Notebook responsavel por extrair as informaçoes das paginas de empenhos extraid
 ## [Mapear Empenhos][mapear]
 
   Sessão responsavel pela criação de um CSV com todos os possiveis empenhos até o presente momento da extração com o [raspador][extrair-mapa].
-
+  
+  *Leva aproximadamente 50 minutos para ser completado*
+  
   Exemplo da sessão em codigo ⬇️:
    ```py
 path_csvs = "/content/input/**/**/**/*.html"
