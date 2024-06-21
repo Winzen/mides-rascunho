@@ -32,14 +32,14 @@ Nome|Sergipe
 Sigla| SE
 Municípios| 75
 Cobertura do Raspador| 2008 - 2016
-Link_Site| [:link:](https://www.tcese.tc.br/portaldatransparencia/Default.aspx)
+Link Site| [:link:](https://www.tcese.tc.br/portaldatransparencia/Default.aspx)
 Pipeline|X
 Sistema| ASP.NET
 Server|Sem registros de Quedas
-Ip_estrageiro|✓
-Link_drive|[:link:](https://drive.google.com/drive/u/0/folders/1-3MIVVXrPobqvSfuQCJ1ylW3xxAx2Zwx)
-Link_storage|X
-Link_licitacao|X
+Ip Estrageiro|✓
+Link Drive|[:link:](https://drive.google.com/drive/u/0/folders/1-3MIVVXrPobqvSfuQCJ1ylW3xxAx2Zwx)
+Link Storage|X
+Link Licitacao|X
 
 # Logica do Site
 
