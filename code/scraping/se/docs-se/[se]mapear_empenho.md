@@ -93,9 +93,8 @@ Exemplo da sessão em codigo ⬇️:
 ```py
 drive.mount('/content/drive')
 
-
-send_folder_drive(path_drive_input,
-                f"/content/input/")
+send_folder_drive(path_drive_csv_mapeamento,
+                "/content/csvs")
 ```
 
 <!-- Referencias -->
