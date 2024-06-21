@@ -40,7 +40,7 @@ Link Site| [:link:][link-site]
 Pipeline|✓
 Sistema| GET
 Server|Sem registros de Quedas
-Ip_estrageiro|✓
+Ip Estrageiro|✓
 Link Drive|[:link:][link-drive]
 Link Storage|[:link:][link-storage]
 Link Licitação|X
