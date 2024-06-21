@@ -26,7 +26,9 @@
  
 # [Raspador][raspador]
 
-Raspador é utilizado para extrair as paginas que contem as informaçoes basicas de empenhos. Com elas podemos forma o link para acessar os empenhos detalhados com mais velocidade.
+Raspador é utilizado para extrair as paginas que contem as informaçoes basicas de empenhos. Com elas podemos forma o link para acessar os empenhos detalhado com mais velocidade.
+
+O [[se]mapear_empenho][mapear] será responsavel por extrair as informaçoes da paginas coletadas por esse raspador.
    
 ## [Constante][constante]
   
@@ -144,6 +146,8 @@ send_folder_drive(path_drive_input,
 ```
 
 <!-- Referencias -->
+
+[mapear]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dmapear_empenho.ipynb
 
 [raspador]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair_mapeamento.ipynb#scrollTo=9ptCC5xP2ssI
 [constante]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair_mapeamento.ipynb#scrollTo=MT-Xd5hN1rhu
