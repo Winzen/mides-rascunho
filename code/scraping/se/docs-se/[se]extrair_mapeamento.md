@@ -26,7 +26,7 @@
  
 # [Raspador][raspador]
 
-Raspador é utilizado para extrair as paginas que contem as informaçoes basicas de empenhos. Com elas podemos forma o link para acessar os empenhos detalhos com mais velocidade.
+Raspador é utilizado para extrair as paginas que contem as informaçoes basicas de empenhos. Com elas podemos forma o link para acessar os empenhos detalhados com mais velocidade.
    
 ## [Constante][constante]
   
