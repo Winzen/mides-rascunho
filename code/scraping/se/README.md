@@ -168,8 +168,8 @@ send_folder_drive(path_drive_csv,
 [extrair-mapeamento]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair_mapeamento.ipynb
 [mapear]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dmapear_empenho.ipynb
 
-[doc-mapeamento]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/docs-se/%5Bse%5Dextrair_mapeamento.md
-[doc-mapear]: https://github.com/Winzen/mides-rascunho/blob/main/code/scraping/se/docs-se/%5Bse%5Dmapear_empenho.md
+[doc-mapeamento]: https://github.com/Winzen/mides-rascunho/blob/main/docs/scraping/%5Bse%5Dextrair_mapeamento.md
+[doc-mapear]: https://github.com/Winzen/mides-rascunho/blob/main/docs/scraping/%5Bse%5Dmapear_empenho.md
 
 [raspador]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb#scrollTo=CpVNwZaGLZd0
 [constante]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb#scrollTo=iuLdqHBy_3co
