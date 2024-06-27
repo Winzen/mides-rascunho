@@ -50,15 +50,11 @@ Após a coleta de todos os links de download dos zips.
 È feito o download e armazenamento dos mesmo.
 
 # [Raspador][raspador]
+Vazio
 
-  Raspadores de Sergipe é divido em três notebooks [[se]extrair.ipynb][extrair], [[se]extrair_mapeamento.ipynb][extrair-mapeamento] e [[se]mapear_empenho.ipynb][mapear].
-  - [[se]extrair.ipynb][extrair] é responsavel por completar a extração dos empenhos depois do mapeamento estiver pronto
-  - [[se]extrair_mapeamento.ipynb][extrair-mapeamento] é responsavel por extrair as paginas de empenhos para pode gerar o mapeamento.
-  - [[se]mapear_empenho.ipynb][mapear] forma o mapeamento dos empenhos e divide eles por ano. 
-
-   Para mais informaçoes do funcionamento de [[se]extrair_mapeamento.ipynb][extrair-mapeamento] e [[se]mapear_empenho.ipynb][mapear].
-   
-   Acesse suas documentaçoes: [doc-[se]extrair_mapeamento.ipynb][doc-mapeamento] e [doc-[se]mapear_empenho.ipynb][doc-mapear]
+```py
+###
+```
 
 ## [Verificar IP][verificar-ip]
 
@@ -75,30 +71,24 @@ Após a coleta de todos os links de download dos zips.
   Grupo responsavel por ativar todas as funçoes e bibliotecas necessarias para as de mais celulas do notebook.
 
 ## [Pegar Municipios Id e Entidades][pegar-municipios]
-  Sessão responsavel por extrair possiveis dados já salvos do caminhos definido em [constantes][constante].
-
-## [Pegar links dos ZIPs][pegar-links]
-
-  Sessão responsavel pela raspagem de dados do site. Apartir do csv com as entidades coletadas do site podemos conseguir forma links que nos leva diretamente para o empenhos.
-  
-  Exemplo da sessão em codigo ⬇️:
-   ```py
-   ```
-
-## [Download dos Zips][download]
-Sessão responsavel pela verificação dos dados que podem está sendo perdidos.
-Fazemos uma verificação entre os dados raspados e os registros de entidades para encontrar dados que não foram raspados com sucesso ou ainda estão na fila de raspagem.
-Podemos fazer uma verificação manual dos links que aparecem como não coletados caso necessario.
-
-Exemplo da sessão em codigo ⬇️:
+Vazio
 
 ```py
-path_csvs = "/content/input/**/**/**/*.html"
-htmls = glob.glob(path_csvs)
-htmls = list(dict.fromkeys(htmls))
-registrados = df[df["coletado"] == "True"].shape[0]
-print(len(htmls) == registrados)
-print(f"Valores nesse momento são coletado {len(htmls)} e registrados {registrados}")
+###
+```
+## [Pegar links dos ZIPs][pegar-links]
+
+Vazio
+
+```py
+###
+```
+
+## [Download dos Zips][download]
+Vazio
+
+```py
+###
 ```
 ## [Manda para o Drive][mandar-drive]
 
