@@ -16,13 +16,12 @@
 # Index
 
 - [Raspador](#raspador)
-  - [Constante](#constante)
   - [Verificar IP](#verificar-ip)
   - [Importação](#importação)
-  - [Extrair](#extrair)
-  - [Raspagem](#raspagem)
-     - [Verificar dados perdidos](#verificar-dados-perdidos)
-  - [Mandar para o drive Manualmente](#mandar-para-o-drive-manualmente)
+  - [Pegar Municipios Id e Entidades](#pegar-municipios-id-e-entidades)
+  - [Pegar links dos ZIPs](#pegar-links-dos-zips)
+  - [Download dos Zips](#download-dos-zips)
+  - [Manda para o Drive](#manda-para-o-drive)
 
 # Detalhes
 Categoria|Detalhe|
@@ -32,13 +31,13 @@ Nome|Rondônia
 Sigla| RO
 Municípios| 52
 Cobertura do Raspador| 2019 - 2020
-Link_Site| [:link:](https://transparencia.tce.ro.gov.br/transparenciatce/Remessa/Pesquisar)
+Link Site| [:link:](https://transparencia.tce.ro.gov.br/transparenciatce/Remessa/Pesquisar)
 Pipeline|X
 Sistema| POST
 Server|Sem Registros de Quedas
-Ip_estrageiro|✓
-Link_drive|[:link:](https://drive.google.com/drive/u/0/folders/1-ZkJqL6VfGOHua9A0Yca7C5t5XGYM87O)
-Link_storage|[:link:](https://console.cloud.google.com/storage/browser/basedosdados-dev/staging/world_wb_mides/raw_empenho_ro?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&cloudshell=false&project=basedosdados-dev)
+Ip estrageiro|✓
+Link drive|[:link:](https://drive.google.com/drive/u/0/folders/1-ZkJqL6VfGOHua9A0Yca7C5t5XGYM87O)
+Link storage|[:link:](https://console.cloud.google.com/storage/browser/basedosdados-dev/staging/world_wb_mides/raw_empenho_ro?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&cloudshell=false&project=basedosdados-dev)
 Link_licitacao|X
 
 # Logica do Site
@@ -60,17 +59,7 @@ Após a coleta de todos os links de download dos zips.
    Para mais informaçoes do funcionamento de [[se]extrair_mapeamento.ipynb][extrair-mapeamento] e [[se]mapear_empenho.ipynb][mapear].
    
    Acesse suas documentaçoes: [doc-[se]extrair_mapeamento.ipynb][doc-mapeamento] e [doc-[se]mapear_empenho.ipynb][doc-mapear]
- 
-## [Constante][constante]
-  
-  Nessa sessão controlamos qual ano será raspado, definimos o caminho para o csv que se encontra as entidades e caminho para salvar e extrair arquivos raspados.
-  Exemplo da sessão em codigo ⬇️:
-   ```py
-ano = 2016 # Ano de coleta
-csv_coleta_name = f"/content/csvs/se_mapeamentos_empenhos_{ano}.csv" # caminho para o CSV que tem os empenhos desejado
-path_drive_input = f"/content/drive/MyDrive/se/htmls_empenho/input_html_empenhos_{ano}" # Caminho para salvar os empenhos coletados e extrair
-path_drive_csv = f"/content/drive/MyDrive/se/mapeamentos_empenhos" # Para salvar a pasta com os CSVs dos empenhos e extrair ela
-   ```
+
 ## [Verificar IP][verificar-ip]
 
   Aqui verificamos o IP que o colab está utilizando na sessão. Caso o IP não for de alguma das americas é recondado que reinicei sessão até um IP das americas seja provido.
@@ -84,53 +73,19 @@ path_drive_csv = f"/content/drive/MyDrive/se/mapeamentos_empenhos" # Para salvar
    ```
 ## [Importação][importação]
   Grupo responsavel por ativar todas as funçoes e bibliotecas necessarias para as de mais celulas do notebook.
-## [Extrair][extrair]
+
+## [Pegar Municipios Id e Entidades][extrair]
   Sessão responsavel por extrair possiveis dados já salvos do caminhos definido em [constantes][constante].
 
-## [Raspagem][raspagem]
+## [Pegar links dos ZIPs][raspagem]
 
   Sessão responsavel pela raspagem de dados do site. Apartir do csv com as entidades coletadas do site podemos conseguir forma links que nos leva diretamente para o empenhos.
   
   Exemplo da sessão em codigo ⬇️:
    ```py
-para_coletar = df[df["coletado"] == "False"]
-
-chunks = make_list_chunks(para_coletar.itertuples(), 60)
-disable_warnings(exceptions.InsecureRequestWarning)
-
-for n, rows in enumerate(chunks):
-
-  print(f"{'-' * 30}\nIniciando extração: {n + 1}/{len(chunks)}")
-  start_time = time.time()
-
-  with concurrent.futures.ThreadPoolExecutor() as executor:
-    tasks = [task for task in executor.map(extrair, rows)]
-    tasks_done = [task.Index for task in tasks if task]
-
-  df.loc[tasks_done, "coletado"] = "True"
-
-  print(f"De {len(rows)} paginas, foram coletadas {len(tasks_done)} com sucesso")
-
-  segundo_execucao = time.time() - start_time
-
-  print(f"Duração da execução: {segundo_execucao / 60:.2f}\n{'-' * 30}")
-  print(f"Intervalo\nRespeito de {segundo_execucao * 0.2: 0.2f} segudos ao servidor")
-
-  sleep(segundo_execucao * 0.2)
-
-  if (n + 1) % 40 == 0:
-    print("Salvando..")
-    df.to_csv(csv_coleta_name, index=False)
-    send_solo_drive()
-    print("Salvamento concluido.")
-
-print("Salvando..")
-df.to_csv(csv_coleta_name, index=False)
-send_solo_drive()
-print("Salvamento concluido.")
    ```
 
-## [Verificar dados perdidos][verificar-dados]
+## [Download dos Zips][verificar-dados]
 Sessão responsavel pela verificação dos dados que podem está sendo perdidos.
 Fazemos uma verificação entre os dados raspados e os registros de entidades para encontrar dados que não foram raspados com sucesso ou ainda estão na fila de raspagem.
 Podemos fazer uma verificação manual dos links que aparecem como não coletados caso necessario.
@@ -145,7 +100,7 @@ registrados = df[df["coletado"] == "True"].shape[0]
 print(len(htmls) == registrados)
 print(f"Valores nesse momento são coletado {len(htmls)} e registrados {registrados}")
 ```
-## [Mandar para o drive Manualmente][mandar-drive]
+## [Manda para o Drive][mandar-drive]
 
 Sessão responsavel por salvar os dados coletados para o google drive caso seja necessario.
 Para utilizar dessa sessão é preciso preencher um caminho de salvamento em [constantes][constante].
