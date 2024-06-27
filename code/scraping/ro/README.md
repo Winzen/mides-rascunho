@@ -129,11 +129,11 @@ send_folder_drive(path_drive_csv,
 [doc-mapeamento]: https://github.com/Winzen/mides-rascunho/blob/main/docs/scraping/%5Bse%5Dextrair_mapeamento.md
 [doc-mapear]: https://github.com/Winzen/mides-rascunho/blob/main/docs/scraping/%5Bse%5Dmapear_empenho.md
 
-[raspador]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb#scrollTo=CpVNwZaGLZd0
-[constante]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb#scrollTo=iuLdqHBy_3co
-[verificar-ip]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb#scrollTo=9ptCC5xP2ssI
-[importação]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb#scrollTo=_VXXXORnNegL
-[extrair]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb#scrollTo=TTb_aULe8FOB
-[raspagem]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb#scrollTo=_3EoBWtuPvIL
-[verificar-dados]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/to/%5Bto%5Dextrair.ipynb#scrollTo=FTalgJh47E3y
-[mandar-drive]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/se/%5Bse%5Dextrair.ipynb#scrollTo=98_15dAlHvyk
+[raspador]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/ro/[ro]extrair.ipynb
+[verificar-ip]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/ro/[ro]extrair.ipynb#scrollTo=epToHlxZBG35
+[importação]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/ro/[ro]extrair.ipynb#scrollTo=0KXJ4Keo9eYe
+[pegar-municipios]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/ro/[ro]extrair.ipynb#scrollTo=FtyeVeEA9jGX
+[pegar-links]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/ro/[ro]extrair.ipynb#scrollTo=gml1tKEk9qHS
+[download]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/ro/[ro]extrair.ipynb#scrollTo=qShzweX09vua
+[manda-drive]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/ro/[ro]extrair.ipynb#scrollTo=3DdZJ5-dyTPC
+
