@@ -74,10 +74,10 @@ Após a coleta de todos os links de download dos zips.
 ## [Importação][importação]
   Grupo responsavel por ativar todas as funçoes e bibliotecas necessarias para as de mais celulas do notebook.
 
-## [Pegar Municipios Id e Entidades][extrair]
+## [Pegar Municipios Id e Entidades][pegar-municipios]
   Sessão responsavel por extrair possiveis dados já salvos do caminhos definido em [constantes][constante].
 
-## [Pegar links dos ZIPs][raspagem]
+## [Pegar links dos ZIPs][pegar-links]
 
   Sessão responsavel pela raspagem de dados do site. Apartir do csv com as entidades coletadas do site podemos conseguir forma links que nos leva diretamente para o empenhos.
   
@@ -85,7 +85,7 @@ Após a coleta de todos os links de download dos zips.
    ```py
    ```
 
-## [Download dos Zips][verificar-dados]
+## [Download dos Zips][download]
 Sessão responsavel pela verificação dos dados que podem está sendo perdidos.
 Fazemos uma verificação entre os dados raspados e os registros de entidades para encontrar dados que não foram raspados com sucesso ou ainda estão na fila de raspagem.
 Podemos fazer uma verificação manual dos links que aparecem como não coletados caso necessario.
@@ -135,5 +135,5 @@ send_folder_drive(path_drive_csv,
 [pegar-municipios]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/ro/[ro]extrair.ipynb#scrollTo=FtyeVeEA9jGX
 [pegar-links]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/ro/[ro]extrair.ipynb#scrollTo=gml1tKEk9qHS
 [download]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/ro/[ro]extrair.ipynb#scrollTo=qShzweX09vua
-[manda-drive]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/ro/[ro]extrair.ipynb#scrollTo=3DdZJ5-dyTPC
+[mandar-drive]: https://colab.research.google.com/github/Winzen/mides-rascunho/blob/main/code/scraping/ro/[ro]extrair.ipynb#scrollTo=3DdZJ5-dyTPC
 
