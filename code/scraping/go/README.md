@@ -26,14 +26,14 @@ Nome| Goiás
 Sigla| Go
 Municípios| 246
 Cobertura do Raspador| 2019 - 2024
-Link_Site| [:link:](https://www.tcmgo.tc.br/pentaho/api/repos/cidadao/app/index.html)
+Link Site| [:link:](https://www.tcmgo.tc.br/pentaho/api/repos/cidadao/app/index.html)
 Pipeline|✓
 Sistema| API
 Server|Sem quedas registradas
-Ip_estrageiro|X
-Link_drive|[:link:](https://drive.google.com/drive/u/0/folders/1-BZ5mjftq98f8en8HLLSmKUwXXLaraU1)
-Link_storage|[:link:](https://console.cloud.google.com/storage/browser/basedosdados-dev/staging/world_wb_mides/raw_despesa_go?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&cloudshell=false&project=basedosdados-dev)
-Link_licitacao|X
+Ip Estrageiro|X
+Link Drive|[:link:](https://drive.google.com/drive/u/0/folders/1-BZ5mjftq98f8en8HLLSmKUwXXLaraU1)
+Link Storage|[:link:](https://console.cloud.google.com/storage/browser/basedosdados-dev/staging/world_wb_mides/raw_despesa_go?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&cloudshell=false&project=basedosdados-dev)
+Link Licitacao|X
 
 # Logica do Site
 
