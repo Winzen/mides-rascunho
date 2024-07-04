@@ -19,7 +19,7 @@ Nesse diretorios temos como foco armazenar e informar sobre os codigos de raspag
 Cada raspador funciona de uma forma um tanto diferente. Você pode conseguir informaçoes sobre como eles funcionam e acessar os devidos codigos indo diretamente ao diretorio ou usando a tabela [abaixo](/code/scraping#resumo)
 
 ## Resumo
-flag|nome|sigla|online|link_site|pipeline|sistema|ip_estrageiro|link_raspador|link_drive|link_storage|link_licitacao
+Flag|Nome|Sigla|Online|Link Site|Pipeline|Sistema|Ip Estrageiro|Link Raspador|Link Drive|Link Storage|Link Licitacao
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 <img src="/docs/images/flags/ac.png">|Acre|AC|✓|[:link:](http://qlik.tceac.tc.br/extensions/gastospublicos/gastospublicos.html?_ga=2.234985153.1351290455.1696941468-160473323.1696941468&_gl=1*1udkbll*_ga*MTYwNDczMzIzLjE2OTY5NDE0Njg.*_ga_7W9X95Q11R*MTY5Njk0MTQ2Ny4xLjEuMTY5Njk0MTU4NS4wLjAuMA..*_ga_BGWR95NM02*MTY5Njk0MTQ2Ny4xLjEuMTY5Njk0MTU4NS4wLjAuMA..)|✓|qlik sense|✓|[:link:](/code/scraping/ac/)|[:link:](https://drive.google.com/drive/u/0/folders/1XRxr0CilhDWyiGfa2XPFcFZRCzUTdpz3)|X|X
 <img src="/docs/images/flags/ba.png">|Bahia|BA|✓|[:link:](https://www.tcm.ba.gov.br/controle-social/consulta-de-despesas/)|X|reCAPTCHA v3|X|[:link:](/code/scraping/ba/)|[:link:](https://drive.google.com/drive/u/0/folders/1HFhCqiUNC_AZawX43MQxs5hosY0B757V)|X|[:link:](https://drive.google.com/drive/u/0/folders/1EOrHv1tnydgwsahaZROwpZJbUg5Uf3JC)
